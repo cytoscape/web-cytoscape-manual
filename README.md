@@ -46,7 +46,7 @@ an obsolete version, which will quickly become confusing.
 NOT WORKING YET
 
 1. Update version number and Copyright year (if applicable) in conf.py
-2. [Create a new release](https://github.com/cytoscape/web-cytoscape-manual/releases) with the relevant release number, for example 1.0.0. **This will automatically trigger a build at ReadTheDocs for this release.** Leave "binary attachments" emtpy. Do not added the "v" in front of the version number as suggested by GitHub (i.e., use 1.0.0 instead of v1.0.0). 
+2. [Create a new release](https://github.com/cytoscape/web-cytoscape-manual/releases) with the relevant release number, for example 1.0.0. **AUTO BUILD NOT WORKING YET** **This will automatically trigger a build at ReadTheDocs for this release.** Leave "binary attachments" emtpy. Do not added the "v" in front of the version number as suggested by GitHub (i.e., use 1.0.0 instead of v1.0.0). 
 3. After 3-10 minutes, verify that the version-specific link works, for example: TO BE ADDED
 
 ### Troubleshooting ###
