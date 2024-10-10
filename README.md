@@ -26,6 +26,8 @@ git clone https://github.com/cytoscape/web-cytoscape-manual.git
 cd web-cytoscape-manual
 make docs
 ```
+The above should launch the default browser with the documentation, but if not the html
+can be found under ``docs/_build/html``
 
 
 ## Rebuilding the Manual
