@@ -20,17 +20,19 @@ To import a network from NDEx, choose **Data → Open network(s) from NDEx** in 
 
 -   The **NDEx Network Browser** window will open in the **SEARCH NDEx** tab allowing you to browse all the available public networks sorted by date last modified.
   
--   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1 or Apoptosis).
+![](_static/images/Creating_networks/ndex_network_browser_v2.png)
+
+-   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1, Apoptosis etc).
 
 -   *BONUS: If you are logged into your NDEx account, you can also select the **MY NETWORKS** tab and browse or search only among your own networks stored in NDEx.*
 
 -   Search results are always returned in order of relevance based on the search terms you provided.
 
+-   Networks highlighted in grey cannot be imported, mouse-over for more information.
+
 -   On the left hand side, mark the checkbox to select the network(s) you want to import.
 
 -   Click the **OPEN NETWORK(S)** button in the bottom right corner to import all selected networks.
-
-![](_static/images/Creating_Networks/ndex_network_browser.png)
 
 <a id="import_workspace_from_ndex"> </a>
 ## Import Workspace from NDEx
@@ -42,6 +44,8 @@ This feature is only available to Cytoscape Web users when they are logged into 
 To import a workspace from NDEx, choose **Data → Open workspace from NDEx...** in the top menu bar:
 
 -   The **My Workspaces** window will open and display all the available workspaces stored in your NDEx account.
+
+![](_static/images/Creating_networks/my_workspaces.png)
   
 -   On the left hand side, mark the checkbox to select the workspace you want to import.
 
@@ -49,12 +53,8 @@ To import a workspace from NDEx, choose **Data → Open workspace from NDEx...**
 
 -   You can also **DELETE** a selected workspace if desired.
 
-![](_static/images/Creating_Networks/my_workspaces.png)
-
-
-
 <a id="import_networks_from_unformatted_table_files"> </a>
-## Import Networks from Unformatted Table Files
+## Import Networks from Unformatted Table Files >> START HERE
 
 Cytoscape supports the import of networks from delimited text files and
 Excel workbooks using **File → Import → Network from File...**. An
