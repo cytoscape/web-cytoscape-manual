@@ -1,4 +1,4 @@
-Cytoscape Privacy Policy
+Cytoscape Privacy Policy >>> Rudi
 ===========================
 <a id="cytoscape_privacy_policy"> </a>
 
