@@ -140,13 +140,13 @@ To import a network from a delimited text table, please follow these steps:
 
 5.  Click the blue **Confirm** button in the bottom right corner to complete the process.
 
-#### Import a List of Nodes Without Edges
+### Import a List of Nodes Without Edges
 
 The table import feature supports lists of nodes without edges. If you
 select only a source column, it creates a network without interactions.
 
 <a id="advanced_settings"> </a>
-#### Advanced Settings
+### Advanced Settings
 
 The **Advanced Settings** button allows you to:
 
