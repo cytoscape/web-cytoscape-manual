@@ -3,73 +3,55 @@ Creating Networks
 <a id="creating_networks"> </a>
 
 
-There are 4 different ways of creating networks in Cytoscape:
+There are 2 different ways of creating networks in Cytoscape Web:
 
-1.  Importing pre-existing, fixed-format network files.
+1.  Importing pre-existing networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org) public database.
 
 2.  Importing pre-existing, unformatted text or Excel files.
 
-3.  Importing data from from public databases.
+<a id="import_network_from_ndex"> </a>
+## Import Networks from NDEx
 
-4.  Creating an empty network and manually adding nodes and edges.
+The NDEx Project provides an open-source framework 
+where scientists and organizations can share, store, manipulate, and publish 
+biological network knowledge.
 
-<a id="import_fixed_format_network_files"> </a>
-## Import Fixed-Format Network Files
+To import a network from NDEx, choose **Data → Open network(s) from NDEx** in the top menu bar:
 
-Network files can be specified in any of the formats described in the
-**[Supported Network
-Formats](Supported_Network_File_Formats.html#supported-network-file-formats)**
-section. Networks are imported into Cytoscape via **File →
-Import**. The network file can either be located directly
-on the local computer, or found on a remote computer (in which case it
-will be referenced with a URL).
+-   The **NDEx Network Browser** window will open in the **SEARCH NDEx** tab allowing you to browse all the available public networks sorted by date last modified.
+  
+-   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1 or Apoptosis).
 
-<a id="load_networks_from_local_computer"> </a>
-### Load Networks from Local Computer
+-   *BONUS: If you are logged into your NDEx account, you can also select the **MY NETWORKS** tab and browse or search only among your own networks stored in NDEx.*
 
-In order to load a network from a local file you can select **File →
-Import → Network from File...** or click on
-![](_static/images/Creating_Networks/Cy3_icon_net_file_import.png)
-on the tool bar. Choose the correct file in the file chooser dialog and
-press Open. Some sample network files of different types have been
-included in the sampleData folder in Cytoscape.
+-   Search results are always returned in order of relevance based on the search terms you provided.
 
-After you choose a network file, another dialog will pop up. Here, you
-can choose either to create a new network collection for the new
-network, or load the new network into an existing network collection.
-When you choose the latter, make sure to choose the right mapping column
-to map the new network to the existing network collection. 
+-   On the left hand side, mark the checkbox to select the network(s) you want to import.
 
-![](_static/images/Creating_Networks/ImportNetwork.png)
+-   Click the **OPEN NETWORK(S)** button in the bottom right corner to import all selected networks.
 
-Alternatively, you can simply drag and drop a network file from the desktop into the _Network_ list 
-(**Control Panel**), rather than selecting the file from the menu option.
+![](_static/images/Creating_Networks/ndex_network_browser.png)
 
-Network files in SIF, GML, and XGMML formats may also be loaded directly
-from the command line using the -N option.
+<a id="import_workspace_from_ndex"> </a>
+## Import Workspace from NDEx
 
-<a id="load_networks_from_a_remote_computer_url_import"> </a>
-### Load Networks from a Remote Computer (URL import)
+In Cytoscape Web, the worspace is comparable to the "session" concept in the Cytoscape desktop application.
+Therefore, a Cytoscape Web workspace can be imported and exported to a user's NDEx account.
+This feature is only available to Cytoscape Web users when they are logged into their NDEx accounts.
 
-To load a network from a remote file, you can select **File → Import →
-Network from URL...**. In the import network dialog, insert the appropriate
-URL, either manually or using URL bookmarks. Bookmarked URLs can be
-accessed by clicking on the arrow to the right of the text field (see
-the Bookmark Manager in
-[Preferences](Cytoscape_Preferences.html#cytoscape-preferences)
-for more details on bookmarks). Also, you can drag and drop links from a
-web browser to the URL text box. Once a URL has been specified, click on
-the OK button to load the network.
+To import a workspace from NDEx, choose **Data → Open workspace from NDEx...** in the top menu bar:
 
-![](_static/images/Creating_Networks/ImportNetworkFromURL.png)
+-   The **My Workspaces** window will open and display all the available workspaces stored in your NDEx account.
+  
+-   On the left hand side, mark the checkbox to select the workspace you want to import.
 
-Another issue for network import is the presence of firewalls, which can
-affect which files are accessible to a computer. To work around this
-problem, Cytoscape supports the use of proxy servers. To configure a
-proxy server, go to **Edit → Preferences → Proxy Settings...**. This is
-further described in the
-**[Preferences](Cytoscape_Preferences.html#cytoscape-preferences)**
-section.
+-   Click the **OPEN WORKSPACE** button in the bottom right corner to import the selected workspace.
+
+-   You can also **DELETE** a selected workspace if desired.
+
+![](_static/images/Creating_Networks/my_workspaces.png)
+
+
 
 <a id="import_networks_from_unformatted_table_files"> </a>
 ## Import Networks from Unformatted Table Files
@@ -290,9 +272,7 @@ using this framework. Cytoscape supports many web services including:
     STRING is a database of known and predicted protein-protein interactions. STITCH and STRING
     are available from the **Search bar** and from **File → Import → Network → Public Databases...**.
     
--   [NDEx](http://www.ndexbio.org/): The Network Data Exchange (NDEx) Project provides an open-source framework 
-    where scientists and organizations can share, store, manipulate, and publish 
-    biological network knowledge. NDEx is available from the **Search bar**, from **File → Import → Network from NDEx...** and     in the **Toolbar** via the **NDEx Button**.
+-   [NDEx](http://www.ndexbio.org/):  NDEx is available from the **Search bar**, from **File → Import → Network from NDEx...** and     in the **Toolbar** via the **NDEx Button**.
     
 ### Example: Retrieving Networks from NDEx
 
