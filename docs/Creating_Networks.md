@@ -22,7 +22,7 @@ To import a network from NDEx, choose **Data → Open network(s) from NDEx** in 
   
 ![](_static/images/Creating_networks/ndex_network_browser_v2.png)
 
--   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1, Apoptosis etc).
+-   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1, Apoptosis etc), then click the ![](_static/images/Creating_networks/magnifier.png) button.
 
 -   *BONUS: If you are logged into your NDEx account, you can also select the **MY NETWORKS** tab and browse or search only among your own networks stored in NDEx.*
 
