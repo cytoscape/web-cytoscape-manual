@@ -34,7 +34,7 @@ To import a network from NDEx, choose **Data → Open network(s) from NDEx** in 
 
 -   Click the **OPEN NETWORK(S)** button in the bottom right corner to import all selected networks.
 
--   *NOTE: You can also use **Data → Open Sample Networks** to conveninetly get started with 4 publicly available example networks available in NDEx.
+-   *NOTE: You can also use **Data → Open Sample Networks** to conveninetly get started with 4 publicly available example networks available in NDEx.*
 
 <a id="import_workspace_from_ndex"> </a>
 ## Import Workspace from NDEx
