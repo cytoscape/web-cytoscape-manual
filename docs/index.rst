@@ -1,7 +1,7 @@
 Cytoscape Web |version| User Manual
 ============================================
 
-The Cytoscape on the Web User Manual copyright is owned by The Cytoscape
+The Cytoscape Web User Manual copyright is owned by The Cytoscape
 Consortium, and is made available under the same GPL license as
 Cytoscape itself: LGPL 2.1, the GNU Lesser General Public License,
 version 2.1, February 1999 available in text at
@@ -14,16 +14,16 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    :numbered: 2
 
    Introduction
-   Launching_Cytoscape
    Quick_Tour_of_Cytoscape
+      App components
+      Menus
+      Search tool
    Creating_Networks
-   Supported_Network_File_Formats
-   Finding_and_Filtering_Nodes_and_Edges
-   Merge
-   Panels
+   Merge networks
    Styles
-   Node_and_Edge_Column_Data
-   Navigation_and_Layout
+   Layouts and layout tools
+   Node and Edge Data Tables
+   Cell View
 
    Cytoscape_Privacy_Policy
 ..
