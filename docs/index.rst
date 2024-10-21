@@ -21,7 +21,7 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    Creating_Networks
    Merge networks
    Styles
-   Layouts and layout tools
+   Layout Tools
    Node and Edge Data Tables
    Cell View
 
