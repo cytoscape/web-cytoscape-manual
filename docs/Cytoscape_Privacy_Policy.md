@@ -1,6 +1,6 @@
 Cytoscape Web Privacy Policy
 ===========================
-<a id="cytoscape_privacy_policy"> </a>
+<a id="cytoscape_web_privacy_policy"> </a>
 
 **Last Updated: October 14th, 2024**
 
