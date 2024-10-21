@@ -7,11 +7,14 @@ This chapter describes the basic layout and mechanics of using Cytoscape Web. Wh
 
 ![](_static/images/Launching_Cytoscape/quick_tour_1.png)
 
-For information on user privacy, see the **[Cytoscape Web Privacy
-Policy](Cytoscape_Privacy_Policy.html#cytoscape-privacy-policy)**.
+The numbers in the image above can help identify the interface elements:
+1. 
+2. 
+3. 
 
-<a id="basic_features"> </a>
-## Basic Features
+
+<a id="interface_layout"> </a>
+## Interface Layout
 
 When a network is loaded, Cytoscape will look similar to the image
 below:
@@ -296,3 +299,6 @@ At the bottom of the Network View Window is a set of network tools:
 The **Navigator** (or "bird's eye view") shows an overview of the network. It can be used to navigate around a large network view. The blue rectangle indicates the portion of the network currently displayed in the network view window, and it can be dragged with the mouse to view other portions of the network. Zooming in will cause the rectangle to appear smaller and vice versa. 
 
 ![](_static/images/Quick_Tour/NetworkOverview.png)
+
+For information on user privacy, see the **[Cytoscape Web Privacy
+Policy](Cytoscape_Privacy_Policy.html#cytoscape_web_privacy_policy)**.
