@@ -17,9 +17,10 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    Quick_Tour_of_Cytoscape
       App components
       Menus
-      Search tool
-   Creating_Networks
-   Merge networks
+      Search Tool
+   Creating Networks
+   Merge Networks
+   Export Your Data
    Styles
    Layout Tools
    Node and Edge Data Tables
