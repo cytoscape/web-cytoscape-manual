@@ -1,29 +1,13 @@
-Quick Tour of Cytoscape on the Web
+Quick Tour of Cytoscape Web
 ========================================
 <a id="quick_tour_of_cytoscape"> </a>
 
 
-This chapter describes the basic layout and mechanics of using Cytoscape. If you would prefer to learn by doing, consider starting with the [Basic Expression Analysis Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/).
+This chapter describes the basic layout and mechanics of using Cytoscape Web. When you start Cytoscape Web for the first time, the interface will look like the image below.
 
-<a id="welcome_screen"> </a>
-## Starter Panel
+![](_static/images/Launching_Cytoscape/quick_tour_1.png)
 
-When you start Cytoscape, you can access basic functions from the
-**Starter Panel**:
-
-![](_static/images/Launching_Cytoscape/Welcome_38.png)
-
-The **Starter Panel** is designed to give you quick access to a set of sample session files,
-as well as tutorials and Cytoscape news. The sample session files include a broad range of networks
-to give a sense of the diversity of interaction types, visualization styles and biological applications (see 
-Network Table properties for more information about each sample session network).
-The **Starter Panel** will also present your own most recent sessions for quick access.
-
-When you load a session file, the **Starter Panel** will disappear. You can display it at any 
-time by choosing **View → Show Starter Panel**.
-
-For
-information on user privacy, see the **[Cytoscape Privacy
+For information on user privacy, see the **[Cytoscape Web Privacy
 Policy](Cytoscape_Privacy_Policy.html#cytoscape-privacy-policy)**.
 
 <a id="basic_features"> </a>
