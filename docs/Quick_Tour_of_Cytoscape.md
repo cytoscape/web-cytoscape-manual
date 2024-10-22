@@ -127,55 +127,24 @@ Cytoscape Web.
 <a id="network_management"> </a>
 ## Network Management
 
-Cytoscape web allows multiple networks to be loaded at a time, but only one can have a view at any given time. A network stores all the nodes and edges that are loaded by the user and a view displays them.
+Cytoscape web allows multiple networks to be loaded, but only one can have a view at any given time.
+A network stores all the nodes and edges that are loaded by the user and a view displays them.
 
 An example where a number of networks have been loaded is shown below:
 
 ![](_static/images/Quick_Tour/quick_tour_7.png)
 
-The network manager (in Control Panel) shows the networks that are
-loaded. Clicking on a network here will make that view active in the
-main window, if the view exists. Each network has a name and size
-(number of nodes and edges), which are shown in the network manager. If
-a network is loaded from a file, the network name is the name of the
-file.
+The **Workspace Panel** (Workspace tab in Control Panel) shows the networks that are
+loaded. Clicking on a network here will dispay the network in the **Network View Window**.
+Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. If
+a network is loaded from NDEx, a blue "NDEx" label will be displayed in front of its name.
+If the network is loaded from a file, the network name is the name of the file and a green "Local" label is displayed instead.
 
-Some networks are very large (thousands of nodes and edges) and can take
-a long time to display. For this reason, a network in Cytoscape may not
-contain a "view". Networks that have a view are in normal black font and
-networks that don't have a view are highlighted in red. You can create
-or destroy a view for a network by right-clicking the network name in
-the network manager or by choosing the appropriate option in the
-**Edit** menu. You can also destroy previously loaded networks this way.
+Some networks are very large and cannot be loaded in Cytoscape Web due to limitations in web browser's performance and capabilities:
+-    For NDEx networks, the network size must be less than *500 Mb* and/or the nodes and edges count less than *20,000 elements*.
+-    For networks imported from file, the text file must be less than *5 Mb*.
 
-Certain operations in Cytoscape will create new networks. If a new
-network is created from an old network, for example by selecting a set
-of nodes in one network and copying these nodes to a new network (via
-the **File → New Network** option), it will be shown immediately
-follows the network that it was derived from.
-
-Network views can also be detached (undocked) from the main Cytoscape window. When detached, a view window can be dragged to another monitor, resized, maximized and minimized by using the normal window controls for your operating system. Notice, however, that closing a view window does not destroy it, but simply reattaches it to the Cytoscape window.
-
-<a id="arrange_network_windows"> </a>
-### Arrange Network Windows
-
-When you have detached network view windows, you can arrange them by selecting one of these options under **View → Arrange Detatched Views**:
-
-**Grid**
-
-![](_static/images/Quick_Tour/MultipleNetworks_Grid.png)
-
-**Cascade**
-
-![](_static/images/Quick_Tour/MultipleNetworks_Cascade.png)
-
-**Vertical Stack**
-
-![](_static/images/Quick_Tour/MultipleNetworks_VerticalStack.png)
-
-**Side by Side**
-
-![](_static/images/Quick_Tour/MultipleNetworks_SidebySide.png)
+START HERE >>>
 
 <a id="the_network_overview_window"> </a>
 ## Network View Tools
