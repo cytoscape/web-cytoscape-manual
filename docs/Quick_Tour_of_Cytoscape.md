@@ -87,7 +87,7 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
-***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage***.
+***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only trasmitted to OpenAI via secure hyper text transfer protocol (https)***.
 
 START HERE >>>>
 
