@@ -132,8 +132,8 @@ The **Workspace Panel** (Workspace tab in Control Panel) shows the networks that
 loaded. Clicking on a network here will dispay the network in the **Network View** window.
 Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. 
 
-If a network is loaded from NDEx, a ![](_static/images/Quick_Tour/ndex_label.png) label is displayed in front of its name.
-If the network is loaded from a file, the network name is the name of the file and a ![](_static/images/Quick_Tour/local_label.png) label is displayed instead.
+If a network is loaded from NDEx, a ![](_static/images/Quick_Tour/ndex_labelx24.png) label is displayed in front of its name.
+If the network is loaded from a file, the network name is the name of the file and a ![](_static/images/Quick_Tour/local_labelx24.png) label is displayed instead.
 
 Some networks are very large and cannot be loaded in Cytoscape Web due to limitations in web browser's performance and capabilities:
 -    For NDEx networks, the network size must be less than *500 Mb* and/or the nodes and edges count less than *20,000 elements*.
