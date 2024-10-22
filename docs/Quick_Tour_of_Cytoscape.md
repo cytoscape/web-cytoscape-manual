@@ -5,7 +5,7 @@ Quick Tour of Cytoscape Web
 
 This chapter describes the basic layout and mechanics of using Cytoscape Web. When you start Cytoscape Web for the first time, the interface will look like the image below:
 
-![](_static/images/Launching_Cytoscape/quick_tour_1.png)
+![](_static/images/Quick_TOur/quick_tour_1.png)
 
 The interface layout is very similar to that of the Cytoscape desktop application, whith the **Control Panel** on the left, **Table Panel** at the bottom and **Network View Window** on the right.
 
