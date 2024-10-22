@@ -59,8 +59,8 @@ Other editing options will be added in future releases.
 <a id="layout"> </a>
 ### Layout
 
-The **Layout** menu lists a variety of layout algorithms which
-automatically lay a network out. In this version of Cytoscape Web, the available options are:
+The **Layout** menu lists a variety of layout algorithms that can easily be applied to your network with just 1 click.
+Choosing any of these options will lay the network out using the default settings for that algorithm. In this version of Cytoscape Web, the available options are:
 -    DAGRE
 -    Force-directed
 -    Radial
@@ -70,8 +70,26 @@ automatically lay a network out. In this version of Cytoscape Web, the available
 -    Concentric
 -    Cosmos
 
+Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window
 
-![](_static/images/Quick_Tour/LayoutMenu37.png)
+<Layout settings image goes here>
+    
+![](_static/images/Quick_Tour/quick_tour_4.png)
+
+<a id="analysis"> </a>
+### Analysis
+
+The **Analysis** menu contains options to analyze your networks. **Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
+
+Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
+
+<run llm query options image goes here>
+
+![](_static/images/Quick_Tour/quick_tour_5.png)
+
+***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage***.
+
+START HERE >>>>
 
 <a id="apps"> </a>
 ### Apps
