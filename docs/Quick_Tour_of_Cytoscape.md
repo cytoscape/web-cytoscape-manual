@@ -34,101 +34,42 @@ concise explanation of the interface components for clarity.
 The Workspace Panel and Table Panel can be resized according to your preference or even fully collapsed 
 to maximize the screen space available for the Network View Window.
 
-<a id="network_editing"> </a>  >>> START HERE
-### Network Editing
-
-Cytoscape also has an edit functionality that enables you to build and
-modify networks interactively within the network canvas. To edit a
-network, just right-click on the open space of network window, select
-the menu item **Add → Node**, a new node will be added to the canvas. To
-add an edge, right click on a node, choose the menu item **Edit → Add
-Edge**. Then select the target node, a new edge will be added between
-the two nodes. In a similar way annotation objects can be added;
-pictures, shapes or textboxes; much like in MS PowerPoint or similar
-software. Detailed information on network editing can be found in the
-**[Editing Networks](Creating_Networks.html#create_a_new_network_or_edit_one_manually)**
-section.
-
-![](_static/images/Quick_Tour/AddNodeMenu37.png)
-
 <a id="the_menus"> </a>
 ## The Menus
 
-<a id="file"> </a>
-### File
+<a id="data"> </a>
+### Data
 
-The File menu contains most basic file functionality: **File → Open**
-for opening a Cytoscape session file; **File → New Network** for creating a new
-network, either blank for editing, or from an existing network; **File →
-Save** for saving a session file; **File → Import** for importing data
-such as networks and tables; and **File → Export** for exporting data. 
-**File → Export Network to Image** lets you export the
-network in either JPEG, PDF, PNG, PostScript or SVG format.
-**File → Export Network to Web Page** lets you export the entire session or
-a single network as a Web page using Cytoscape.js.
+The **Data** menu contains most basic file functionality: **Data → Open**
+for opening NDEx networks and workspaces; **Data → Save** for saving networks and workspaces to NDEx; 
+**Data → Import** for importing data such as networks and tables; and **Data → Export** for exporting data. 
 
-**File → Open Recent** will list recently opened session files for
-quick access. **File → Print...** allows printing.
+<Updated Data menu image goes here (quick_tour_3.pmg)>
 
-![](_static/images/Quick_Tour/FileMenu37.png)
+![](_static/images/Quick_Tour/quick_tour_3.png)
 
 <a id="edit"> </a>
 ### Edit
 
-The **Edit** menu contains **Cut**, **Copy** and **Paste** functions, as
-well as **Undo** and **Redo** functions which undo and redo edits made
-in the **Table Panel**, the **Network Editor** and to layout.
+The **Edit** menu allows to delete the nodes and/or edges of a selected subset of
+the network.
 
-There are also options for creating and destroying views (graphical
-representations of a network) and networks (the raw network data - not
-yet visualized), as well as an option for deleting selected nodes and
-edges from the current network. All deleted nodes and edges can be
-restored to the network via **Edit → Undo**.
-
-Other editing options include; **Remove Duplicated Edges** will
-delete edges that are duplicates (having the same source and target nodes), keeping one edge, **Remove
-Self-Loops** removes edges that have the same source and target node,
-and **Delete Selected Nodes and Edges...** deletes a selected subset of
-the network. **Rename Network...** allows you to rename the currently
-selected network.
-
-A set of functions for bringing annotations forward, backward etc, and pushing/pulling
-them to the foreground vs background layer are also available in the Edit menu.
-
-Editing preferences for properties and apps are found under **Edit →
-Preferences → Properties...**. More details on how to edit preferences
-can be found
-[here](Cytoscape_Preferences.html#cytoscape-preferences).
-
-![](_static/images/Quick_Tour/EditMenu.png)
-
-<a id="view"> </a>
-### View
-
-The **View** menu allows you to display or hide panels, including the **Control Panel**,
-**Table Panel**, **Result Panel**, **Tool Panel** and the **Automation Panel**. In addition, it
-also provides a means for viewing the **Starter Panel**. 
-It also provides the control of other view-related functionality.
-
-![](_static/images/Quick_Tour/ViewMenu38.png)
-
-<a id="select"> </a>
-### Select
-
-The **Select** menu contains different options for selecting nodes and
-edges.
-
-![](_static/images/Quick_Tour/SelectMenu37.png)
+Other editing options will be added in future releases.
 
 <a id="layout"> </a>
 ### Layout
 
-The **Layout** menu has an array of features for visually organizing the
-network. The features in the top portion of the network (**Bundle
-Edges**, **Clear Edge Bends**, **Node Layout Tools**) are tools for 
-manipulating the network visualization. The
-bottom section of the menu lists a variety of layout algorithms which
-automatically lay a network out.
+The **Layout** menu lists a variety of layout algorithms which
+automatically lay a network out. In this version of Cytoscape Web, the available options are:
+-    DAGRE
+-    Force-directed
+-    Radial
+-    Grid
+-    Circle
+-    COSE
+-    Concentric
+-    Cosmos
+
 
 ![](_static/images/Quick_Tour/LayoutMenu37.png)
 
