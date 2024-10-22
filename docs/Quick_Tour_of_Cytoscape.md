@@ -70,20 +70,16 @@ Choosing any of these options will lay the network out using the default setting
 -    Concentric
 -    Cosmos
 
-Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window
-
->> Layout settings image goes here >>
+Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window.
     
 ![](_static/images/Quick_Tour/quick_tour_4.png)
 
 <a id="analysis"> </a>
 ### Analysis
 
-The **Analysis** menu contains options to analyze your networks. **Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
+The **Analysis** menu contains features to analyze your networks. **Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
 
 Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
-
->> run llm query options image goes here >>
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
