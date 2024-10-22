@@ -23,7 +23,7 @@ concise explanation of the interface components for clarity.
     This is where all the networks you are working with are listed.
     You can have several networks in your workspace, but only one of them can be selected and dispayed at any given time; this is called the 'current' network.
       
--   The **Network View Window**, which displays the current network. At the bottom right corner
+-   The **Network View** window displays the current network. At the bottom right corner
     of the network view are a set of network view tools, mouse over for more information on each tool. 
 
 -   The full-width **Table Panel** uses the bottom portion of the screen and displays columns of data
@@ -31,7 +31,7 @@ concise explanation of the interface components for clarity.
     column data.
 
 The Workspace Panel and Table Panel can be resized according to your preference or even fully collapsed 
-to maximize the screen space available for the Network View Window.
+to maximize the screen space available for the Network View.
 
 <a id="the_menus"> </a>
 ## The Menus
