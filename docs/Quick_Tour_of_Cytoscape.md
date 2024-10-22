@@ -121,6 +121,9 @@ Cytoscape Web.
 <a id="network_management"> </a>
 ## Network Management
 
+<a id="workspace"> </a>
+### Workspace
+
 Cytoscape web allows multiple networks to be loaded, but only one can have a view at any given time.
 A network stores all the nodes and edges that are loaded by the user and a view displays them.
 
@@ -139,38 +142,29 @@ Some networks are very large and cannot be loaded in Cytoscape Web due to limita
 -    For NDEx networks, the network size must be less than *500 Mb* and/or the nodes and edges count less than *20,000 elements*.
 -    For networks imported from file, the text file must be less than *5 Mb*.
 
-START HERE >>>
+<a id="layout_tools"> </a>
+### Layout Tools
+
+The **Layout Tools** panel is available below the **Workspace Panel**; this panel is collapsed by default and can be expanded
+by clicking it. 
+
+![](_static/images/Quick_Tour/quick_tour_9.png)
 
 <a id="the_network_overview_window"> </a>
-## Network View Tools
+### Network View
 
-At the bottom of the Network View Window is a set of network tools:
+At the bottom right corner of the **Network View** Window is a set of 4 network view tools as shown below:
 
-![](_static/images/Quick_Tour/NetworkTools.png)
+![](_static/images/Quick_Tour/quick_tour_8.png)
 
--   **Show Grid** will arrange all loaded networks as a grid.
+-   ![](_static/images/Quick_Tour/apply_default_layout.png) **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.html#layout)**.
 
--   **Show Network** will show the currently selected network.
+-   ![](_static/images/Quick_Tour/fit_to_screen.png) **Fit Network to Window** will resize the current network and fit it to the **Network View** window.
 
--   **Detach View** detaches the network view window from the main Cytoscape window.
+-   ![](_static/images/Quick_Tour/open_in_cytoscape.png) **Open in Cytoscape** will open the current network in the Cytoscape desktop application if it is already running on your computer (default port: 1234).
 
--   **Export to File...** gives you options to export the network or image.
+-   ![](_static/images/Quick_Tour/share_url.png) **Share Network** copies the URL of the current network to your computer's clipboard so you can paste it in emails and other documents.
 
--   **Always Show Graphics Detail** forces the rendering of graphics details. It is turned off by default.
-
--   **Toggle Node Selection** allows you to turn off/on node selection. It is turned on by default.
-    
--   **Toggle Edge Selection** allows you to turn off/on edge selection. It is turned on by default.
-
--   **Toggle Annotation Selection** allows you to turn off/on annotation selection. It is turned off by default.
-
--   **Toggle Node Label Selection** allows you to turn off/on node label selection. It is turned off by default.
-
--   **Hide Navigator** lets you hide the Navigator ("bird's eye view").
-
-The **Navigator** (or "bird's eye view") shows an overview of the network. It can be used to navigate around a large network view. The blue rectangle indicates the portion of the network currently displayed in the network view window, and it can be dragged with the mouse to view other portions of the network. Zooming in will cause the rectangle to appear smaller and vice versa. 
-
-![](_static/images/Quick_Tour/NetworkOverview.png)
 
 For information on user privacy, see the **[Cytoscape Web Privacy
 Policy](Cytoscape_Privacy_Policy.html#cytoscape_web_privacy_policy)**.
