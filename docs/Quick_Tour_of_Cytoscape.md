@@ -2,7 +2,6 @@ Quick Tour of Cytoscape Web
 ========================================
 <a id="quick_tour_of_cytoscape_web"> </a>
 
-
 This chapter describes the basic layout and mechanics of using Cytoscape Web. When you start Cytoscape Web for the first time, the interface will look like the image below:
 
 ![](_static/images/Quick_Tour/quick_tour_1.png)
@@ -87,8 +86,17 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 
 START HERE >>>>
 
+
+
+<a id="tools"> </a>
+### Tools
+
+The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**.
+
+Other advanced feature tools will be added in future releases. 
+
 <a id="apps"> </a>
-### Apps
+### Apps >> NEEDS UPDATE
 
 The **Apps** menu gives you access to the **App Manager** (**Apps → App
 Manager**) for managing (install/update/delete) your apps and may have
@@ -104,45 +112,26 @@ apps.
 In previous versions of Cytoscape, apps were called plugins and served a
 similar function.
 
-<a id="tools"> </a>
-### Tools
-
-The **Tools** menu contains advanced features like **cyCharts**, **[Network Analyzer](Network_Analyzer.html#networkanalyzer)**, **[Cytoscape Web Browser](CyBrowser.html)**, **[Network Merge](Merge.html#merge)**, **[Execute Command File...](Command_Tool.html)**, **Job Status Monitor**, **Run Script File...** and **[Diffuse](Finding_and_Filtering_Nodes_and_Edges.html#diffusion)**.
-
-**Cytoscape Web Browser** allows for viewing any html page directly in Cytoscape. The web browser can be opened in a separate window or can be launched in the Results Panel. 
-
-![](_static/images/Quick_Tour/ToolsMenu.png)
 
 <a id="help"> </a>
 ### Help
 
-The **Help** menu allows you to launch the online help viewer and browse and search this manual.
-It also provides direct access to a **Tour of Cytoscape**, as well as a full listing
-of Cytoscape tutorials. Tutorial content opens automatically in the **Cytoscape Web Browser**. 
-Video demos are also linked to direclty from the Help menu. 
+The **Help** menu allows you to easily access basic information **About Cytoscape Web**, this **Manual**, the **Code Repository** and **Bug Report** interface. The **Citation** option displays the literature citation for
+Cytoscape Web.
 
-![](_static/images/Quick_Tour/HelpMenu.png)
+>> Updated Help Menu image goes here >>
 
-The **Citations** option displays the main literature citation for
-Cytoscape, as well as a list of literature citations for installed apps.
-The list will be different depending on the set of apps you have
-installed.
+![](_static/images/Quick_Tour/quick_tour_6.png)
 
-![](_static/images/Quick_Tour/Citations.png)
-
-The **Help** menu also allows you to connect directly to Cytoscape Help
-Desk and the Bug Report interface.
 
 <a id="network_management"> </a>
 ## Network Management
 
-Cytoscape allows multiple networks to be loaded at a time, either with
-or without a view. A network stores all the nodes and edges that are
-loaded by the user and a view displays them.
+Cytoscape web allows multiple networks to be loaded at a time, but only one can have a view at any given time. A network stores all the nodes and edges that are loaded by the user and a view displays them.
 
 An example where a number of networks have been loaded is shown below:
 
-![](_static/images/Quick_Tour/MultipleNetworkView.png)
+![](_static/images/Quick_Tour/quick_tour_7.png)
 
 The network manager (in Control Panel) shows the networks that are
 loaded. Clicking on a network here will make that view active in the
