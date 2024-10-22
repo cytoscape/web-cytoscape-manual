@@ -1,76 +1,40 @@
 Quick Tour of Cytoscape Web
 ========================================
-<a id="quick_tour_of_cytoscape"> </a>
+<a id="quick_tour_of_cytoscape_web"> </a>
 
 
-This chapter describes the basic layout and mechanics of using Cytoscape Web. When you start Cytoscape Web for the first time, the interface will look like the image below.
+This chapter describes the basic layout and mechanics of using Cytoscape Web. When you start Cytoscape Web for the first time, the interface will look like the image below:
 
 ![](_static/images/Launching_Cytoscape/quick_tour_1.png)
 
-The numbers in the image above can help identify the interface elements:
-1. 
-2. 
-3. 
+The interface layout is very similar to that of the Cytoscape desktop application, whith the **Control Panel** on the left, **Table Panel** at the bottom and **Network View Window** on the right.
 
-
-<a id="interface_layout"> </a>
-## Interface Layout
-
-When a network is loaded, Cytoscape will look similar to the image
+When a network is loaded, Cytoscape Web will look similar to the image
 below:
 
-![](_static/images/Quick_Tour/NetworkLoaded38.png)
+![](_static/images/Quick_Tour/quick_tour_2.png)
 
 Most functionalities are self-explanatory, but we'll go through a
-concise explanation for clarity. The main window here has several
-components:
+concise explanation of the interface components for clarity.
 
--   The Menu Bar at the top (see below for more information about
-    each menu).
+-   The **Menu Bar** is at the top of the screen and contains several options (see below for more information about
+    each menu). Also in the Menu Bar, to the right, are the **Search Tool** the **NDEx Login** button.
 
--   The Tool Bar, which contains icons for commonly used functions.
-    These functions are also available via the menus. Hover the mouse
-    pointer over an icon and wait momentarily for a description to
-    appear as a tooltip. Right-clicking on the tool bar allows the
-    contents to be customized.
+-   The **Workspace Panel** (Workspace tab of the Control Panel). 
+    This is where all the networks you are working with are listed.
+    You can have several networks in your workspace, but only one of them can be selected and dispayed at any given time; this is called the 'current' network.
+      
+-   The **Network View Window**, which displays the current network. At the bottom right corner
+    of the network view are a set of network view tools, mouse over for more information on each tool. 
 
--   The Network Panel (Network tab of the Control Panel). 
-    At the top of the Network Panel is a Search bar, with direct access 
-    to multiple external resources. The network panel also
-    contains an optional network overview pane (shown at the
-    bottom left).  
-
--   The main Network View Window, which displays the network. At the bottom
-    of the network view are a set of network view tools. 
-
--   The Table Panel (bottom right panel), which displays columns of
-    selected nodes and edges and enables you to modify the values of
+-   The full-width **Table Panel** uses the bottom portion of the screen and displays columns of data
+    for nodes and edges in your network. The table also allows you to modify the values of
     column data.
 
-The Network Panel and Table Panel are dockable tabbed Panels. You can
-undock any of these panels by clicking on the **Float Window** control
-![](_static/images/Quick_Tour/FloatWindow.png)
-in the upper-right corner of the CytoPanel. This is useful when you want
-assign the network panel as much screen space as possible. You will now
-have two Cytoscape windows, the main window, and a new window labeled
-Table Panel, similar to the one shown below. A popup will be displayed
-when you put the mouse pointer on a cell.
+The Workspace Panel and Table Panel can be resized according to your preference or even fully collapsed 
+to maximize the screen space available for the Network View Window.
 
-To dock the window again, click the **Dock Window** icon
-![](_static/images/Quick_Tour/DockWindow.png).
-
-Clicking the **Minimize** icon ![](_static/images/Quick_Tour/Minimize.png)
-will minimize the panel; the panel can be shown again by choosing **View → Show**
-and selecting the relevant panel, or by clicking on one of the tabs in the 
-minimized panel, for example **Network** or **Node Table**, and then clicking 
-the **Dock** icon.
-
-![](_static/images/Quick_Tour/TablePanel38.png)
-
-For more information on the panels in Cytoscape, see the **[Panels](Panels.html#what-are-panels)**
-section.
-
-<a id="network_editing"> </a>
+<a id="network_editing"> </a>  >>> START HERE
 ### Network Editing
 
 Cytoscape also has an edit functionality that enables you to build and
