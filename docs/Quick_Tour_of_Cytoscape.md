@@ -18,7 +18,7 @@ Most functionalities are self-explanatory, but we'll go through a
 concise explanation of the interface components for clarity.
 
 -   The **Menu Bar** is at the top of the screen and contains several options (see below for more information about
-    each menu). Also in the Menu Bar, to the right, are the **Search Tool** the **NDEx Login** button.
+    each menu). Also in the Menu Bar, to the right, are the **Search Tool** and **NDEx Login** button.
 
 -   The **Workspace Panel** (Workspace tab of the Control Panel). 
     This is where all the networks you are working with are listed.
