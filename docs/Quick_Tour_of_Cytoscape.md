@@ -44,7 +44,7 @@ The **Data** menu contains most basic file functionality: **Data → Open**
 for opening NDEx networks and workspaces; **Data → Save** for saving networks and workspaces to NDEx; 
 **Data → Import** for importing data such as networks and tables; and **Data → Export** for exporting data. 
 
-<Updated Data menu image goes here (quick_tour_3.pmg)>
+Updated Data menu image goes here (quick_tour_3.pmg)
 
 ![](_static/images/Quick_Tour/quick_tour_3.png)
 
@@ -72,7 +72,7 @@ Choosing any of these options will lay the network out using the default setting
 
 Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window
 
-<Layout settings image goes here>
+>> Layout settings image goes here >>
     
 ![](_static/images/Quick_Tour/quick_tour_4.png)
 
@@ -83,7 +83,7 @@ The **Analysis** menu contains options to analyze your networks. **Run LLM Query
 
 Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
 
-<run llm query options image goes here>
+>> run llm query options image goes here >>
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
