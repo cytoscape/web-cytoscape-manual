@@ -84,16 +84,10 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 
 ***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only trasmitted to OpenAI via secure hyper text transfer protocol (https)***.
 
-START HERE >>>>
-
-
-
 <a id="tools"> </a>
 ### Tools
 
-The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**.
-
-Other advanced feature tools will be added in future releases. 
+The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
 ### Apps >> NEEDS UPDATE
@@ -135,10 +129,11 @@ An example where a number of networks have been loaded is shown below:
 ![](_static/images/Quick_Tour/quick_tour_7.png)
 
 The **Workspace Panel** (Workspace tab in Control Panel) shows the networks that are
-loaded. Clicking on a network here will dispay the network in the **Network View Window**.
-Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. If
-a network is loaded from NDEx, a blue "NDEx" label will be displayed in front of its name.
-If the network is loaded from a file, the network name is the name of the file and a green "Local" label is displayed instead.
+loaded. Clicking on a network here will dispay the network in the **Network View** window.
+Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. 
+
+If a network is loaded from NDEx, a ![](_static/images/Quick_Tour/ndex_label.png) label is displayed in front of its name.
+If the network is loaded from a file, the network name is the name of the file and a ![](_static/images/Quick_Tour/local_label.png) label is displayed instead.
 
 Some networks are very large and cannot be loaded in Cytoscape Web due to limitations in web browser's performance and capabilities:
 -    For NDEx networks, the network size must be less than *500 Mb* and/or the nodes and edges count less than *20,000 elements*.
