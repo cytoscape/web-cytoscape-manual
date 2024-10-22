@@ -1,4 +1,4 @@
-# Cytoscape on the Web
+# Cytoscape Web
 This project contains the complete user manual for Cytoscape  Web. 
 There are versions of the manual based on specific versions of Cytoscape. 
 There is also a "stable" that links to the latest Cytoscape version. 
