@@ -76,7 +76,9 @@ Choosing **Layout → Settings...** will open a dialog window where you can sele
 <a id="analysis"> </a>
 ### Analysis
 
-The **Analysis** menu contains features to analyze your networks. **Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
+The **Analysis** menu contains features to analyze your networks.
+
+**Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
 
 Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
 
@@ -124,14 +126,14 @@ Cytoscape Web.
 <a id="workspace"> </a>
 ### Workspace
 
-Cytoscape web allows multiple networks to be loaded, but only one can have a view at any given time.
-A network stores all the nodes and edges that are loaded by the user and a view displays them.
+In Cytoscape Web, the **Workspace** replaces the **Session** concept that Cytoscape desktop application users are familiar with. 
+The Cytoscape Web **Workspace** allows multiple networks to be loaded, but only one can be displayed at any given time. 
 
 An example where a number of networks have been loaded is shown below:
 
 ![](_static/images/Quick_Tour/quick_tour_7.png)
 
-The **Workspace Panel** (Workspace tab in Control Panel) shows the networks that are
+The **Workspace Panel** (Workspace tab in Control Panel) shows all the networks that are
 loaded. Clicking on a network here will dispay the network in the **Network View** window.
 Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. 
 
@@ -150,12 +152,12 @@ by clicking it.
 
 ![](_static/images/Quick_Tour/quick_tour_9.png)
 
+The **Layout Tools** let you adjust the *height* and *width* of the entire network independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets the slider position >>and the original network view.>> ????
+
 <a id="the_network_overview_window"> </a>
 ### Network View
 
-At the bottom right corner of the **Network View** Window is a set of 4 network view tools as shown below:
-
-![](_static/images/Quick_Tour/quick_tour_8.png)
+This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Window is a set of 4 network view tools as shown below:
 
 -   ![](_static/images/Quick_Tour/apply_default_layout.png) **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.html#layout)**.
 
@@ -164,6 +166,25 @@ At the bottom right corner of the **Network View** Window is a set of 4 network 
 -   ![](_static/images/Quick_Tour/open_in_cytoscape.png) **Open in Cytoscape** will open the current network in the Cytoscape desktop application if it is already running on your computer (default port: 1234).
 
 -   ![](_static/images/Quick_Tour/share_url.png) **Share Network** copies the URL of the current network to your computer's clipboard so you can paste it in emails and other documents.
+
+
+<a id="cell_view"> </a>
+### Cell View
+
+If the currently selected network is a *hierarchy*, the interface will display the **Cell View** tab at the top of the **Network View** window. Click it to switch to the **Cell View**, also know as circle packing view:
+
+![](_static/images/Quick_Tour/quick_tour_10.png)
+
+**Cell View** displays the network in systems and sub-systems (circles) that might or might not be nested.
+A good comparison is to think about thisrepresentation as Matryoshka dolls.
+
+Single click a system to select it, or double click to zoom in and see the next-level sub-systems.
+
+When a system is selected, you can explore the underlying interaction network by opening the sliding **Sub-network Viewer** panel using the ![](_static/images/Quick_Tour/quick_tour_10.png) button in the top right corner of the **Cell View** window:
+
+![](_static/images/Quick_Tour/quick_tour_11.png)
+
+>> TO BE CONTINUED WHEN THE FEATURE WORKS !!! >>
 
 
 For information on user privacy, see the **[Cytoscape Web Privacy
