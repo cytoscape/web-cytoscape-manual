@@ -40,6 +40,91 @@ all or a subset of nodes/edges, depending on how the mapping is defined.
 A **Bypass** on a specific set of nodes/edges will bypass and override
 both the default value and defined mapping.
 
+<a id="how_mappings_work"> </a>
+### How Mappings Work
+
+For each property, you can specify a default value or define a dynamic
+mapping. Cytoscape currently supports three different types of mappings:
+
+1.  **Passthrough Mapping**
+
+    -   The values of network column data are passed directly through
+        to properties. A passthrough mapping is typically used to
+        specify node/edge labels. For example, a passthrough mapping can
+        label all nodes with their common gene names.
+
+2.  **Discrete Mapping**
+
+    -   Discrete column data are mapped to discrete properties. For
+        example, a discrete mapping can map different types of molecules
+        to different node shapes, such as rectangles for gene products
+        and ellipses for metabolites.
+
+3.  **Continuous Mapping**
+
+    -   Continuous data are mapped to properties. Depending on the
+        property, there are three kinds of continuous mapping:
+
+        i.  **Continuous-to-Continuous Mapping**: for example, you can
+            map a continuous numerical value to node size.
+
+        ii. **Color Gradient Mapping**: This is a special case of
+            continuous-to-continuous mapping. Continuous numerical
+            values are mapped to a color gradient.
+
+<a id="styles_tutorials"> </a>
+## Styles Tutorial
+
+The following tutorial demonstrate some of the basic style features. 
+
+<a id="tutorial_1_creating_a_basic_style_and_setting_default_values"> </a>
+### Creating a Basic Style with Discrete and Continuous Mappings
+
+First, we will update the default values for two node properties:
+
+1.  Load a sample network via **Data → Open network(s) from NDEx** in the top menu bar.
+In the **NDEx Network Browser** window, search for **galfiltered** and open the **galFiltered network with data**.
+
+2.  Select the **STYLE** panel in the Network Panel. Default values are defined for
+some of the properties. 
+
+3.  To set the default node shape to ovals, click the **Default** column for the
+    **Shape** property in the **NODES** tab. Select the **ellipse** item and click **CONFIRM**. 
+    
+4.  Similarly, click the **Default** column for **Fill
+    Color** and set it to light grey.
+
+Next, we will use discrete mappings for edge style properties:
+
+5.  In the **EDGE** tab of the **STYLE** panel, find the
+    **Stroke Color** property and click on the **Mapping** column. Under **Column**, 
+    select "interaction".
+
+6.  Under **Mapping Type**, select "Discrete". The interface will now show all available column values for "interaction": 
+
+    ![](_static/images/Styles/DiscreteMapper.png)
+
+7.  Click the box next to "pp" (protein-DNA interactions) and select a dark blue color, click **CONFIRM**. Repeat with "pd" and select a green color.
+
+    ![](_static/images/Styles/Tutorial2-final.png)
+
+Next, let's create continuous mappings for nodes:
+
+8.  In the **NODES** tab of the **STYLE** panel, find the
+    **Fill Color** property. Click on the **Mapping** column. 
+    
+9.  Under **Column**, select "gal1RGexp" from the drop-down list that appears.
+
+10. Select the "continuous" option as the **Mapping Type**. This automatically creates a default mapping using a default palette.
+
+    ![](_static/images/Styles/DefaultContinous.png)
+
+11. Let's update the palette by clicking the **Current Palette** button. Select the "Red-Blue" palette on the left and click **OK**. 
+
+We encourage you to choose palette from the ones provided, these palettes come from published recommendations for choosing colors in scientific and cartographic applications, such as [BrewerColors](http://colorbrewer2.org).
+
+![](_static/images/Styles/RedBlue.png)
+
 <a id="list_of_node_edge_and_network_properties"> </a>
 ### List of Node, Edge and Network Properties
 
@@ -114,90 +199,3 @@ The style of a variety of properties to be controlled, summarized in the tables 
 </tbody>
 </table>
 <br>
-
-<a id="how_mappings_work"> </a>
-### How Mappings Work
-
-For each property, you can specify a default value or define a dynamic
-mapping. Cytoscape currently supports three different types of mappings:
-
-1.  **Passthrough Mapping**
-
-    -   The values of network column data are passed directly through
-        to properties. A passthrough mapping is typically used to
-        specify node/edge labels. For example, a passthrough mapping can
-        label all nodes with their common gene names.
-
-2.  **Discrete Mapping**
-
-    -   Discrete column data are mapped to discrete properties. For
-        example, a discrete mapping can map different types of molecules
-        to different node shapes, such as rectangles for gene products
-        and ellipses for metabolites.
-
-3.  **Continuous Mapping**
-
-    -   Continuous data are mapped to properties. Depending on the
-        property, there are three kinds of continuous mapping:
-
-        i.  **Continuous-to-Continuous Mapping**: for example, you can
-            map a continuous numerical value to node size.
-
-        ii. **Color Gradient Mapping**: This is a special case of
-            continuous-to-continuous mapping. Continuous numerical
-            values are mapped to a color gradient.
-
-<a id="styles_tutorials"> </a>
-## Styles Tutorial
-
-The following tutorial demonstrate some of the basic style features. 
-
-<a id="tutorial_1_creating_a_basic_style_and_setting_default_values"> </a>
-### Creating a Basic Style with Discrete and Continuous Mappings
-
-First, we will update the default values for two node properties:
-
-1.  Load a sample network via **Data → Open network(s) from NDEx** in the top menu bar.
-In the **NDEx Network Browser** window, search for **galfiltered** and open the **galFiltered network with data**.
-
-2.  Select the **STYLE** panel in the Network Panel. Default values are defined for
-some of the properties. 
-
-3.  To set the default node shape to ovals, click the **Default** column for the
-    **Shape** property in the **NODES** tab. Select the **ellipse** item and click **CONFIRM**. 
-    
-4.  Similarly, click the **Default** column for **Fill
-    Color** and set it to light grey.
-
-<!--    ![](_static/images/Styles/Tutorial1-final.png)-->
-
-Next, we will use discrete mappings for edge style properties:
-
-5.  In the **EDGE** tab of the **STYLE** panel, find the
-    **Stroke Color** property and click on the **Mapping** column. Under **Column**, 
-    select "interaction".
-
-6.  Under **Mapping Type**, select "Discrete". The interface will now show all available column values for "interaction": 
-
-    ![](_static/images/Styles/DiscreteMapper.png)
-
-7.  Click the box next to "pp" (protein-DNA interactions) and select a dark blue color, click **CONFIRM**. Repeat with "pd" and select a green color.
-
-![](_static/images/Styles/Tutorial2-final.png)
-
-Next, let's create continuous mappings for nodes:
-
-8.  In the **NODES** tab of the **STYLE** panel, find the
-    **Fill Color** property. Click on the **Mapping** column. 
-    
-9.  Under **Column**, select "gal1RGexp" from the drop-down list that appears.
-
-10. Select the "continuous" option as the **Mapping Type**. This automatically creates a default mapping using a default palette.
-
-    ![](_static/images/Styles/DefaultContinous.png)
-
-11. Let's update the palette by clicking the **Current Palette** button. Select the "Red-Blue" palette on the left and click **OK**. 
-
-We encourage you to choose palette from the ones provided, these palettes come from published recommendations for choosing colors in scientific and cartographic applications, such as [BrewerColors](http://colorbrewer2.org).
-
-![](_static/images/Styles/RedBlue.png)
