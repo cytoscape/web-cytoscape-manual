@@ -195,9 +195,19 @@ Above the column headers, we find a number of **Table Tools**:
   
 -    ![](_static/images/Quick_Tour/import_table.png) > Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.html#data_tables)** for detailed information and examples.
 
-In addition, when one or more cells in the table are selected, additional **Table Tools** options will become available as shown below:
+Any cells in the table can be selected and its values edited. Click the cell ***once*** to select it, click it ***again*** to edit its content. If the content of the cell is a link, click the ***pencil icon*** to edit it.
+
+When one or more cells in the table are selected, more **Table Tools** options will become available as shown below:
 
 ![](_static/images/Quick_Tour/quick_tour_13.png)
+
+-    *APPLY VALUE TO COLUMN* > Applies the value of the selected cell to all cells in that column.
+-    *APPLY VALUE TO SELECTED NODES* > Applies the value of the selected cell to the cells of all nodes selected in the network view (if any).
+  
+***NOTE: These tools will modify your data and the changes are irreversible, please use them with caution.***
+
+-    SELECT NODES > Selects (highlights) the node in the network view corresponding to the selected cell in the table.
+***NOTE: these 3 extra table tools will modify your data and 
 
 
 For information on user privacy, see the **[Cytoscape Web Privacy
