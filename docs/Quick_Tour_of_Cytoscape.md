@@ -179,7 +179,21 @@ When a system is selected, you can explore the underlying interaction network by
 
 ### Data Tables
 
-The bottom part of the interface contains the data tables, please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.html#data_tables)** for detailed information and examples.
+At the bottom of the interface, the tables allow you to view, and modify the data associated with your network elements.
+The **Data Tables** panel has a blue header with 3 tabs: *NODES*, *EDGES* and *NETWORK*, that contain the data columns (also known as *attributes* or *properties*) for each of those elements.
+
+Like other interface features, the **Data Tables** panel can be minimized using the arrow button on the right hand side, or its size customized to user's preference by dragging the blue header up and down. The image below shows the a custom sized panel with the default *NODES* tab selected.
+
+![](_static/images/Quick_Tour/quick_tour_12.png)
+
+Consistently with the behavior in the Cytoscape desktop application, when no nodes are selected in the network view, the *NODES* table shows the data columns and values of all nodes in the network. When one or more nodes are selected in the network view, the *NODES* table only shows the data for the selected nodes.
+
+Above the column headers, we find a number of table tools:
+-    ![](_static/images/Quick_Tour/table_search.png)
+-    ![](_static/images/Quick_Tour/add_col.png)
+-    ![](_static/images/Quick_Tour/import_table.png)
+
+downcontains the data tables , please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.html#data_tables)** for detailed information and examples.
 
 
 For information on user privacy, see the **[Cytoscape Web Privacy
