@@ -49,9 +49,7 @@ for opening NDEx networks and workspaces; **Data → Save** for saving networks 
 ### Edit
 
 The **Edit** menu allows to delete the nodes and/or edges of a selected subset of
-the network.
-
-Other editing options will be added in future releases.
+the network. Other editing options will be added in future releases.
 
 <a id="layout"> </a>
 ### Layout
@@ -90,6 +88,7 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
+### Apps
 
 The **Apps** menu allows to manage and configure apps and external services that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu.
 
