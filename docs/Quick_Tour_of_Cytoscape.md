@@ -33,8 +33,8 @@ concise explanation of the interface components for clarity.
 The Workspace Panel and Table Panel can be resized according to your preference or even fully collapsed 
 to maximize the screen space available for the Network View.
 
-<a id="the_menus"> </a>
-## The Menus
+<a id="menu_bar"> </a>
+## The Menu Bar
 
 <a id="data"> </a>
 ### Data
@@ -88,7 +88,7 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
-### Apps
+### Apps  >>> MAYBE NEEDS UPDATE
 
 The **Apps** menu allows to manage and configure apps and external services that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu.
 
@@ -102,6 +102,13 @@ Cytoscape Web.
 
 ![](_static/images/Quick_Tour/quick_tour_6.png)
 
+
+<a id="search"></a>
+### Search Tool >>> NEEDS UPDATE
+
+The **Search Tool** lets you find column values using text-based search. As shown in the image below, you can select the type of boolean operator to use for your search, as well the target. By default, searches are done on nodes (columns in the node table), but you can decide to search edges instead, or both. The *Exact Match* option is used to enable/disable wildcard searches.
+
+![](_static/images/Quick_Tour/search_tool.png)
 
 <a id="network_management"> </a>
 ## Network Management
@@ -140,7 +147,7 @@ The **Layout Tools** let you adjust the *height* and *width* of the entire netwo
 <a id="the_network_overview_window"> </a>
 ### Network View
 
-This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Window is a set of 4 network view tools as shown below:
+This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Panel is a set of 4 network view tools as shown below:
 
 -   ![](_static/images/Quick_Tour/apply_default_layout.png) **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.html#layout)**.
 
@@ -154,7 +161,7 @@ This is where your selected network is displayed and you can interact with it. A
 <a id="cell_view"> </a>
 ### Cell View
 
-If the currently selected network is a *hierarchy*, the interface will display the **Cell View** tab at the top of the **Network View** window. Click it to switch to the **Cell View**, also know as circle packing view:
+If the currently selected network is a *hierarchy*, the interface will display the **Cell View** tab at the top of the **Network View** panel. Click it to switch to the **Cell View**, also know as circle packing view:
 
 ![](_static/images/Quick_Tour/quick_tour_10.png)
 
@@ -168,6 +175,11 @@ When a system is selected, you can explore the underlying interaction network by
 ![](_static/images/Quick_Tour/quick_tour_11.png)
 
 >> TO BE CONTINUED WHEN THE FEATURE WORKS !!! >>
+
+
+### Data Tables
+
+The bottom part of the interface contains the data tables, please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.html#data_tables)** for detailed information and examples.
 
 
 For information on user privacy, see the **[Cytoscape Web Privacy
