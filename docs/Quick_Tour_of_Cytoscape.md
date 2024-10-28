@@ -104,9 +104,9 @@ Cytoscape Web.
 
 
 <a id="search_tool"></a>
-### Search Tool >>> NEEDS UPDATE
+### Search Tool >>> NEEDS UPDATE AFTER BUGS ARE RESOLVED
 
-The **Search Tool** lets you find column values using text-based search. As shown in the image below, you can select the type of boolean operator to use for your search, as well the target. By default, searches are done on nodes (columns in the node table), but you can decide to search edges instead, or both. The *Exact Match* option is used to enable/disable wildcard searches.
+The **Search Tool** lets you search for network elements using text-based search. As shown in the image below, you can select the type of boolean operator to use for your search, as well the target. Searches are *case insensitive* and are done on nodes (columns in the node table) by default, but you can decide to search edges instead, or both. The *Exact Match* option is used to enable/disable wildcard searches.
 
 ![](_static/images/Quick_Tour/search_tool.png)
 
