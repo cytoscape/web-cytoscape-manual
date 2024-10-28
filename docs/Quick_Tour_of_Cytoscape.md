@@ -90,22 +90,10 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
-### Apps >> NEEDS UPDATE
 
-The **Apps** menu gives you access to the **App Manager** (**Apps → App
-Manager**) for managing (install/update/delete) your apps and may have
-options added by apps that have been installed. Depending on which apps
-are loaded, the apps that you see may be different than what appear
-here. The below picture shows a Cytoscape installation without installed
-apps.
+The **Apps** menu allows to manage and configure apps and external services that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu.
 
 ![](_static/images/Quick_Tour/apps_menu.png)
-
-**Note: A list of available Cytoscape apps with descriptions is available online at: [http://apps.cytoscape.org](http://apps.cytoscape.org)**
-
-In previous versions of Cytoscape, apps were called plugins and served a
-similar function.
-
 
 <a id="help"> </a>
 ### Help
