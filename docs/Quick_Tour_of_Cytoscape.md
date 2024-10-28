@@ -179,7 +179,8 @@ When a system is selected, you can explore the underlying interaction network by
 
 ### Data Tables
 
-At the bottom of the interface, the tables allow you to view, and modify the data associated with your network elements.
+At the bottom of the interface, the **Data Tables** panel allows you to view and modify your network's data.
+
 The **Data Tables** panel has a blue header with 3 tabs: **NODES**, **EDGES** and **NETWORK**, that contain the data columns (also known as *attributes* or *properties*) for each of those elements. The interface is the same for all 3 tabs, so we will only describe it in detail for the default table, the **NODES** table.
 
 Like other interface features, the **Data Tables** panel can be minimized using the arrow button on the right hand side, or its size customized to user's preference by dragging the blue header up and down. The image below shows the a custom sized panel with the **NODES** tab selected.
