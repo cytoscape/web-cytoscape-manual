@@ -41,9 +41,7 @@ to maximize the screen space available for the Network View.
 
 The **Data** menu contains most basic file functionality: **Data → Open**
 for opening NDEx networks and workspaces; **Data → Save** for saving networks and workspaces to NDEx; 
-**Data → Import** for importing data such as networks and tables; and **Data → Export** for exporting data. 
-
-Updated Data menu image goes here (quick_tour_3.pmg)
+**Data → Import** for importing data such as networks and tables; and **Data → Export** for exporting data.
 
 ![](_static/images/Quick_Tour/quick_tour_3.png)
 
