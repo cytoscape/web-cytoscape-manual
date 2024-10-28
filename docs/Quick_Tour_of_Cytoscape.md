@@ -99,7 +99,7 @@ are loaded, the apps that you see may be different than what appear
 here. The below picture shows a Cytoscape installation without installed
 apps.
 
-![](_static/images/Quick_Tour/AppsMenu.png)
+![](_static/images/Quick_Tour/apps_menu.png)
 
 **Note: A list of available Cytoscape apps with descriptions is available online at: [http://apps.cytoscape.org](http://apps.cytoscape.org)**
 
