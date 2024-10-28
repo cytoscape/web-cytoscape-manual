@@ -113,8 +113,6 @@ similar function.
 The **Help** menu allows you to easily access basic information **About Cytoscape Web**, this **Manual**, the **Code Repository** and **Bug Report** interface. The **Citation** option displays the literature citation for
 Cytoscape Web.
 
->> Updated Help Menu image goes here >>
-
 ![](_static/images/Quick_Tour/quick_tour_6.png)
 
 
