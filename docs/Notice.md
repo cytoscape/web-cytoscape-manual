@@ -1,5 +1,6 @@
-<a id="notice"></a>
-## Notice
+Notice
+====================
+<a id="notice"> </a>
 
 This manual refers to the new **Cytoscape Web** application only.
 Please be patient...Cytoscape Web is still under development and a beta version will be released soon.
