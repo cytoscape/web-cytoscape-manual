@@ -16,10 +16,11 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    Introduction
    Quick_Tour_of_Cytoscape
    Creating_Networks
-   Merge
-   Styles
-   Export_Your_Data
    Node_and_Edge_Column_Data
+   Styles
+   Merge
+   App_Manager
+   Export_Your_Data
    Cytoscape_Privacy_Policy
 ..
    
