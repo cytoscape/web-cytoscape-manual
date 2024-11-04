@@ -82,7 +82,7 @@ The following tutorial demonstrate some of the basic style features.
 
 First, we will update the default values for two node properties:
 
-1.  Load a sample network via **Data → Open network(s) from NDEx** in the top menu bar.
+1.  Load a sample network via **Data → Open network(s) from NDEx** in the **Menu Bar**.
 In the **NDEx Network Browser** window, search for **galfiltered** and open the **galFiltered network with data**.
 
 2.  Select the **STYLE** panel in the Network Panel. Default values are defined for
@@ -128,7 +128,7 @@ We encourage you to choose palette from the ones provided, these palettes come f
 <a id="list_of_node_edge_and_network_properties"> </a>
 ### List of Node, Edge and Network Properties
 
-The style of a variety of properties to be controlled, summarized in the tables below.
+The style of a variety of properties can be controlled, summarized in the tables below.
 
 <table cellspacing="0" style="table-layout: fixed; width: 700px">
 <caption>Node Properties</caption>
