@@ -199,18 +199,18 @@ If the currently selected network is a *hierarchy*, the interface will display t
 
 ![](_static/images/Quick_Tour/quick_tour_10.png)
 
-**Cell View** displays the network in systems and sub-systems (circles) that might or might not be nested.
-A good comparison is to think about this representation as Matryoshka dolls.
+**Cell View** displays the network in systems (circles) that might or might not be nested.
+A fair comparison is to think about this type of representation as Matryoshka dolls.
 
-Single click a system to select it. Double click to zoom in and see the next-level sub-systems.
+Single click a system to select it. Double click it to zoom in and see the next-level systems (sub-systems).
 
-When a system is selected, you can explore the underlying interaction network in the **Sub-network Viewer** panel; this panel can be opened and closed using the ![](_static/images/Quick_Tour/sub_net_slider.png) button in the top right corner of the **Cell View** window.
+When a system is selected, you can explore the underlying interaction network in the **Sub Network Viewer** panel:
 
 ![](_static/images/Quick_Tour/quick_tour_11.png)
 
->>>> Replace image???
+The **Sub Network Viewer** panel can be opened and closed using the ![](_static/images/Quick_Tour/sub_net_slider.png) button in the top right corner of the **Cell View** window.
 
-When the hierarchical model has more than 1 data source, filtering options will be available in the bottom part of the **Sub-network Viewer** panel, allowing you to explore the different type of interaction data available for the selected system.
+When the hierarchical model has more than 1 interaction data sources, filtering options will be available in the bottom part of the **Sub Network Viewer** panel, allowing you to explore the different type of interaction data available for the selected system.
 
 
 <a id="table_panel"> </a>
