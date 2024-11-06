@@ -106,9 +106,19 @@ Cytoscape Web.
 <a id="search_tool"></a>
 ### Search Tool >>> NEEDS UPDATE AFTER BUGS ARE RESOLVED
 
-The **Search Tool** lets you search for network elements using text-based search. As shown in the image below, you can select the type of boolean operator to use for your search, as well the target. Searches are *case insensitive* and are done on nodes (columns in the node table) by default, but you can decide to search edges instead, or both. The *Exact Match* option is used to enable/disable wildcard searches.
+The **Search Tool** lets you find elements within your network using text-based search. Click ![](_static/images/Quick_Tour/search_settings.png) in the **Search Tool** to reveal the search settings:
 
 ![](_static/images/Quick_Tour/search_tool.png)
+
+As shown in the image above, you can adjust the search settings by:
+
+-    Selecting the type of boolean operator to use for your search.
+-    Choosing the target (nodes only, edges only or both).
+-    Selecting the search mode. The *Exact Match* option is used to enable/disable wildcard searches. When enabled, the results 
+     will only contain the exact search term you specified.
+
+Searches are ***case insensitive***; by default, they are performed on *nodes*, using the *OR* operator and *Exact match* enabled.
+
 
 <a id="login"></a>
 ### Sign In Button
