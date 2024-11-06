@@ -19,7 +19,6 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    Node_and_Edge_Column_Data
    Styles
    Merge
-   App_Manager
    Export_Your_Data
    Cytoscape_Privacy_Policy
 ..
