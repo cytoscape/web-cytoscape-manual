@@ -88,7 +88,7 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
-### Apps  >>> MAYBE NEEDS UPDATE
+### Apps
 
 The **Apps** menu allows to manage and configure apps and external services that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu.
 
@@ -109,6 +109,23 @@ Cytoscape Web.
 The **Search Tool** lets you search for network elements using text-based search. As shown in the image below, you can select the type of boolean operator to use for your search, as well the target. Searches are *case insensitive* and are done on nodes (columns in the node table) by default, but you can decide to search edges instead, or both. The *Exact Match* option is used to enable/disable wildcard searches.
 
 ![](_static/images/Quick_Tour/search_tool.png)
+
+<a id="login"></a>
+### Login Button
+
+At the far right of the menu bar, the ![](_static/images/Quick_Tour/login_icon.png) icon allows you to login to your NDEx account (if you already have one) or register for one. 
+
+When you click ![](_static/images/Quick_Tour/login_icon.png), the browser will open a new tab and the following page will be shown:
+
+![](_static/images/Quick_Tour/ndex_login.png)
+
+Here, you can:
+
+-    Sign in to your existing NDEx account either by typing your username and password, or by using the convenient *Sign In with Google* option.
+  
+-    Create a new NDEx account. Again, the easiest/fastest way is to click *Sign In with Google* to create a new account with just a few clicks. Alternatively, you can click *Register* at the bottom of the screen, provide the required information and follow the instructions to activate your new NDEx account.
+ 
+***NOTE: even if you already have an exixting NDEx account, the first time you sign in to link your NDEx account with Cytoscape Web, you will need to go through an email verification process. While this is a quick and simple procedure, it is recommended that you perform it using the same browser and device.***
 
 <a id="network_management"> </a>
 ## Network Management
@@ -166,9 +183,9 @@ If the currently selected network is a *hierarchy*, the interface will display t
 ![](_static/images/Quick_Tour/quick_tour_10.png)
 
 **Cell View** displays the network in systems and sub-systems (circles) that might or might not be nested.
-A good comparison is to think about thisrepresentation as Matryoshka dolls.
+A good comparison is to think about this representation as Matryoshka dolls.
 
-Single click a system to select it, or double click to zoom in and see the next-level sub-systems.
+Single click a system to select it. Double click to zoom in and see the next-level sub-systems.
 
 When a system is selected, you can explore the underlying interaction network by opening the sliding **Sub-network Viewer** panel using the ![](_static/images/Quick_Tour/quick_tour_10.png) button in the top right corner of the **Cell View** window:
 
@@ -177,13 +194,14 @@ When a system is selected, you can explore the underlying interaction network by
 >> TO BE CONTINUED WHEN THE FEATURE WORKS !!! >>
 
 
-### Data Tables
+<a id="table_panel"> </a>
+### Table Panel
 
-At the bottom of the interface, the **Data Tables** panel allows you to view and modify your network's data.
+At the bottom of the interface, the **Table Panel** allows you to view and modify your network's data.
 
-The **Data Tables** panel has a blue header with 3 tabs: **NODES**, **EDGES** and **NETWORK**, that contain the data columns (also known as *attributes* or *properties*) for each of those elements. The interface is the same for all 3 tabs, so we will only describe it in detail for the default table, the **NODES** table.
+The **Table Panel** has a blue header with 3 tabs: **NODES**, **EDGES** and **NETWORK**, that contain the data columns (also known as *attributes* or *properties*) for each of those elements. The interface is the same for all 3 tabs, so we will only describe it in detail for the default table, the **NODES** table.
 
-Like other interface features, the **Data Tables** panel can be minimized using the arrow button on the right hand side, or its size customized to user's preference by dragging the blue header up and down. The image below shows the a custom sized panel with the **NODES** tab selected.
+Like other interface features, the **Table Panel** can be minimized using the arrow button on the right hand side, or its size customized to user's preference by dragging the blue header up and down. The image below shows the a custom sized panel with the **NODES** tab selected.
 
 ![](_static/images/Quick_Tour/quick_tour_12.png)
 
