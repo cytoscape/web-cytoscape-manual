@@ -195,11 +195,13 @@ A good comparison is to think about this representation as Matryoshka dolls.
 
 Single click a system to select it. Double click to zoom in and see the next-level sub-systems.
 
-When a system is selected, you can explore the underlying interaction network in the **Sub-network Viewer** panel; this panel can be opened and closed using the ![](_static/images/Quick_Tour/quick_tour_10.png) button in the top right corner of the **Cell View** window.
+When a system is selected, you can explore the underlying interaction network in the **Sub-network Viewer** panel; this panel can be opened and closed using the ![](_static/images/Quick_Tour/sub_net_slider.png) button in the top right corner of the **Cell View** window.
 
 ![](_static/images/Quick_Tour/quick_tour_11.png)
 
-When the visualized hierarchical model has more than 1 data source, filtering options will be available in the bottom part of the **Sub-network Viewer** panel.
+>>>> Replace image???
+
+When the hierarchical model has more than 1 data source, filtering options will be available in the bottom part of the **Sub-network Viewer** panel, allowing you to explore the different type of interaction data available for the selected system.
 
 
 <a id="table_panel"> </a>
