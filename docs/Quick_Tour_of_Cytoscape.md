@@ -210,7 +210,7 @@ When a system is selected, you can explore the underlying interaction network in
 
 The **Sub Network Viewer** panel can be opened and closed using the ![](_static/images/Quick_Tour/sub_net_slider.png) button in the top right corner of the **Cell View** window.
 
-When the hierarchical model has more than 1 interaction data sources, filtering options will be available in the bottom part of the **Sub Network Viewer** panel, allowing you to explore the different type of interaction data available for the selected system.
+When the hierarchical model has more than 1 interaction data sources, the *Filter Interaction Source* options will be available in the bottom part of the **Sub Network Viewer** panel, allowing you to explore the different sources of data available for the selected system.
 
 
 <a id="table_panel"> </a>
