@@ -113,9 +113,7 @@ The **Search Tool** lets you search for network elements using text-based search
 <a id="login"></a>
 ### Login Button
 
-At the far right of the menu bar, the ![](_static/images/Quick_Tour/login_icon.png) icon allows you to login to your NDEx account (if you already have one) or register for one. 
-
-When you click ![](_static/images/Quick_Tour/login_icon.png), the browser will open a new tab and the following page will be shown:
+At the far right of the menu bar, the ![](_static/images/Quick_Tour/login_icon.png) icon allows you to login to your NDEx account (if you already have one) or register for one. Click it and the browser will open a new tab to display the NDEx sign in page as shown below:
 
 ![](_static/images/Quick_Tour/ndex_login.png)
 
