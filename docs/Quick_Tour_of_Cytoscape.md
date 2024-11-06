@@ -104,7 +104,7 @@ Cytoscape Web.
 
 
 <a id="search_tool"></a>
-### Search Tool >>> NEEDS UPDATE AFTER BUGS ARE RESOLVED
+### Search Tool
 
 The **Search Tool** lets you find elements within your network using text-based search. Click ![](_static/images/Quick_Tour/search_settings.png) in the **Search Tool** to reveal the search settings:
 
@@ -195,11 +195,11 @@ A good comparison is to think about this representation as Matryoshka dolls.
 
 Single click a system to select it. Double click to zoom in and see the next-level sub-systems.
 
-When a system is selected, you can explore the underlying interaction network by opening the sliding **Sub-network Viewer** panel using the ![](_static/images/Quick_Tour/quick_tour_10.png) button in the top right corner of the **Cell View** window:
+When a system is selected, you can explore the underlying interaction network in the **Sub-network Viewer** panel; this panel can be opened and closed using the ![](_static/images/Quick_Tour/quick_tour_10.png) button in the top right corner of the **Cell View** window.
 
 ![](_static/images/Quick_Tour/quick_tour_11.png)
 
->> TO BE CONTINUED WHEN THE FEATURE WORKS !!! >>
+When the visualized hierarchical model has more than 1 data source, filtering options will be available in the bottom part of the **Sub-network Viewer** panel.
 
 
 <a id="table_panel"> </a>
