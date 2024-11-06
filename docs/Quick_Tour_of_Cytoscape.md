@@ -226,9 +226,3 @@ When one or more cells in the table are selected, more **Table Tools** options w
    ***NOTE: These tools will modify your data and the changes are irreversible, please use them with caution.***
 
 -    *SELECT NODES* > Selects (highlights) the node in the network view corresponding to the selected cell in the table.
-
- 
-
-
-For information on user privacy, see the **[Cytoscape Web Privacy
-Policy](Cytoscape_Privacy_Policy.html#cytoscape_web_privacy_policy)**.
