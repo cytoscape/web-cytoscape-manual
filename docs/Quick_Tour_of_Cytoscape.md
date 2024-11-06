@@ -162,7 +162,7 @@ Some networks are very large and cannot be loaded in Cytoscape Web due to limita
 <a id="style_tab"> </a>
 ### Style
 
-The **Style Panel** (STYLE tab in Control Panel) also know as *VizMapper*, provides the interface to create and manage the visual styles associated with your networks. Please review the chapter on **[Styles](Styles.html#styles)** for detailed information and examples.
+The **Style Panel** (STYLE tab in Control Panel) also know as *VizMapper*, provides the interface to create and manage the visual styles associated with your networks. As shown below, even though the look and feel of the **Style Panel** is consistent with that of the Cytoscape desktop application, we recommend you review the chapter on **[Styles](Styles.html#styles)** for detailed information and examples.
 
 ![](_static/images/Quick_Tour/quick_tour_style_tab.png)
 
