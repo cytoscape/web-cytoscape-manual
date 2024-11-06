@@ -112,7 +112,7 @@ The **Search Tool** lets you find elements within your network using text-based 
 
 As shown in the image above, you can adjust the search settings by:
 
--    Selecting the type of boolean operator to use for your search.
+-    Selecting the type of boolean operator (*AND* or *OR*) to use.
 -    Choosing the target (nodes only, edges only or both).
 -    Selecting the search mode. The *Exact Match* option is used to enable/disable wildcard searches. When enabled, the results 
      will only contain the exact search term you specified.
