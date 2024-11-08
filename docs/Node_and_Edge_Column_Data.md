@@ -9,7 +9,7 @@ edge and network information as node/edge/network column data. This could includ
 for example, annotation data on a gene or confidence values in a protein-protein 
 interaction. These column data can then be visualized in a user-defined way by setting up a mapping
 from columns to network attributes (colors, shapes, and so on). The
-section on **[Styles](Styles.html#styles#)** discusses this in greater detail.
+section on **[Styles](Styles.md#styles)** discusses this in greater detail.
 
 <a id="import_data_table_files"> </a>
 ## Import Data Table Files
