@@ -1,4 +1,4 @@
-Introduction >>> Rudi to fix GSAI reference
+Introduction
 ===============
 
 <a id='introduction'> </a>
