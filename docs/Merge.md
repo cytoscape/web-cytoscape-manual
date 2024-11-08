@@ -16,7 +16,8 @@ Cytoscape Web allows for merging networks, through **Tools → Merge Networks**.
 
 -    All the networks available to merge are listed under **Available Networks**.
      Select 2 or more networks from this list and click the right arrow to transfer
-     them to **Networks to Merge**.
+     them to **Networks to Merge**. The first network is marked with a yellow star and is the base network; the other network will 
+     be merged into the base network.
      
 -    Click **Merge** to continue. The merged network will be displayed as a new network in your workspace.
 
