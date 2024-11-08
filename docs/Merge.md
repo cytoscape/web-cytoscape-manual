@@ -40,8 +40,8 @@ The options available here are:
 
 -    **How to merge columns**: a table lets the user specify for each of
      the individual network columns, what the corresponding column in the
-     merged network should be named as well as its data type. Buttons Below the table,
-     let you further customize how to merge columns for nodes, edges and network properties.
+     merged network should be named as well as its data type. Buttons below the table,
+     allow to further specify how to merge columns for nodes, edges and network attributes individually.
 
 
 
