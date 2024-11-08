@@ -85,7 +85,7 @@ Choosing **Analysis → LLM Query Options** lets you select the LLM used for ana
 <a id="tools"> </a>
 ### Tools
 
-The **Tools** menu contains advanced features like **[Network Merge](Merge.html#merge)**. Other advanced feature tools will be added in future releases. 
+The **Tools** menu contains advanced features like **[Network Merge](Merge.md#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
 ### Apps
@@ -164,7 +164,7 @@ Some networks are very large and cannot be loaded in Cytoscape Web due to limita
 
 The **Style Panel** (STYLE tab in Control Panel) also know as *VizMapper*, provides the interface to create and manage the visual styles associated with your networks.
 
-As shown below, even though the look and feel of the **Style Panel** is consistent with that of the Cytoscape desktop application, we recommend you review the chapter on **[Styles](Styles.html#styles)** for detailed information and examples.
+As shown below, even though the look and feel of the **Style Panel** is consistent with that of the Cytoscape desktop application, we recommend you review the chapter on **[Styles](Styles.md#styles)** for detailed information and examples.
 
 ![](_static/images/Quick_Tour/quick_tour_style_tab.png)
 
@@ -183,7 +183,7 @@ The **Layout Tools** let you adjust the *height* and *width* of the entire netwo
 
 This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Panel is a set of 4 network view tools as shown below:
 
-![](_static/images/Quick_Tour/apply_default_layout.png)  **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.html#layout)**.
+![](_static/images/Quick_Tour/apply_default_layout.png)  **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.md#layout)**.
 
 ![](_static/images/Quick_Tour/fit_to_screen.png)  **Fit Network to Window** will resize the current network and fit it to the **Network View** window.
 
@@ -234,7 +234,7 @@ Above the column headers, we find a number of **Table Tools**:
   
 ![](_static/images/Quick_Tour/add_col.png)  Allows to add a new columns to the existing table. Users can specify the name of the column, the datatype and an optional default value to populate the column if desired.
   
-![](_static/images/Quick_Tour/import_table.png)  Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.html#data_tables)** for detailed information and examples.
+![](_static/images/Quick_Tour/import_table.png)  Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.md#table_panel)** for detailed information and examples.
 
 Any cells in the table can be selected and its values edited. Click the cell ***once*** to select it, click it ***again*** to edit its content. If the content of the cell is a link, click the ***pencil icon*** to edit it. Multiple cells can be selected by combining mouse clicks with either the *shift* or *command* buttons on the keyboard.
 
