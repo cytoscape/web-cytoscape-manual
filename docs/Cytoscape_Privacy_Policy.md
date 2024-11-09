@@ -6,11 +6,13 @@ Cytoscape Web Privacy Policy
 
 At Cytoscape Web, accessible from [https://web.cytoscape.org](https://web.cytoscape.org), your privacy is a priority. This Privacy Policy outlines how we collect, use, and protect your personal data when you use our website and services. By using our platform, you agree to the practices outlined in this policy.
 
-## 1. Information We Collect
+## Information and Data
+
+### 1. Information We Collect
 
 Cytoscape Web doesn’t directly collect or store any user’s personal information. All user information and network data are stored on the Network Data Exchange (NDEx). Please refer to the NDEx privacy policy for more details.
 
-## 2. How We Use Your Information
+### 2. How We Use Your Information
 
 Cytoscape Web uses information in the following ways:
 
@@ -20,7 +22,7 @@ Cytoscape Web uses information in the following ways:
 - To analyze how our website is used and to gather statistical data to enhance our platform.
 - To prevent fraudulent activities and ensure security.
 
-## 3. Data Sharing and Disclosure
+### 3. Data Sharing and Disclosure
 
 We do not sell, rent, or trade your personal information to third parties. However, we may share your data in the following circumstances:
 
@@ -30,11 +32,13 @@ We may also share your information if you choose to install and use third-party 
 
 **Legal Compliance**: We may disclose your information when required by law or in response to legal processes (e.g., subpoenas, court orders).
 
-## 4. Data Security
+### 4. Data Security
 
 All data used by Cytoscape Web is stored in NDEx. Please refer to the NDEx privacy policy for details about the measures we take to protect the privacy of your data in NDEx.
 
-## 5. Your Rights and Choices
+## Rights and Choices
+
+### 5. Your Rights
 
 Depending on your jurisdiction, you may have the following rights regarding your personal information:
 
@@ -45,17 +49,24 @@ Depending on your jurisdiction, you may have the following rights regarding your
 
 To exercise these rights, please contact us at [support@cytoscape.org](mailto:support@cytoscape.org).
 
-## 6. Third-Party Links
+### 6. Third-Party Links
 
 Cytoscape Web may contain links to external websites that are not operated by us. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies.
 
-## 7. Children's Privacy
+### 7. Children's Privacy
 
 Our services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that we have inadvertently gathered personal data from a child, we will take steps to delete it.
 
-## 8. Changes to This Privacy Policy
+### 8. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time to reflect changes in our practices or legal obligations. Any updates will be posted on this page with the revised "Last Updated" date. We encourage you to review this policy periodically to stay informed of any changes.
+
+## Feedback
+
+### 9. Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please reach out to us by email at [support@cytoscape.org](mailto:support@cytoscape.org).
+policy of that service.
 
 ## 9. Contact Us
 
