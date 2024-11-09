@@ -178,7 +178,10 @@ by clicking it.
 
 The **Layout Tools** let you adjust the *height* and *width* of the entire network independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets the slider position >>and the original network view.>> ????
 
-<a id="the_network_overview_window"> </a>
+<a id="network_viewer"> </a>
+## Network Viewer
+
+<a id="network_view"> </a>
 ### Network View
 
 This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Panel is a set of 4 network view tools as shown below:
@@ -212,6 +215,9 @@ The **Sub Network Viewer** panel can be opened and closed using the ![](_static/
 
 When the hierarchical model has more than 1 interaction data sources, filtering options will be available in the bottom part of the **Sub Network Viewer** panel, allowing you to explore the different sources of data available for the selected system.
 
+
+<a id="tables"> </a>
+## Tables
 
 <a id="table_panel"> </a>
 ### Table Panel
