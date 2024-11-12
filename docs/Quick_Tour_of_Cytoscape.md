@@ -123,7 +123,9 @@ Searches are ***case insensitive***; by default, they are performed on *nodes*, 
 <a id="login"></a>
 ### Sign In Button
 
-At the far right of the menu bar, the ![](_static/images/Quick_Tour/login_icon.png) icon allows you to sign in to your NDEx account (if you already have one) or register for one. Click it and the browser will open a new tab to display the NDEx sign in page as shown below:
+At the far right of the menu bar, the ![](_static/images/Quick_Tour/login_icon.png) icon allows you to sign in to your Network Data Exchange (NDEx) account (if you already have one) or register for one. Your NDEx accounts acts as the official "Cytoscape Ecosystem Account", and provides a secure, unified sign-in experience across existing and future Cytoscape ecosystem's applications and services.
+
+Click ![](_static/images/Quick_Tour/login_icon.png) and the browser will open a new tab to display the NDEx sign in page as shown below:
 
 ![](_static/images/Quick_Tour/ndex_login.png)
 
