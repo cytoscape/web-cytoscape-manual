@@ -42,11 +42,11 @@ The options available here are:
      the individual network columns, what the corresponding column in the
      merged network should be named as well as its data type.
 
-     Buttons below the table, allow to further specify how to merge columns for ***nodes***, ***edges*** and ***network*** attributes individually.
-
-Additional checkboxes let you further specify the mergeing behavior:
+     Buttons below the table, allow to further specify how to merge columns for **NODES**, **EDGES** and **NETWORK** attributes individually.
 
 ![](_static/images/Merge/merge_collapse_nodes.png)
+
+Additional checkboxes let you further specify the merging behavior:
 
 **Enable merging nodes/edges in the same network**
 -   This option is active by default and available for all 3 types of merge (Union, Intersection, Difference).
