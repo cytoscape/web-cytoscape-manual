@@ -185,7 +185,7 @@ by clicking it.
 
 ![](_static/images/Quick_Tour/quick_tour_9.png)
 
-The **Layout Tools** let you adjust the *height* and *width* of the entire network independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets the slider position >>and the original network view.>> ????
+The **Layout Tools** let you adjust the *height* and *width* of the network either independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets the only the slider's position allowing additional adjustments.
 
 <a id="network_viewer"> </a>
 ## Network Viewer
@@ -249,7 +249,7 @@ Above the column headers, we find a number of **Table Tools**:
   
 ![](_static/images/Quick_Tour/add_col.png)  Allows to add a new columns to the existing table. Users can specify the name of the column, the datatype and an optional default value to populate the column if desired.
   
-![](_static/images/Quick_Tour/import_table.png)  Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_data.md#table_panel)** for detailed information and examples.
+![](_static/images/Quick_Tour/import_table.png)  Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_Data.md#table_panel)** for detailed information and examples.
 
 Any cells in the table can be selected and its values edited. Click the cell ***once*** to select it, click it ***again*** to edit its content. If the content of the cell is a link, click the ***pencil icon*** to edit it. Multiple cells can be selected by combining mouse clicks with either the *shift* or *command* buttons on the keyboard.
 
