@@ -166,6 +166,8 @@ Some networks are very large and cannot be loaded in Cytoscape Web due to limita
 -    For NDEx networks, the network size must be less than *500 Mb* and/or the nodes and edges count less than *20,000 elements*.
 -    For networks imported from file, the text file must be less than *5 Mb*.
 
+A **Workspace** can be saved to NDEx and re-opened later, via the options available in the **Data** menu. For more information, please review the chapter on **[Creating and Saving Networks](Creating_Networks.md#creating_networks)**.
+
 <a id="style_tab"> </a>
 ### Style
 
