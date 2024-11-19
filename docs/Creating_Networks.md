@@ -1,16 +1,16 @@
-Creating Networks
+Creating and Saving Networks
 ====================
 <a id="creating_networks"> </a>
 
 
 There are 2 different ways of creating networks in Cytoscape Web:
 
-1.  Importing pre-existing networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org) public database.
+1.  Opening pre-existing networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org) public database.
 
-2.  Importing pre-existing, unformatted text or Excel files.
+2.  Importing unformatted tabular text files.
 
-<a id="import_network_from_ndex"> </a>
-## Import Network from NDEx
+<a id="open_network_from_ndex"> </a>
+## Open Network from NDEx
 
 The NDEx Project provides an open-source framework 
 where scientists and organizations can share, store, manipulate, and publish 
@@ -36,8 +36,8 @@ To import a network from NDEx, choose **Data → Open network(s) from NDEx** in 
 
 -   *NOTE: You can also use **Data → Open Sample Networks** to conveninetly get started with 4 publicly available example networks available in NDEx.*
 
-<a id="import_workspace_from_ndex"> </a>
-## Import Workspace from NDEx
+<a id="open_workspace_from_ndex"> </a>
+## Open Workspace from NDEx
 
 In Cytoscape Web, the worspace is comparable to the "session" concept in the Cytoscape desktop application.
 Therefore, a Cytoscape Web workspace can be imported and exported to a user's NDEx account.
@@ -163,3 +163,23 @@ The **Advanced Settings** button allows you to:
 -   Start Import Row: Set which row of the table to begin importing
     data from. For example, if you want to skip the first 3 rows in the
     file, set 4 for this option.
+
+<a id="save_to_NDEx"> </a>
+## Save to NDEx
+
+Cytoscape Web also allows users to save their networks and worskpaces if they are **[signed in](Quick_tour_of_Cytoscape.md#sign-in-button)** to their NDEx account. To save a network or workspace to NDEx, choose one of the options available in the **Data** top menu bar item:
+
+   - **Save Current Network to NDEx (Update)** - this option saves your current network by *overwriting* the existing one in NDEx. In order to use this option, you must either be the network's owner or have *edit* permission on it.
+
+   - **Save Current Network to NDEx As...** - lets you save a new copy of the current network to your NDEx account. The existing source network will not be modified.
+
+   - **Save Workspace** - allows you to overwrite your current workspace in NDEx.
+    
+   - **Save Workspace As...** - saves a new workspace to your NDEx account. When using this option, you must specify a *unique name* for the new workspace to be saved.
+
+<a id="download_cx2_file"> </a>
+## Download Network File
+
+Another way to save a network is to download it as a **[CX2](https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/)** file by using **Data → Download Current Network (.cx2)**.
+
+CX2 files can be opened in the Cytoscape desktop application, uploaded and stored in NDEx, and accessed programmatically via the [NDEx2 Python Client](https://ndex2.readthedocs.io/en/latest/index.html).
