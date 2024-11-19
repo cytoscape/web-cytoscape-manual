@@ -40,8 +40,25 @@ The options available here are:
 
 -    **How to merge columns**: a table lets the user specify for each of
      the individual network columns, what the corresponding column in the
-     merged network should be named as well as its data type. Buttons below the table,
-     allow to further specify how to merge columns for nodes, edges and network attributes individually.
+     merged network should be named as well as its data type.
+
+     Buttons below the table, allow to further specify how to merge columns for ***nodes***, ***edges*** and ***network*** attributes individually.
+
+Additional checkboxes let you further specify the mergeing behavior:
+
+![](_static/images/Merge/merge_collapse_nodes.png)
+
+**Enable merging nodes/edges in the same network**
+-   This option is active by default and available for all 3 types of merge (Union, Intersection, Difference).
+-   It allows to merge nodes within each network, in case they have the same value for the selected *matching attribute*.
+-   This makes it possible to perform a network merge even when selecting *only 1 network*.
+-   If you don't want to merge nodes within each network, you should disable this option.
+
+**Merge only nodes and ignore edges**
+-   This option is disabled by default and can only be used in an Intersection merge.
+-   If you are interested in retrieving only the nodes that are shared between 2 or more networks, you should enable this option.
+
+
 
 
 
