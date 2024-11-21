@@ -207,7 +207,7 @@ This is where your selected network is displayed and you can interact with it. A
 <a id="cell_view"> </a>
 ### Cell View
 
-If the currently selected network is a *hierarchy*, the interface will allow you to choose how you want to display the network. At the top of the **Network View** panel, you'll see two tabs: the standard **Tree View** and the new **Cell View**. Click it to switch to the **Cell View**, also know as circle packing view:
+If the currently selected network is a *hierarchy*, the interface will allow you to choose how you want to display the network. At the top of the **Network View** panel, you'll see two tabs: the standard **Tree View** and the new **Cell View**. Click it to switch to **Cell View**, also know as circle packing view:
 
 ![](_static/images/Quick_Tour/quick_tour_10.png)
 
