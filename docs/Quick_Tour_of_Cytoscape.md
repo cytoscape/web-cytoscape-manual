@@ -79,13 +79,13 @@ Choosing **Layout → Settings...** will open a dialog window where you can sele
 
 The **Analysis** menu contains features to analyze your networks.
 
-**Run LLM Query** will analize a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network is a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
+**Run LLM Query** will analyze a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network has a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
 
 Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
-***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only trasmitted to OpenAI via secure hyper text transfer protocol (https)***.
+***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only transmitted to OpenAI via secure hyper text transfer protocol (https)***.
 
 <a id="tools"> </a>
 ### Tools
@@ -171,7 +171,7 @@ A **Workspace** can be saved to NDEx and re-opened later, via the options availa
 <a id="style_tab"> </a>
 ### Style
 
-The **Style Panel** (STYLE tab in Control Panel) also know as *VizMapper*, provides the interface to create and manage the visual styles associated with your networks.
+The **Style Panel** (STYLE tab in Control Panel), also know as *VizMapper*, provides the interface to create and manage the visual styles associated with your networks.
 
 As shown below, even though the look and feel of the **Style Panel** is consistent with that of the Cytoscape desktop application, we recommend you review the chapter on **[Styles](Styles.md#styles)** for detailed information and examples.
 
@@ -185,7 +185,7 @@ by clicking it.
 
 ![](_static/images/Quick_Tour/quick_tour_9.png)
 
-The **Layout Tools** let you adjust the *height* and *width* of the network either independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets the only the slider's position allowing additional adjustments.
+The **Layout Tools** let you adjust the *height* and *width* of the network either independently or together (both) by using an intuitive slider. The *circular arrow* button on the right resets only the slider's position allowing additional adjustments.
 
 <a id="network_viewer"> </a>
 ## Network Viewer
@@ -241,7 +241,7 @@ Like other interface features, the **Table Panel** can be minimized using the ar
 
 Consistently with the behavior in the Cytoscape desktop application, when no nodes are selected in the network view, the **NODES** table shows the data columns and values of all nodes in the network.
 
-When one or more nodes are selected in the network view, the *NODES* table only shows the data for the selected nodes.
+When one or more nodes are selected in the network view, the **NODES** table only shows the data for the selected nodes.
 
 Above the column headers, we find a number of **Table Tools**:
 
@@ -257,10 +257,10 @@ When one or more cells in the table are selected, additional **Table Tools** wil
 
 ![](_static/images/Quick_Tour/quick_tour_13.png)
 
--    *APPLY VALUE TO COLUMN* > Applies the value of the selected cell to all cells in that column.
--    *APPLY VALUE TO SELECTED NODES* > Applies the value of the selected cell to the cells of all nodes selected in the network view (if any).
+-    **APPLY VALUE TO COLUMN**: Applies the value of the selected cell to all cells in that column.
+-    **APPLY VALUE TO SELECTED NODES**: Applies the value of the selected cell to the cells of all nodes selected in the network view (if any).
   
    ***NOTE: These tools will modify your data and the changes are irreversible, please use them with caution.***
 
--    *SELECT NODES* > Selects (highlights) the node in the network view corresponding to the selected cell in the table.
+-    **SELECT NODES**: Selects (highlights) the node in the network view corresponding to the selected cell in the table.
 
