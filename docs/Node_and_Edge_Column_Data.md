@@ -29,7 +29,7 @@ Cytoscape Web offers support for importing data from delimited text data tables.
 
 
 The data table file should contain a primary key column and at least one
-data column. The maximum number of data columns is unlimited, and the first row of
+data column. The number of data columns is unlimited, and the first row of
 data can be used as column names. Alternatively, you can specify each column name
 from the **Data → Import → Table from File...** interface.
 
@@ -47,16 +47,15 @@ from the **Data → Import → Table from File...** interface.
 
 ![](_static/images/Node_Edge_Column_Data/EditColumnDefinitions.png)
 
-4.  First, select where you want to import your data to under **Import data as**, either "Node table columns" or "Edge     table columns".
+4.  First, select where you want to import your data to under **Import data as**, either **Node table columns** or **Edge table columns**.
 
-5.  Next, designate which column in your network contains the ++Key** to be used to map the network to the data under **Key Column for Network**. 
+5.  Next, designate which column in your network contains the **Key** to be used to map the network to the data under **Key Column for Network**. 
 
 6.  To select a **Key** column in the data file, click on the column header, and click the key icon under **Meaning** in the pop-up interface. Make sure the column designated as key matches the key in the network.
 
 ![](_static/images/Node_Edge_Column_Data/DataColumnKey.png)
 
-7.  Similarly, to change the data type of a column, for example from 
-    integer to string, click the column header and select the correct data type under **Data Type**.
+7.  Similarly, to change the data type of a column, for example from integer to string, click the column header and select the correct data type under **Data Type**.
     
 8. A message at the bottom of the interface will inform you of how many rows of data will be imported to your network. Click **Confirm** to continue.
     
