@@ -12,7 +12,7 @@ Cytoscape Web allows for merging networks, through **Tools → Merge Networks**.
 <a id="basic_operations"> </a>
 ### Basic Operations
 
--    With the buttons select either "UNION", "INTERSECTION" or "DIFFERENCE".
+-    With the buttons select either **UNION**, **INTERSECTION** or **DIFFERENCE**.
 
 -    All the networks available to merge are listed under **Available Networks**.
      Select 2 or more networks from this list and click the right arrow to transfer
@@ -35,7 +35,7 @@ The options available here are:
 -    **Merged Network Name**: here you can specify a custom name for the merged network.
 
 -    **Matching columns**: this specifies the network columns that should
-     be used for merging. Typically, the "name" column is used as matching attribute.
+     be used for merging. Typically, the **name** column is used as matching attribute.
      Alternatively, you can decide to use a different column that contains some other type of identifier.
 
 -    **How to merge columns**: a table lets the user specify for each of
