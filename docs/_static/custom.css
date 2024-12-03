@@ -1,0 +1,27 @@
+/* Target the toctree lists to remove bullets */
+div.toctree-wrapper ul.simple {
+    list-style: none;      /* Remove bullet points */
+    margin-left: 0;        /* Remove left margin */
+    padding-left: 0;       /* Remove left padding */
+}
+
+/* Adjust the numbering and indentation */
+div.toctree-wrapper ul.simple li {
+    counter-reset: item;   /* Reset counter */
+    margin-left: 1.5em;    /* Indent list items */
+    text-indent: -1.5em;   /* Align numbers with text */
+}
+
+/* Add numbering to list items */
+div.toctree-wrapper ul.simple li:before {
+    counter-increment: item;                          /* Increment counter */
+    content: counters(item, ".") ". ";                /* Display numbers */
+    position: absolute;                               /* Position numbers */
+    margin-left: -1.5em;                              /* Adjust number position */
+    width: 1.5em;                                     /* Reserve space for numbers */
+}
+
+/* Ensure the links are displayed inline with the numbers */
+div.toctree-wrapper ul.simple li p {
+    display: inline;    /* Display paragraphs inline */
+}
