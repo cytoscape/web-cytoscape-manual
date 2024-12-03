@@ -10,7 +10,7 @@ At Cytoscape Web, accessible from [https://web.cytoscape.org](https://web.cytosc
 
 ### 1. Information We Collect
 
-Cytoscape Web doesn’t directly collect or store any user’s personal information. All user information and network data are stored on the Network Data Exchange (NDEx). Please refer to the NDEx privacy policy for more details.
+Cytoscape Web doesn’t directly collect or store any user’s personal information. All user information and network data are stored on the Network Data Exchange (NDEx). Please refer to the [NDEx privacy policy](https://home.ndexbio.org/disclaimer-license/) for more details.
 
 ### 2. How We Use Your Information
 
