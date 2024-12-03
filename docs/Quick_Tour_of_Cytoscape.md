@@ -251,7 +251,7 @@ Above the column headers, we find a number of **Table Tools**:
   
 ![](_static/images/Quick_Tour/import_table.png)  Allows to import another table to add new data columns to the current table. Please review the chapter on **[Node and Edge Column Data](Node_and_Edge_Column_Data.md#table_panel)** for detailed information and examples.
 
-Any cells in the table can be selected and its values edited. Click the cell ***once*** to select it, click it ***again*** to edit its content. If the content of the cell is a link, click the ***pencil icon*** to edit it. Multiple cells can be selected by combining mouse clicks with either the *shift* or *command* buttons on the keyboard.
+Any cells in the table can be selected and its values edited. Click the cell ***once*** to select it, click it ***again*** to edit its content. If the content of the cell is a link, click the **pencil icon** to edit it. Multiple cells can be selected by combining mouse clicks with either the **shift** or **command** buttons on the keyboard.
 
 When one or more cells in the table are selected, additional **Table Tools** will become available as shown below:
 
