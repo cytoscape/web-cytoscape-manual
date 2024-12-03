@@ -96,7 +96,7 @@ The style of a variety of properties can be controlled, summarized in the tables
 <tr> <th class="specalt ulcase">Label Position</th>                  <td class="alt">The position of the node label relative to the node.</td> </tr>
 <tr> <th class="spec ulcase">Label Rotation</th>                  <td class="">The rotation of the node label, default is 0.</td> </tr>
 <tr> <th class="specalt ulcase">Label Width</th>                     <td class="alt">The maximum width of the node label.</td> </tr>
-<tr> <th class="spec ulcase"></th>                 <td class="">The  of the color of the node. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
+<tr> <th class="spec ulcase">Opacity</th>                 <td class="">The  opacity of the color of the node. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
 <tr> <th class="specalt ulcase">Selected Color</th>                 <td class="alt">The fill color of the node when selected.</td> </tr>
 <tr> <th class="spec ulcase">Shape</th>                           <td class="">The shape of the node.</td> </tr>
 <tr> <th class="specalt ulcase">Visibility</th>                   <td class="alt">Hides the node if set to false. By default, this value is set to true.</td> </tr>
