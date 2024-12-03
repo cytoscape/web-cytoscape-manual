@@ -84,7 +84,7 @@ The style of a variety of properties can be controlled, summarized in the tables
 <tr> <th>Node Property</th>                                     <th>Description</th></tr>
 <tr> <th class="specalt ulcase">Border Color</th>                    <td class="alt">The color of the border of the node.</td> </tr>
 <tr> <th class="spec ulcase">Border Line Type</th>                <td class="">The type of line used for the border of the node.</td> </tr>
-<tr> <th class="specalt ulcase">Border Opacity</th>          <td class="alt">The opacity of the color of the border of the node. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
+<tr> <th class="specalt ulcase">Border Opacity</th>          <td class="alt">The opacity of the color of the border of the node. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
 <tr> <th class="spec specalt">Border Width</th>                    <td class="alt">The width of the node border.</td> </tr>
 <tr> <th class="spec ulcase">Fill Color</th>                   <td class="">The color of the node.</td> </tr>
 <tr> <th class="specalt ulcase">Height</th>                          <td class="alt">The height of the node. Height will be independent of width.</td> </tr>
@@ -92,11 +92,11 @@ The style of a variety of properties can be controlled, summarized in the tables
 <tr> <th class="specalt ulcase">Label Color</th>                     <td class="alt">The color of the node label.</td> </tr>
 <tr> <th class="spec ulcase">Label Font</th>                 <td class="">The font used for the node label.</td> </tr>
 <tr> <th class="specalt ulcase">Label Font Size</th>              <td class="alt">The size of the font used for the node label.</td> </tr>
-<tr> <th class="spec ulcase">Label Opacity</th>           <td class="">The opacity of the node label. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
+<tr> <th class="spec ulcase">Label Opacity</th>           <td class="">The opacity of the node label. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
 <tr> <th class="specalt ulcase">Label Position</th>                  <td class="alt">The position of the node label relative to the node.</td> </tr>
 <tr> <th class="spec ulcase">Label Rotation</th>                  <td class="">The rotation of the node label, default is 0.</td> </tr>
 <tr> <th class="specalt ulcase">Label Width</th>                     <td class="alt">The maximum width of the node label.</td> </tr>
-<tr> <th class="spec ulcase">Opacity</th>                 <td class="">The opacity of the color of the node. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
+<tr> <th class="spec ulcase"></th>                 <td class="">The  of the color of the node. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
 <tr> <th class="specalt ulcase">Selected Color</th>                 <td class="alt">The fill color of the node when selected.</td> </tr>
 <tr> <th class="spec ulcase">Shape</th>                           <td class="">The shape of the node.</td> </tr>
 <tr> <th class="specalt ulcase">Visibility</th>                   <td class="alt">Hides the node if set to false. By default, this value is set to true.</td> </tr>
@@ -115,11 +115,11 @@ The style of a variety of properties can be controlled, summarized in the tables
 <tr> <th class="spec ulcase">Label Color</th>                       <td class="">The color of the edge label.</td> </tr>
 <tr> <th class="specalt ulcase">Label Font</th>                <td class="alt">The font used for the edge label.</td> </tr>
 <tr> <th class="spec ulcase">Label Font Size</th>                   <td class="">The size of the font used for the edge label.</td> </tr>
-<tr> <th class="specalt ulcase">Label Opacity</th>             <td class="alt">The opacity of the color of the edge label. <i>Zero</i> means totally transparent, and <i>255</i> means totally opaque.</td> </tr>
+<tr> <th class="specalt ulcase">Label Opacity</th>             <td class="alt">The opacity of the color of the edge label. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
 <tr> <th class="spec ulcase">Label Rotation</th>             <td class="">The rotation of the edge label, default is 0.</td> </tr>
 <tr> <th class="specalt ulcase">Label Width</th>             <td class="alt">The width of the edge label.</td> </tr>
 <tr> <th class="spec ulcase">Line Type</th>                         <td class="">The type of stoke used to render the line (solid, dashed, etc.)</td> </tr>
-<tr> <th class="specalt ulcase">Opacity</th>                      <td class="alt">The opacity of the of the edge. Zero means totally transparent, and 255 means totally opaque.</td> </tr>
+<tr> <th class="specalt ulcase">Opacity</th>                      <td class="alt">The opacity of the of the edge. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
 <tr> <th class="spec ulcase">Selected Color</th>                  <td class="">The color of the whole edge (stroke and arrows) when selected. </td> </tr>
 <tr> <th class="specalt ulcase">Source Arrow Color</th>  <td class="alt">The color of the arrow on the source node end of the edge.</td> </tr>
 <tr> <th class="spec ulcase">Source Arrow Shape</th>             <td class="">The shape of the arrow on the source node end of the edge.</td> </tr>
@@ -179,7 +179,7 @@ Next, we will use discrete mappings for edge style properties:
 
     ![](_static/images/Styles/DiscreteMapper.png)
 
-7.  Click the box next to **pp** (protein-DNA interactions) and select a dark blue color, click **CONFIRM**. Repeat with **pd** and select a green color.
+7.  Click the box next to **pp** (protein-protein interactions), select a dark blue color, then click **CONFIRM**. Repeat the process with **pd** (protein-DNA interasctions) and select a green color.
 
     ![](_static/images/Styles/Tutorial2-final.png)
 
@@ -196,6 +196,6 @@ Next, let's create continuous mappings for nodes:
 
 11. Let's update the palette by clicking the **Current Palette** button. Select the **Red-Blue** palette on the left and click **OK**. 
 
-We encourage you to choose palette from the ones provided, these palettes come from published recommendations for choosing colors in scientific and cartographic applications, such as [BrewerColors](http://colorbrewer2.org).
+The available palettes come from published recommendations for choosing colors in scientific and cartographic applications, such as [BrewerColors](http://colorbrewer2.org).
 
 ![](_static/images/Styles/RedBlue.png)
