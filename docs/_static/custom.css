@@ -1,29 +1,11 @@
-/* Target the <ul> directly inside the <div class="toctree-wrapper compound"> */
+/* Remove bullet points from the toctree */
 div.toctree-wrapper.compound > ul {
     list-style: none;       /* Remove bullet points */
     margin-left: 0;         /* Reset left margin */
     padding-left: 0;        /* Reset left padding */
 }
 
-/* Style the <li> elements within the targeted <ul> */
+/* Adjust indentation of list items if necessary */
 div.toctree-wrapper.compound > ul > li {
-    counter-reset: item;    /* Reset counter for nested lists */
     margin-left: 1.5em;     /* Indent list items */
-    text-indent: -1.5em;    /* Align numbers with text */
-    position: relative;     /* Establish positioning context */
-}
-
-/* Add numbering before each <li> */
-div.toctree-wrapper.compound > ul > li:before {
-    counter-increment: item;                  /* Increment counter */
-    content: counters(item, ".") ". ";        /* Display hierarchical numbers */
-    position: absolute;                       /* Position numbers absolutely */
-    left: 0;                                  /* Align numbers to the left */
-    width: 1.5em;                             /* Reserve space for numbers */
-}
-
-/* Ensure that links or paragraphs are displayed inline */
-div.toctree-wrapper.compound > ul > li a,
-div.toctree-wrapper.compound > ul > li p {
-    display: inline;        /* Display links and paragraphs inline */
 }
