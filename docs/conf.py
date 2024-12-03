@@ -24,6 +24,9 @@ def setup(app):
 # from http://stackoverflow.com/questions/32079200/how-do-i-set-up-custom-styles-for-restructuredtext-sphinx-readthedocs-etc/32079202#32079202
 
 html_static_path = ['_static']
+html_css_files = [
+    'custom.css',
+]
 html_show_sourcelink = True
 htmlhelp_basename = 'Testdoc'
 html_logo = '_static/images/cytoscape3-icon-trans-128x128.png'
