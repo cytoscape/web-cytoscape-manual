@@ -44,7 +44,9 @@ As shown in the image below, the **Data** menu contains most basic file function
    - **Data → Open** for opening NDEx networks and workspaces
    - **Data → Save** for saving networks and workspaces to NDEx 
    - **Data → Import** for importing data such as networks and tables
-   - **Data → Export** for exporting data.
+   - **Data → Export** for exporting data
+   - **Data → Remove** for removing networks
+   - **Data → Clear Local Database** for resetting your Cytoscape Web instance and starting over with a clean slate.
 
 For more details, please review the chapters on **[Creating and Saving Networks](Creating_Networks.md#creating_networks)** and **[Exporting Your Data](Export_Your_Data.md#export_your_data)**.
 
