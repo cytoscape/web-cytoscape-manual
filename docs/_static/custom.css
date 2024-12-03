@@ -1,11 +1,5 @@
-/* Remove bullet points from the toctree */
-div.toctree-wrapper.compound > ul {
-    list-style: none;       /* Remove bullet points */
-    margin-left: 0;         /* Reset left margin */
-    padding-left: 0;        /* Reset left padding */
-}
-
-/* Adjust indentation of list items if necessary */
+/* Remove bullet and Adjust indentation of list items if necessary */
 div.toctree-wrapper.compound > ul > li {
     margin-left: 1.5em;     /* Indent list items */
+    list-style: none
 }
