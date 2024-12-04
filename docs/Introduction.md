@@ -13,4 +13,18 @@ Cytoscape Web expands visualization capabilities by supporting multiple renderin
  
 By integrating these features, Cytoscape Web not only maintains the robust functionality and familiarity of its desktop counterpart but also enhances collaboration and visual analysis within a modern web environment.
 
+<a id="requirements"> </a>
+## Software Requirements
+
+We recommend that you always update your preferred web browser to the latest version whenever possible. Cytoscape Web fully supports the following browsers:
+
+   - Google Chrome
+   - Mozilla Firefox
+   - Microsoft Edge
+
+While we don't discourage the use of alternative web browsers, we cannot guarantee that all features will be available and functioning as intended. For example, if using the Brave browser, you must disable the **Brave Shield** otherwise the **Open in Cytoscape** feature in Cytoscape Web will not work.
+
+For the **Open in Cytoscape** feature to work properly, you also need **Cytoscape 3.10** or higher installed and running on your machine and the **cx support** core app updated to the latest version available.
+
+
 
