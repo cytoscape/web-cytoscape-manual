@@ -24,7 +24,7 @@ We recommend that you always update your preferred web browser to the latest ver
 
 While we don't discourage the use of alternative web browsers, we cannot guarantee that all features will be available and functioning as intended. For example, if using the Brave browser, you must disable the **Brave Shield** otherwise the **Open in Cytoscape** feature in Cytoscape Web will not work.
 
-For the **Open in Cytoscape** feature to work properly, you also need **Cytoscape 3.10** or higher installed and running on your machine and the **cx support** core app updated to the latest version available.
+For the **Open in Cytoscape** feature to work properly, you also need [Cytoscape 3.10 or higher](https://cytoscape.org/download.html) installed and running on your machine, and the **cx support** core-app updated to the latest version available.
 
 
 
