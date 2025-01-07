@@ -1,9 +1,7 @@
-Advanced
-==========
-<a id="advanced"> </a>
-
+Extending Cytoscape Web
+=========================
 <a id="extending_cytoscape_web"> </a>
-## Extending Cytoscape Web
+
 
 **Apps** and **Service-Apps** are community built additions that add new functionality to 
 Cytoscape Web. 
@@ -17,12 +15,15 @@ The **[Service-Apps](Advanced#service_app)** are more limited in accessibility, 
  to implement and offer freedom of language. 
 
 <a id="app"> </a>
-### App
+## App
 
-Coming soon
+[Documentation to build an App](https://github.com/cytoscape/cytoscape-web-app-examples/tree/pre-release-cleanup)
+
+For integration of a custom App into Cytoscape Web please contact us (TODO ADD CONTACT)
+
 
 <a id="service_app"> </a>
-### Service-App
+## Service-App
 
 A Service-App is a REST service that can be registered with Cytoscape Web to extend
 functionality. For more information about creating a Service-App see:
