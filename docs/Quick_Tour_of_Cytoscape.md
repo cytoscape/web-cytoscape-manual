@@ -97,7 +97,7 @@ The **Tools** menu contains advanced features like **[Network Merge](Merge.md#me
 <a id="apps"> </a>
 ### Apps
 
-The **Apps** menu allows to manage and configure apps and external services that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu.
+The **Apps** menu allows to manage and configure apps and external services (service-apps) that extend Cytoscape Web capabilities. As apps and services are developed over time, they will become available through this menu. For more information about apps and service-apps, please review the chapter on **[Extending Cytoscape Web](Extending.md)**
 
 ![](_static/images/Quick_Tour/apps_menu.png)
 
