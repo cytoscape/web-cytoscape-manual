@@ -20,6 +20,7 @@ Copyright (c) 2001-2024 The Cytoscape Consortium
    Styles
    Merge
    Export_Your_Data
+   Extending
    Cytoscape_Privacy_Policy
 ..
    
