@@ -35,7 +35,7 @@ Below is the list of all additional query parameters available:
 ```activeTableBrowserTab``` >> Defines the active tab in the table panel (0= Nodes, 1= Edges or 2= Network)
 
 
-## Troubleshooting Cytoscape Web >> TO DO
+## Troubleshooting Cytoscape Web
 
 Web applications are complex software, sometimes they can get in an abnormal state that prevents normal operation and Cytoscape Web is no exception. Should Cytoscape Web get in a state that prevents it from operating normally, users can take measures to try resolve the issue.
 
@@ -43,6 +43,8 @@ The first measure consists in performing a **Hard Reload** of the Cytoscape Web 
 
 The second measure consists in **Clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different browser's and platforms.
 
-The third and last measure is to **Clear the local database**. This fetaure is available in the Cytoscape web main menu under **Data > Clear Local Database** and should only be used as a last resort. You can think about this as a "factory reset", that will completely erase and restore Cytoscape Web to a clean slate.
+The third and last measure is to **Clear the local database**. This fetaure is available in the Cytoscape web main menu under **Data → Clear Local Database** and should only be used as a last resort. You can think about this as a "factory reset", that will completely erase and restore Cytoscape Web to a clean slate.
+
+Finally, we remind you that Cytoscape Web is still in active development and may contain unidentified bugs. Should you find one, please make sure to report it by choosing **Help → Report a Bug** in the Cytoscape Web main menu.
 
 
