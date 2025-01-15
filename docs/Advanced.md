@@ -12,15 +12,15 @@ using the URL **https://web.cytoscape.org/?import=http://localhost:8080/xyz/myte
 
 Additional URL parameters allow to specify the behavior of some of the interface components. These parameters let users customize the way a network is displayed in Cytoscape Web prior to sharing it with collaborators, such as a collapsed or expanded table panel, the active table panel’s tab and the node/edge selection in the network’s graphic rendering.
 
-The resulting URL not only allows immediate interactive access to the network in the recipient’s Cytoscape Web workspace, but also preserves some of the interface settings that the sender defined, 
+The resulting URL not only allows immediate interactive access to the network in the recipient’s Cytoscape Web workspace, but also preserves some of the interface settings that the sender defined. 
 
-For example, the following URL:
+For example, pasting the following URL in a web browser:
 
 **https://web.cytoscape.org/0/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf?selectednodes=41536+41580+41605+41606+41719&selectededges=e42257+e42161+e42160+e42117&left=open&right=closed&bottom=open&activeTableBrowserTab=2**
 
-will open a network in Cytoscape web that has 5 nodes and 4 edges selected in the "Homologous Recombination" cluster on the left side of the graphic rendering, an expanded table panel and the active table panel tab set to "Network". 
+will open a network in Cytoscape Web that has 5 nodes and 4 edges selected in the "Homologous Recombination" cluster on the left side of the graphic rendering, an expanded table panel and the active table panel tab set to "Network". 
 
-Below is the list of all the additional query parameters available:
+Below is the list of all additional query parameters available:
 
 ```selectednodes``` >> Defines the selected nodes
 
@@ -37,8 +37,12 @@ Below is the list of all the additional query parameters available:
 
 ## Troubleshooting Cytoscape Web >> TO DO
 
-1. Clear browser's cache
-2. Hard reload
-3. Last resort: Clear local db (factory resets Cy-web)
+Web applications are complex software, sometimes they can get in an abnormal state that prevents normal operation and Cytoscape Web is no exception. Should Cytoscape Web get in a state that prevents it from operating normally, users can take measures to try resolve the issue.
+
+The first measure consists in performing a **Hard Reload** of the Cytoscape Web application. This can be achieved by holding down  the **Shift** key on your keyboard and clicking the browser's **Reload icon** (icon image here). A hard reload bypasses the browser's cache and can help restoring a web application normal state by refreshing outdated files in the cache.
+
+The second measure consists in **Clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different browser's and platforms.
+
+The third and last measure is to **Clear the local database**. This fetaure is available in the Cytoscape web main menu under **Data > Clear Local Database** and should only be used as a last resort. You can think about this as a "factory reset", that will completely erase and restore Cytoscape Web to a clean slate.
 
 
