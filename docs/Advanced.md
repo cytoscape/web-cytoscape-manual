@@ -39,7 +39,7 @@ Below is the list of all additional query parameters available:
 
 Web applications are complex software, sometimes they can get in an abnormal state that prevents normal operation and Cytoscape Web is no exception. Should Cytoscape Web get in a state that prevents it from operating normally, users can take measures to try resolve the issue.
 
-The first measure consists in performing a **Hard Reload** of the Cytoscape Web application. This can be achieved by holding down  the **Shift** key on your keyboard and clicking the browser's **Reload icon** (![](_static/images/Quick_Tour/search_settings.png) ). A hard reload bypasses the browser's cache and can help restoring a web application's normal state by refreshing outdated files in the cache.
+The first measure consists in performing a **Hard Reload** of the Cytoscape Web application. This can be achieved by holding down  the **Shift** key on your keyboard and clicking the browser's **Reload icon** (![](_static/images/reload_icon.png) ). A hard reload bypasses the browser's cache and can help restoring a web application's normal state by refreshing outdated files in the cache.
 
 The second measure consists in **Clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different browser's and platforms.
 
