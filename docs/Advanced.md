@@ -43,7 +43,7 @@ Web applications are complex software, sometimes they can get in an abnormal sta
 
 The first measure consists in performing a **hard reload** of the Cytoscape Web application. This can be achieved by holding down  the **Shift** key on your keyboard and clicking the browser's reload icon ![](_static/images/Advanced/reload_icon.png). A hard reload bypasses the browser's cache and can help restoring a web application's normal state by refreshing outdated files in the cache.
 
-The second measure consists in **clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different browser's and platforms.
+The second measure consists in **clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different web browsers and platforms.
 
 The third and last measure involves **clearing the local database**. This fetaure is available in the Cytoscape web main menu under **Data → Clear Local Database** and should only be used as a last resort. You can think about this as a "factory reset", that will completely erase and restore Cytoscape Web to a clean slate.
 
