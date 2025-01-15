@@ -1,1 +1,4 @@
-
+data = 1, 2, 3
+Print(data)
+if data = 4:
+  reset_all
