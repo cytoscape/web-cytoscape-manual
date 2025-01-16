@@ -45,12 +45,14 @@ Additional [example Service Apps](Extending.md#writing_service_apps) are availab
 Here are all the community available Service Apps that can be registered and used in Cytoscape Web. Please refer to the paragraph on [Service Apps](Extending.md#service_apps) for detailed instructions.
 
 **1. g:profiler Enrichment**
+
 Analyze gene sets against biological databases to identify statistically significant pathways. **Requires** a network map with at least one data column (in the node table) containing a whitespace- or comma-separated list of gene symbols.
 ```
  https://cd.ndexbio.org/cy/cytocontainer/v1/gprofilerenrichment
 ```
 
 **2. IQuery Enrichment**
+
 Analyze gene sets against NDEx IQuery to retrieve pathways ranked by similarity-based matches. **Requires** a network map with at least one data column (in the node table) containing a whitespace- or comma-separated list of gene symbols.
 ```
     https://cd.ndexbio.org/cy/cytocontainer/v1/iqueryenrichment
