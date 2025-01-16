@@ -5,7 +5,7 @@ Introduction
 
 Cytoscape has been a leading platform for visualization and analysis of complex networks since 2003. To complement the highly successful desktop application, we introduce [Cytoscape Web](https://web.cytoscape.org), a web-based version of Cytoscape that supports modern computing environments without the need for software installation.
  
-Cytoscape Web delivers efficient network analysis directly in the browser. Its new UI-centric app framework allows for the seamless migration of existing Cytoscape applications and enables *de novo* development of service-based apps in any programming language, thus enhancing access and flexibility.
+Cytoscape Web delivers efficient network analysis directly in the browser. Its new UI-centric app framework allows for the seamless migration of existing Cytoscape applications and enables *de novo* development of Service Apps in any programming language, thus enhancing access and flexibility.
  
 It simplifies data sharing and distribution. Networks can be stored in the [Network Data Exchange (NDEx)](https://www.ndexbio.org) and shared among researchers via unique URLs rather than attaching large session files to email messages.
  
