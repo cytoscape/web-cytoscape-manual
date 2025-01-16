@@ -35,6 +35,8 @@ https://cd.ndexbio.org/cy/cytocontainer/v1/updatetablesexample
 
 The **Update tables example** Service App will be enable in Cytoscape Web. To use it, choose **Apps -> Example Service App -> Update tables example**
 
+Additional [example Service Apps](Extending.md#writing_service_apps) are available to test and familiarize with this feature.
+
 **NOTE:** *All active Apps and Service Apps will be cleared if you reset Cytoscape Web by using **Data -> Clear Local Database**.*
 
 <a id="community"></a>
@@ -69,7 +71,29 @@ functionality. For more information about creating a Service App see:
 
 [Cytoscape Web Service-App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2))
 
+Here are some example Service Apps to use as reference:
 
+1. Add Network
+```
+https://cd.ndexbio.org/cy/cytocontainer/v1/addnetworksexample
+```
 
+2. Open URL
+```
+https://cd.ndexbio.org/cy/cytocontainer/v1/openurlexample
+```
 
+3. Update Layout
+```
+https://cd.ndexbio.org/cy/cytocontainer/v1/updatelayoutsexample
+```
 
+4. Update Network
+```
+https://cd.ndexbio.org/cy/cytocontainer/v1/updatenetworkexample
+```
+
+5. Update Selection
+```
+https://cd.ndexbio.org/cy/cytocontainer/v1/updateselectionexample
+```
