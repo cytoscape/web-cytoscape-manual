@@ -67,11 +67,9 @@ For integration of a custom App into Cytoscape Web please [**contact us**](https
 <a id="writing_service_apps"></a>
 ### Service Apps
 A Service App is a REST service that can be registered with Cytoscape Web to extend
-functionality. For more information about creating a Service App see:
+functionality. For more information about creating a Service App see: [Cytoscape Web Service-App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2))
 
-[Cytoscape Web Service-App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2))
-
-Here are some example Service Apps to use as reference:
+Here are some example Service Apps to try or use as reference:
 
 1. Add Network
 ```
