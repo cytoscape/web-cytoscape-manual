@@ -5,22 +5,22 @@ Extending Cytoscape Web
 **Apps** and **Service Apps** are community built additions that add new functionality or extend existing capabilities of 
 Cytoscape Web.
 
-<a id="app"> </a>
+<a id="apps"> </a>
 ## Apps
 
-Creating an **[App](Extending#writing_apps)** (written in Typescript) gives the developer the
+Creating an **[App](Extending.md#writing_apps)** (written in Typescript) gives the developer the
 most access to Cytoscape Web APIs to extend and augment both the user interface and analysis tools, but requires experience
 in web development.
 
 To enable/disable Apps in Cytoscape Web, choose **Apps -> Manage Apps** in the main menu and heck or uncheck the boxes in the **Status of Apps** section. For example,
 checking the box next to **Simple Menu App** enables that example app. Once enabled, you will be able to use the App by choosing **Apps -> Simple Dialog Example** fromthe main menu. When you do so, a **Hello Cytoscape World!** window will pop up as shown below:
 
-![](_static/images/Extending/Simple_menu_app_popup.png)
+![](_static/images/Extending/hello_cytoscape.png)
 
-<a id="service_app"> </a>
+<a id="service_apps"> </a>
 ## Service Apps
 
-The **[Service Apps](Extending#writing_service_apps)** are more limited in accessibility, but are easier
+The **[Service Apps](Extending.md#writing_service_apps)** are more limited in accessibility, but are easier
  to implement and offer freedom of language. 
 
 To enable a Service App, paste its URL into the **Exterternal Service URL** field, and click **Add**. 
@@ -40,7 +40,7 @@ The **Update tables example** Service App will be enable in Cytoscape Web. To us
 <a id="community"></a>
 ## Community Available Service Apps
 
-Here are all the community available Service Apps that can be registered and used in Cytoscape Web. Please refer to the paragraph on [Service Apps](Extending#service_apps) for detailed instructions.
+Here are all the community available Service Apps that can be registered and used in Cytoscape Web. Please refer to the paragraph on [Service Apps](Extending.md#service_apps) for detailed instructions.
 
 1. g:profiler Enrichment
 ```
