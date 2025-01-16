@@ -63,17 +63,17 @@ Analyze gene sets against NDEx IQuery to retrieve pathways ranked by similarity-
 ## For Developers
 
 <a id="writing_apps"></a>
-### Apps
+### Writing Apps
 [Documentation to build an App](https://github.com/cytoscape/cytoscape-web-app-examples/tree/pre-release-cleanup)
 
 For integration of a custom App into Cytoscape Web please [**contact us**](https://cytoscape.atlassian.net/servicedesk/customer/portal/1/group/1/create/7).
 
 <a id="writing_service_apps"></a>
-### Service Apps
+### Writing Service Apps
 A Service App is a REST service that can be registered with Cytoscape Web to extend
 functionality. For more information about creating a Service App see: [Cytoscape Web Service-App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2))
 
-Here are some example Service Apps to try or use as reference:
+Here are some example Service Apps to test or use as reference:
 
 1. Add Network
 ```
