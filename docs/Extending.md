@@ -12,7 +12,7 @@ Creating an **[App](Extending.md#writing_apps)** (written in Typescript) gives t
 most access to Cytoscape Web APIs to extend and augment both the user interface and analysis tools, but requires experience
 in web development.
 
-To enable/disable Apps in Cytoscape Web, choose **Apps -> Manage Apps** in the main menu and heck or uncheck the boxes in the **Status of Apps** section. For example,
+To enable/disable Apps in Cytoscape Web, choose **Apps -> Manage Apps** in the main menu and check or uncheck the boxes in the **Status of Apps** section. For example,
 checking the box next to **Simple Menu App** enables that example app. Once enabled, you will be able to use the App by choosing **Apps -> Simple Dialog Example** fromthe main menu. When you do so, a **Hello Cytoscape World!** window will pop up as shown below:
 
 ![](_static/images/Extending/hello_cytoscape.png)
@@ -23,7 +23,7 @@ checking the box next to **Simple Menu App** enables that example app. Once enab
 The **[Service Apps](Extending.md#writing_service_apps)** are more limited in accessibility, but are easier
  to implement and offer freedom of language. 
 
-To enable a Service App, paste its URL into the **Exterternal Service URL** field, and click **Add**. 
+To enable a Service App, paste its URL into the **External Service URL** field, and click **Add**. 
 
 ![](_static/images/Extending/add_service_app.png)
 
