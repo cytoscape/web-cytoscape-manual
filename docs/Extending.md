@@ -37,7 +37,7 @@ The **Update tables example** Service App will be enable in Cytoscape Web. To us
 
 Additional [example Service Apps](Extending.md#writing_service_apps) are available to test and familiarize with this feature.
 
-**NOTE:** *All active Apps and Service Apps will be cleared if you reset Cytoscape Web by using **Data -> Clear Local Database**.*
+**NOTE:** *All active Apps and Service Apps will be cleared if you reset Cytoscape Web by using **Data -> Clear Local Database**. To preserve active Apps and Service Apps, please make sure to use **Data -> Save Workspace As...** (must be signed in to NDEx) to save a snapshot of your Cytoscape Web workspace to your NDEx account. For more details, please review the section [Save to NDEx](Creating_Networks.md#save_to_ndex) 
 
 <a id="community"></a>
 ## Community Available Service Apps
