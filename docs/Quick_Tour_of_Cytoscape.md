@@ -138,9 +138,9 @@ Click ![](_static/images/Quick_Tour/login_icon.png) and the browser will open a 
 
 Here, you can:
 
--    Sign in to your existing NDEx account either by typing your username and password, or by using the convenient *Sign In with Google* option.
+-    **Sign in** to your existing NDEx account either by typing your username and password, or by using the convenient *Sign In with Google* option.
   
--    Create a new NDEx account. Again, the easiest/fastest way is to click *Sign In with Google* to create a new account with just a few clicks. Alternatively, you can click *Register* at the bottom of the screen, provide the required information and follow the instructions to activate your new NDEx account.
+-    **Create a new NDEx account**. Again, the easiest/fastest way is to choose *Sign In with Google* to create a new account with just a few clicks. Alternatively, you can choose *Register* at the bottom of the screen, provide the required information and follow the instructions to activate your new NDEx account.
  
 ***NOTE: even if you already have an exixting NDEx account, the first time you sign in to link your NDEx account with Cytoscape Web, you will need to go through an email verification process. While this is a quick and simple procedure, it is recommended that you perform it using the same browser and device.***
 
