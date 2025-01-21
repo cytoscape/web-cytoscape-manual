@@ -34,9 +34,7 @@ For example, if you paste in this URL:
 https://cd.ndexbio.org/cy/cytocontainer/v1/updatetablesexample
 ``
 
-The **Update tables example** Service App will be enable in Cytoscape Web.
-
-To use it, choose **Apps -> Example Service App -> Update tables example**
+The **Update tables example** Service App will be enable in Cytoscape Web. To use it, choose **Apps -> Example Service App -> Update tables example**.
 
 Additional [example Service Apps](Extending.md#writing_service_apps) are available to test and familiarize with this feature.
 
