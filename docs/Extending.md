@@ -38,7 +38,7 @@ The **Update tables example** Service App will be enable in Cytoscape Web. To us
 
 Additional [example Service Apps](Extending.md#writing_service_apps) are available to test and familiarize with this feature.
 
-**NOTE:** *All active Apps and Service Apps will be cleared if you reset Cytoscape Web by using **Data -> Clear Local Database**. To preserve active Apps and Service Apps, please make sure to use **Data -> Save Workspace As...** to save a snapshot of your Cytoscape Web workspace to your NDEx account. For more details, please review the section on how to [Save to NDEx](Creating_Networks.md#save_to_NDEx) 
+**NOTE:** *All active Apps and Service Apps will be cleared if you reset Cytoscape Web by using **Data -> Clear Local Database**. To preserve active Apps and Service Apps, please make sure to use **Data -> Save Workspace As...** to save a snapshot of your Cytoscape Web workspace to your NDEx account. For more details, please review the section on how to [Save to NDEx](Creating_Networks.md#save_to_NDEx). 
 
 <a id="community"></a>
 ## Community Available Service Apps
@@ -68,14 +68,14 @@ The screenshot below shows the **App Manager** window with all Apps disabled and
 
 <a id="writing_apps"></a>
 ### Writing Apps
-[Documentation to build an App](https://github.com/cytoscape/cytoscape-web-app-examples/tree/pre-release-cleanup)
+[Documentation to build an App](https://github.com/cytoscape/cytoscape-web-app-examples/tree/pre-release-cleanup).
 
 For integration of a custom App into Cytoscape Web please [**contact us**](https://cytoscape.atlassian.net/servicedesk/customer/portal/1/group/1/create/7).
 
 <a id="writing_service_apps"></a>
 ### Writing Service Apps
 A Service App is a REST service that can be registered with Cytoscape Web to extend
-functionality. For more information about creating a Service App see: [Cytoscape Web Service App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2))
+functionality. For more information about creating a Service App see: [Cytoscape Web Service App REST service V1 specification](https://github.com/cytoscape/cytoscape-web/wiki/Specification-for-Service%E2%80%90based-App-in-Cytoscape-Web-(draft-v2)).
 
 Here are some example Service Apps to test or use as reference:
 
