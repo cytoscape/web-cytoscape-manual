@@ -172,11 +172,11 @@ The **Advanced Settings** button allows you to:
 
 Cytoscape Web also allows users to save their networks and worskpaces if they are **[signed in](Quick_Tour_of_Cytoscape.md#sign-in-button)** to their NDEx account. To save a network or workspace to NDEx, choose one of the options available in the **Data** top menu bar item:
 
-   - **Save Current Network to NDEx (Update)** - this option saves your current network by *overwriting* the existing one in NDEx. In order to use this option, you must either be the network's owner or have *edit* permission on it.
+   - **Save Network to NDEx** - this option saves your current network by *overwriting* the existing one in NDEx. In order to use this option, you must either be the network's owner or have *edit* permission on it.
 
-   - **Save Current Network to NDEx As...** - lets you save a new copy of the current network to your NDEx account. The existing source network will not be modified.
+   - **Save Copy to NDEx** - lets you save a new copy of the current network to your NDEx account. The existing source network will not be modified.
 
-   - **Save Workspace** - allows you to overwrite your current workspace in NDEx.
+   - **Save Workspace** - allows you to overwrite your current workspace in NDEx. This includes not only your networks, but also any installed Apps or registered Service Apps.
     
    - **Save Workspace As...** - saves a new workspace to your NDEx account. When using this option, you must specify a *unique name* for the new workspace to be saved.
 
