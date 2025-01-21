@@ -12,8 +12,9 @@ Creating an **[App](Extending.md#writing_apps)** (written in Typescript) gives t
 most access to Cytoscape Web APIs to extend and augment both the user interface and analysis tools, but requires experience
 in web development.
 
-To enable/disable Apps in Cytoscape Web, choose **Apps -> Manage Apps** in the main menu and check or uncheck the boxes in the **Status of Apps** section. For example,
-checking the box next to **Simple Menu App** enables that example app. Once enabled, you will be able to use the App by choosing **Apps -> Simple Dialog Example** fromthe main menu. When you do so, a **Hello Cytoscape World!** window will pop up as shown below:
+To enable/disable Apps in Cytoscape Web, choose **Apps -> Manage Apps** in the main menu and check or uncheck the appropriate boxes. For example, checking the box next to **Simple Menu App** enables that example app. 
+
+To use the App, choose **Apps -> Simple Dialog Example** from the main menu. When you do so, a **Hello Cytoscape World!** window will pop up as shown below:
 
 ![](_static/images/Extending/hello_cytoscape.png)
 
@@ -33,7 +34,9 @@ For example, if you paste in this URL:
 https://cd.ndexbio.org/cy/cytocontainer/v1/updatetablesexample
 ``
 
-The **Update tables example** Service App will be enable in Cytoscape Web. To use it, choose **Apps -> Example Service App -> Update tables example**
+The **Update tables example** Service App will be enable in Cytoscape Web.
+
+To use it, choose **Apps -> Example Service App -> Update tables example**
 
 Additional [example Service Apps](Extending.md#writing_service_apps) are available to test and familiarize with this feature.
 
@@ -58,6 +61,9 @@ Analyze gene sets against NDEx IQuery to retrieve pathways ranked by similarity-
     https://cd.ndexbio.org/cy/cytocontainer/v1/iqueryenrichment
 ```
 
+The screenshot below shows the **App Manager** window with all Apps disabled and the 2 enrichment Service Apps enabled:
+
+![](_static/images/Extending/enrichment_2.png)
 
 <a id="developers"></a>
 ## For Developers
