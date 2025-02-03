@@ -16,7 +16,7 @@ The NDEx Project provides an open-source framework
 where scientists and organizations can share, store, manipulate, and publish 
 biological network knowledge.
 
-To import a network from NDEx, choose **Data → Open network(s) from NDEx** in the top menu bar:
+To import a network from NDEx, choose **Data → Open Network(s) from NDEx** in the top menu bar:
 
 -   The **NDEx Network Browser** window will open in the **SEARCH NDEx** tab allowing you to browse all the available public networks sorted by date last modified.
   
@@ -43,7 +43,7 @@ In Cytoscape Web, the worspace is comparable to the "session" concept in the Cyt
 Therefore, a Cytoscape Web workspace can be imported and exported to a user's NDEx account.
 This feature is only available to Cytoscape Web users when they are logged into their NDEx accounts.
 
-To import a workspace from NDEx, choose **Data → Open workspace from NDEx...** in the top menu bar:
+To import a workspace from NDEx, choose **Data → Open Workspace from NDEx...** in the top menu bar:
 
 -   The **My Workspaces** window will open and display all the available workspaces stored in your NDEx account.
 
@@ -176,9 +176,9 @@ Cytoscape Web also allows users to save their networks and worskpaces if they ar
 
    - **Save Copy to NDEx** - lets you save a new copy of the current network to your NDEx account. The existing source network will not be modified.
 
-   - **Save Workspace** - allows you to overwrite your current workspace in NDEx. This includes not only your networks, but also any installed Apps or registered Service Apps.
+   - **Save Workspace** - allows you to overwrite your current workspace in NDEx. This includes not only your networks, but also any installed Apps and registered Service Apps. The very first time you use this option, you'll be asked to choose a *unique name* for your workspace.
     
-   - **Save Workspace As...** - saves a new workspace to your NDEx account. When using this option, you must specify a *unique name* for the new workspace to be saved.
+   - **Save Workspace As...** - saves a new copy of the workspace to your NDEx account. When using this option, you must always specify a *unique name* for the new workspace to be saved.
 
 <a id="download_cx2_file"> </a>
 ## Download Network File
