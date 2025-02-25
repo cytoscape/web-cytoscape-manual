@@ -1,14 +1,17 @@
+from datetime import datetime
+
 extensions = []
 templates_path = ['_templates']
 
 master_doc = 'index'
 
+current_year = datetime.now().year
 project = u'Cytoscape Web User Manual'
-copyright = u'2024, The Cytoscape Consortium'
+copyright = u'{}, The Cytoscape Consortium'.format(current_year)
 author = u'The Cytoscape Consortium'
 
-version = '0.1.0'
-release = '0.1.0'
+version = '1.0.x'
+release = '1.0.x'
 language = None
 
 exclude_patterns = ['_build']
