@@ -5,7 +5,7 @@ master_doc = 'index'
 
 from datetime import datetime
 current_year = datetime.now().year
-copyright = u'2001-{}, The Cytoscape Consortium'.format(current_year)
+copyright = f'&copy; 2001-{current_year}, The Cytoscape Consortium.' # u'2001-{}, The Cytoscape Consortium'.format(current_year)
 project = u'Cytoscape Web User Manual'
 author = u'The Cytoscape Consortium'
 
@@ -13,8 +13,8 @@ version = '1.0.x'
 release = '1.0.x'
 language = None
 
-rst_epilog = """
-.. |index_copyright| replace:: u'2001-{}, The Cytoscape Consortium'.format(current_year)
+rst_epilog = f"""
+.. |index_copyright| replace:: &copy; 2001-{current_year}, The Cytoscape Consortium.
 """
 
 exclude_patterns = ['_build']
