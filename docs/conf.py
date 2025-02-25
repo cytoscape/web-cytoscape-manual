@@ -7,7 +7,7 @@ master_doc = 'index'
 
 current_year = datetime.now().year
 project = u'Cytoscape Web User Manual'
-copyright = u'2001-{}, The Cytoscape Consortium'.format(current_year)
+copyright = u'2001-'{}', The Cytoscape Consortium'.format(current_year)
 author = u'The Cytoscape Consortium'
 
 version = '1.0.x'
