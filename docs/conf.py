@@ -13,6 +13,10 @@ version = '1.0.x'
 release = '1.0.x'
 language = None
 
+rst_epilog = """
+.. |index_copyright| replace:: u'2001-{}, The Cytoscape Consortium'.format(current_year)
+"""
+
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
