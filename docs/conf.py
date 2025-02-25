@@ -14,7 +14,7 @@ release = '1.0.x'
 language = None
 
 rst_epilog = f"""
-.. |index_copyright| replace:: © 2001-{current_year}, The Cytoscape Consortium.
+.. |index_copyright| replace:: © Copyright 2001-{current_year}, The Cytoscape Consortium.
 """
 
 exclude_patterns = ['_build']
