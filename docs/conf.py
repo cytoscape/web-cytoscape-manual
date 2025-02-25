@@ -1,18 +1,21 @@
-from datetime import datetime
-
 extensions = []
 templates_path = ['_templates']
 
 master_doc = 'index'
 
+from datetime import datetime
 current_year = datetime.now().year
+copyright = u'2001-{}, The Cytoscape Consortium'.format(current_year)    # f'© 2001-{current_year}, The Cytoscape Consortium'
 project = u'Cytoscape Web User Manual'
-copyright = u'2001-'{}', The Cytoscape Consortium'.format(current_year)
 author = u'The Cytoscape Consortium'
 
 version = '1.0.x'
 release = '1.0.x'
 language = None
+
+rst_epilog = f"""
+.. |index_copyright| replace:: © Copyright 2001-{current_year}, The Cytoscape Consortium.
+"""
 
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
