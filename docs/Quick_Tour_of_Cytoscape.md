@@ -81,14 +81,15 @@ Choosing **Layout → Settings...** will open a dialog window where you can sele
 
 The **Analysis** menu contains features to analyze your networks.
 
-**Run LLM Query** will analyze a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the analysis is only available if your network has a hierarchical structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to non-hierarchical networks too. Other analysis tools will also be added in future releases.
+**Run LLM Query** leverages Large Language Models (LLMs) to analyze a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the LLM Query analysis is only available if your network has a map-like structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to standard networks too. Other analysis tools will also be added in future releases.
 
-Choosing **Analysis → LLM Query Options** lets you select the LLM used for analysis, add your own API key as well as review and choose the prompt template to use. Currently, the available LLMs are OpenAi's *gpt-3.5-turbo* and *gpt-4-1106-preview*.
+Choosing **Analysis → LLM Query Options** lets you select the Large Language Model (LLM) used for the analysis, add your own API key as well as review and choose the prompt template to use. Currently, LLMs are 2 different versions of the popular ChatGPT, produced by OpenAI. For more information about obtaining an API key, please refer to [this guide](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#how-to-get-an-openai-api-key)
+
+.
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
-***NOTE: the **Run LLM Query** leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only transmitted to OpenAI via secure hyper text transfer protocol (https)***.
-
+***NOTE: this feature leverages commercially available LLMs and is therefore a paid feature. In order to use it, you must provide an API key linked to your OpenAI account so you can be billed based on usage. The API key is stored locally in your browser's cache, encrypted and only transmitted to OpenAI via secure hyper text transfer protocol (https)***. 
 <a id="tools"> </a>
 ### Tools
 
