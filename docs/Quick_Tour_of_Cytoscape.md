@@ -83,9 +83,7 @@ The **Analysis** menu contains features to analyze your networks.
 
 **Run LLM Query** leverages Large Language Models (LLMs) to analyze a list of genes and provide details about their involvement in known biological processes. In this version of Cytoscape Web, the LLM Query analysis is only available if your network has a map-like structure where its nodes are "communities" of genes. In future releases, the analysis will be extended to standard networks too. Other analysis tools will also be added in future releases.
 
-Choosing **Analysis → LLM Query Options** lets you select the Large Language Model (LLM) used for the analysis, add your own API key as well as review and choose the prompt template to use. Currently, LLMs are 2 different versions of the popular ChatGPT, produced by OpenAI. For more information about obtaining an API key, please refer to [this guide](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#how-to-get-an-openai-api-key)
-
-.
+Choosing **Analysis → LLM Query Options** lets you select the Large Language Model (LLM) used for the analysis, add your own API key as well as review and choose the prompt template to use. Currently, LLMs are 2 different versions of the popular ChatGPT, produced by OpenAI. For more information about obtaining an API key, please refer to [this guide](https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/#how-to-get-an-openai-api-key).
 
 ![](_static/images/Quick_Tour/quick_tour_5.png)
 
