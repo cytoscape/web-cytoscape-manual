@@ -63,14 +63,14 @@ the network. Other editing options will be added in future releases.
 
 The **Layout** menu lists a variety of layout algorithms that can easily be applied to your network with just 1 click.
 Choosing any of these options will lay the network out using the default settings for that algorithm. In this version of Cytoscape Web, the available options are:
--    DAGRE
--    Force-directed
--    Radial
--    Grid
--    Circle
--    COSE
--    Concentric
+-    Compound Spring Embedder (COSE)
 -    Cosmos
+-    Force-directed (gForce
+-    Circular
+-    Concentric
+-    Grid
+-    Radial
+-    Hierarchical (DAGRE)
 
 Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window.
     
