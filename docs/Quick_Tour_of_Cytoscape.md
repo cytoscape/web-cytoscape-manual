@@ -194,7 +194,7 @@ The **Layout Tools** let you adjust the *height* and *width* of the network eith
 <a id="network_view"> </a>
 ### Network View Panel
 
-This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View Panel** 4 network view tools let users perform various operations as shown below:
+This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View Panel**, 4 network view tools let users perform various operations as shown below:
 
 ![](_static/images/Quick_Tour/apply_default_layout.png)  **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.md#layout)**.
 
