@@ -6,7 +6,7 @@ This chapter describes the basic layout and mechanics of using Cytoscape Web. Wh
 
 ![](_static/images/Quick_Tour/quick_tour_1.png)
 
-The interface layout is very similar to that of the Cytoscape desktop application, whith the **Control Panel** on the left, **Table Panel** at the bottom and **Network View Window** on the right.
+The interface layout is very similar to that of the Cytoscape desktop application, whith the **Control Panel** on the left, **Table Panel** at the bottom and **Network View Panel** on the right.
 
 When a network is loaded, Cytoscape Web will look similar to the image
 below:
@@ -16,22 +16,22 @@ below:
 Most functionalities are self-explanatory, but we'll go through a
 concise explanation of the interface components for clarity.
 
--   The **Menu Bar** is at the top of the screen and contains several options (see below for more information about
+-   The **[Menu Bar](Quick_tour_of_Cytoscape.md#menu_bar)** is at the top of the screen and contains several options (see below for more information about
     each menu). Also in the Menu Bar, to the right, are the **Search Tool** and **NDEx Login** button.
 
--   The **Workspace Panel** (Workspace tab of the Control Panel). 
+-   The **[Workspace Panel](Quick_tour_of_Cytoscape.md#workspace_tab)** (Workspace tab of the Control Panel). 
     This is where all the networks you are working with are listed.
     You can have several networks in your workspace, but only one of them can be selected and dispayed at any given time; this is called the 'current' network.
       
--   The **Network View** window displays the current network. At the bottom right corner
+-   The **[Network View Panel](Quick_tour_of_Cytoscape.md#network_view)** displays the current network. At the bottom right corner
     of the network view are a set of network view tools, mouse over for more information on each tool. 
 
--   The full-width **Table Panel** uses the bottom portion of the screen and displays columns of data
+-   The full-width **[Table Panel](Quick_tour_of_Cytoscape.md#table_panel)** uses the bottom portion of the screen and displays columns of data
     for nodes and edges in your network. The table also allows you to modify the values of
     column data.
 
 The Workspace Panel and Table Panel can be resized according to your preference or even fully collapsed 
-to maximize the screen space available for the Network View.
+to maximize the screen space available for the Network View Panel.
 
 <a id="menu_bar"> </a>
 ## The Menu Bar
@@ -65,14 +65,14 @@ The **Layout** menu lists a variety of layout algorithms that can easily be appl
 Choosing any of these options will lay the network out using the default settings for that algorithm. In this version of Cytoscape Web, the available options are:
 -    Compound Spring Embedder (COSE)
 -    Cosmos
--    Force-directed (gForce
+-    Force-directed (gForce)
 -    Circular
 -    Concentric
 -    Grid
 -    Radial
 -    Hierarchical (DAGRE)
 
-Choosing **Layout → Settings...** will open a dialog window where you can select each available layout algorithm to modify its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the Network View Window.
+Choosing **Layout → Settings...** will open a dialog window where you can select any available layout algorithm using the dropdown menu, and adjust its parameters. You can also specify a default algorithm to use via the **Apply Default Layout** feature available in the **[Network View Panel](Quick_Tour_of_Cytoscape.md#network_view)**.
     
 ![](_static/images/Quick_Tour/quick_tour_4.png)
 
@@ -157,7 +157,7 @@ An example where a number of networks have been loaded is shown below:
 ![](_static/images/Quick_Tour/quick_tour_7.png)
 
 The **Workspace Panel** (WORKSPACE tab in Control Panel) shows all the networks that are
-loaded. Clicking on a network here will dispay the network in the **Network View** window.
+loaded. Clicking on a network here will dispay the network in the **Network View Panel**.
 Each network has a name, size (number of nodes and edges) and a label that identifies its provenance. 
 
 If a network is loaded from NDEx, a ![](_static/images/Quick_Tour/ndex_labelx24.png) label is displayed in front of its name.
@@ -192,13 +192,13 @@ The **Layout Tools** let you adjust the *height* and *width* of the network eith
 ## Network Viewer
 
 <a id="network_view"> </a>
-### Network View
+### Network View Panel
 
-This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View** Panel is a set of 4 network view tools as shown below:
+This is where your selected network is displayed and you can interact with it. At the bottom right corner of the **Network View Panel** 4 network view tools let users perform various operations as shown below:
 
 ![](_static/images/Quick_Tour/apply_default_layout.png)  **Apply Default Layout** will apply the default network layout (*G6: gForce*) or whatever other layout you have specified as "default" in the **[Layout Settings](Quick_Tour_of_Cytoscape.md#layout)**.
 
-![](_static/images/Quick_Tour/fit_to_screen.png)  **Fit Network to Window** will resize the current network and fit it to the **Network View** window.
+![](_static/images/Quick_Tour/fit_to_screen.png)  **Fit Network to Window** will resize the current network and fit it to the **Network View Panel**.
 
 ![](_static/images/Quick_Tour/open_in_cytoscape.png)  **Open in Cytoscape** will open the current network in the Cytoscape desktop application if it is already running on your computer (default port: 1234).
 
@@ -208,7 +208,7 @@ This is where your selected network is displayed and you can interact with it. A
 <a id="cell_view"> </a>
 ### Cell View
 
-If the currently selected network is a *hierarchy*, the interface will allow you to choose how you want to display the network. At the top of the **Network View** panel, you'll see two tabs: the standard **Tree View** and the new **Cell View**. Click it to switch to **Cell View**, also know as circle packing view:
+If the currently selected network is a *hierarchy*, the interface will allow you to choose how you want to display the network. At the top of the **Network View Panel**, you'll see two tabs: the standard **Tree View** and the new **Cell View**. Click it to switch to **Cell View**, also know as circle packing view:
 
 ![](_static/images/Quick_Tour/quick_tour_10.png)
 
