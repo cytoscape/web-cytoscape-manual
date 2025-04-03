@@ -16,17 +16,17 @@ below:
 Most functionalities are self-explanatory, but we'll go through a
 concise explanation of the interface components for clarity.
 
--   The **[Menu Bar](Quick_tour_of_Cytoscape.md#menu_bar)** is at the top of the screen and contains several options (see below for more information about
+-   The **[Menu Bar](Quick_Tour_of_Cytoscape.md#menu_bar)** is at the top of the screen and contains several options (see below for more information about
     each menu). Also in the Menu Bar, to the right, are the **Search Tool** and **NDEx Login** button.
 
--   The **[Workspace Panel](Quick_tour_of_Cytoscape.md#workspace_tab)** (Workspace tab of the Control Panel). 
+-   The **[Workspace Panel](Quick_Tour_of_Cytoscape.md#workspace_tab)** (Workspace tab of the Control Panel). 
     This is where all the networks you are working with are listed.
     You can have several networks in your workspace, but only one of them can be selected and dispayed at any given time; this is called the 'current' network.
       
--   The **[Network View Panel](Quick_tour_of_Cytoscape.md#network_view)** displays the current network. At the bottom right corner
+-   The **[Network View Panel](Quick_Tour_of_Cytoscape.md#network_view)** displays the current network. At the bottom right corner
     of the network view are a set of network view tools, mouse over for more information on each tool. 
 
--   The full-width **[Table Panel](Quick_tour_of_Cytoscape.md#table_panel)** uses the bottom portion of the screen and displays columns of data
+-   The full-width **[Table Panel](Quick_Tour_of_Cytoscape.md#table_panel)** uses the bottom portion of the screen and displays columns of data
     for nodes and edges in your network. The table also allows you to modify the values of
     column data.
 
