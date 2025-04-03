@@ -13,6 +13,8 @@ Cytoscape Web expands visualization capabilities by supporting multiple renderin
  
 By integrating these features, Cytoscape Web maintains the robust functionality and familiarity of its desktop counterpart while streamlining collaboration and visual analysis within a modern web environment.
 
+Being a newer tool and still in active development, Cytoscape Web doesn't provide all the features and functionalities available in its desktop application counterpart yet. Please refer to the [Feature Comparison](https://github.com/cytoscape/cytoscape-web/wiki/Cytoscape-Web-vs-Desktop-Feature-Comparison) table for more information. 
+
 <a id="requirements"> </a>
 ## Software Requirements
 
