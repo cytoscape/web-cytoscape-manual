@@ -1,4 +1,4 @@
-Merge
+Merge Networks
 ====================
 <a id="merge"> </a>
 
