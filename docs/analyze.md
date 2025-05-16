@@ -8,7 +8,7 @@ The user experience is very similar to that of the Cytoscape desktop application
 
 As suggested by its name, NXA is based on the popular [NetworkX](https://networkx.org/documentation/stable/index.html) Python utility and provides a comprehensive suite of [analysis metrics](analyze.md#nxa_metrics) that can be used to annotate a network's elements.
 
-<a id="components">
+<a id="components"></a>
 ## Network Components
 
 When a network is disconnected, the analysis is usually performed on the largest connected component, in order to provide reliable metrics. The flowchart below illustrates how the metrics are calculated in directed vs undirected, as well as connected vs disconnected networks.
@@ -31,7 +31,7 @@ When analyzing a network as a directed graph, users are likely to be interested 
 
 For more information about graph components please refer to the relevant [NetworX documentation](https://networkx.org/documentation/stable/reference/algorithms/component.html)
 
-<a id="nxa_metrics">
+<a id="nxa_metrics"></a>
 ## NXA Metrics
 
 Below you'll find a comprehensive list of metrics computed by the analyzer. All metrics are added as new attributes to the NETWORK, NODE and EDGE tables with the appropriate component suffixes if applicable.
