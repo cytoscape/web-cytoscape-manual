@@ -19,6 +19,7 @@ http://www.gnu.org/licenses/lgpl-2.1.html.
    Node_and_Edge_Column_Data
    Styles
    Merge
+   analyze
    Export_Your_Data
    Extending
    Advanced
