@@ -15,15 +15,23 @@ When a network is disconnected, the analysis is usually performed on the largest
 
 ![](_static/images/analyze/nxa_flowchart.png)
 
-- **Largest Connected Component (LCC)** is defined as the connected component that contains the most nodes in the graph.
+- **Largest Connected Component (LCC)** is defined as the connected component that contains the most nodes in an undirected graph.
 - **Strongly Connected Component (SCC)** is defined as a maximal set of nodes where each node is reachable from every other via directed paths.
 - **Weakly Connected Component (WCC)** is defined as a maximal set of nodes that are connected if you ignore edge directions.
 
-So, SCC metrics ***preserve*** directionality while WCC metrics ***ignore*** it.
+So, both SCC and WCC metrics only apply to directed networks, but SCC metrics ***preserve*** directionality while WCC metrics ***ignore*** it.
+
+The figure below can help explaining and understanding SCC and WCC components:
+
+![](_static/images/analyze/nxa_components.png)
+
+In the graph on the left, each node can reach all other nodes following paths that respect edge directions: **A** can get to B and C, **B** can get to C and A, and **C** can reach A and B. Such a network will contain 1 SCC that includes all 3 nodes (the whole network), and the SCC metrics will be computed on all nodes. Obviously, If we disregard edge directions, each node will still be able to reach every other node, so the network will also have 1 WCC that encompasses the whole network.
+
+In the graph on the right, the situation is different. Here, node **A** can still reach bot B and C following edge directions, while **B** and **C** cannot. Therefore, this network will have 1 SCC that includes only 1 node (A), and the SCC metrics will be computed for this node only. However, if we ignore edge directions, each node will still able to reach all the others, so there will be 1 WCC that covers the whole network, and the WCC metrics will be calculated for all of them.
 
 For networks analyzed as **undirected graphs** (default option), if fully connected, the metrics are computed on the whole network. Instead, if the graph is disconnected, calculations are performed on the Largest Connected Component, and the attribute names will contain the **(LCC)** suffix.
 
-For networks analyzed as **directed graphs**, regardless whether they are disconnected or not, the metrics are always calculated both on the largest Strongly Connected Component and the largest Weakly Connected Component, and the attribute names will contain the **(SCC)** and **(WCC)** suffixes respectively.
+For networks analyzed as **directed graphs**, regardless whether they are disconnected or not, the metrics are always calculated both on the **largest** Strongly Connected Component and the **largest** Weakly Connected Component, and the attribute names will contain the **(SCC)** and **(WCC)** suffixes respectively.
 
 In a fully connected network, you will always have **only one WCC** spanning the entire graph (red asterisk), and several smaller SCCs, unless a large fraction of the edges come in reciprocal (bi-directional) pairs.
 
@@ -34,7 +42,7 @@ For more information about graph components please refer to the relevant [Networ
 <a id="nxa_metrics"></a>
 ## NXA Metrics
 
-Below you'll find a comprehensive list of metrics computed by the analyzer. All metrics are added as new attributes to the NETWORK, NODE and EDGE tables with the appropriate component suffixes if applicable.
+Below you'll find a comprehensive list of metrics computed by the analyzer. All metrics are added as new attributes to the NETWORK, NODE and EDGE tables with the appropriate component suffixes if applicable. If a metric attribute shows no suffix, it means it was computed on the entire network.
 
 ### Network-level Metrics
 
