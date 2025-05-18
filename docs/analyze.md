@@ -27,7 +27,7 @@ The figures below can help explaining and understanding SCC and WCC components:
 
 In the directed network on the left, each node can reach all other nodes following paths that respect edge directions: **A** can get to B and C, **B** can get to C and A, and **C** can reach A and B. Such a network will contain 1 SCC that includes all 3 nodes (the whole network), and the SCC metrics will be computed on all nodes. 
 
-In the network on the right, the situation is different. Here, node **A** can still reach bot B and C following edge directions, while **B** and **C** cannot. Therefore, this network will have 1 SCC that includes only 1 node (A), and the SCC metrics will be computed for this node only. 
+In the network on the right, the situation is different. Here, node **A** can still reach both B and C following edge directions, while **B** and **C** cannot. Therefore, this network will have 1 SCC that includes only 1 node (A), and the SCC metrics will be computed for this node only. 
 
 However, if in the same two networks we ignore edge directions (as shown below), each node will still able to reach all the others, so there will be 1 WCC that covers the whole network, and the WCC metrics will be calculated for all of them.
 
@@ -113,7 +113,7 @@ Below you'll find a comprehensive list of metrics computed by the analyzer. All 
 ### Edge-level Metrics
 
 - **Edge Betweenness**  
-  Measures the number of shortest paths between all pairs of nodes that pass through a given edge, indicating the edge’s importance in connecting different parts of the network. Uses [`edge_betweenness_centrality()`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.edge_betweenness_centrality.html).
+  Measures the number of shortest paths between all pairs of nodes that pass through a given edge, indicating the edge’s importance in connecting different parts of the network. Outputs normalized values rather than raw counts like Cytoscape desktop. Uses [`edge_betweenness_centrality()`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.edge_betweenness_centrality.html).
  
 ## Current Limitations
 
