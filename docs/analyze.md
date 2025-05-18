@@ -11,7 +11,7 @@ As suggested by its name, NXA is based on the popular [NetworkX](https://network
 <a id="components"></a>
 ## Network Components
 
-When a network is disconnected, the analysis is usually performed on the largest connected component, in order to provide reliable metrics. The flowchart below illustrates how the metrics are calculated in directed vs undirected, as well as connected vs disconnected networks.
+When a network is disconnected, the analysis is usually performed on the largest connected component in order to provide reliable metrics. The flowchart below illustrates how the metrics are calculated in directed vs undirected, as well as connected vs disconnected networks.
 
 ![](_static/images/analyze/nxa_flowchart.png)
 
@@ -19,21 +19,25 @@ When a network is disconnected, the analysis is usually performed on the largest
 - **Strongly Connected Component (SCC)** is defined as a maximal set of nodes where each node is reachable from every other via directed paths.
 - **Weakly Connected Component (WCC)** is defined as a maximal set of nodes that are connected if you ignore edge directions.
 
-So, both SCC and WCC metrics only apply to directed networks, but SCC metrics ***preserve*** directionality while WCC metrics ***ignore*** it.
+So, while both SCC and WCC metrics apply to directed networks, SCC metrics ***preserve*** directionality while WCC metrics ***ignore*** it.
 
-The figure below can help explaining and understanding SCC and WCC components:
+The figures below can help explaining and understanding SCC and WCC components:
 
-![](_static/images/analyze/nxa_components.png)
+![](_static/images/analyze/nxa_comp_scc.png)
 
-In the graph on the left, each node can reach all other nodes following paths that respect edge directions: **A** can get to B and C, **B** can get to C and A, and **C** can reach A and B. Such a network will contain 1 SCC that includes all 3 nodes (the whole network), and the SCC metrics will be computed on all nodes. Obviously, If we disregard edge directions, each node will still be able to reach every other node, so the network will also have 1 WCC that encompasses the whole network.
+In the directed network on the left, each node can reach all other nodes following paths that respect edge directions: **A** can get to B and C, **B** can get to C and A, and **C** can reach A and B. Such a network will contain 1 SCC that includes all 3 nodes (the whole network), and the SCC metrics will be computed on all nodes. 
 
-In the graph on the right, the situation is different. Here, node **A** can still reach bot B and C following edge directions, while **B** and **C** cannot. Therefore, this network will have 1 SCC that includes only 1 node (A), and the SCC metrics will be computed for this node only. However, if we ignore edge directions, each node will still able to reach all the others, so there will be 1 WCC that covers the whole network, and the WCC metrics will be calculated for all of them.
+In the network on the right, the situation is different. Here, node **A** can still reach bot B and C following edge directions, while **B** and **C** cannot. Therefore, this network will have 1 SCC that includes only 1 node (A), and the SCC metrics will be computed for this node only. 
+
+However, if in the same two networks we ignore edge directions (as shown below), each node will still able to reach all the others, so there will be 1 WCC that covers the whole network, and the WCC metrics will be calculated for all of them.
+
+![](_static/images/analyze/nxa_comp_wcc.png)
 
 For networks analyzed as **undirected graphs** (default option), if fully connected, the metrics are computed on the whole network. Instead, if the graph is disconnected, calculations are performed on the Largest Connected Component, and the attribute names will contain the **(LCC)** suffix.
 
 For networks analyzed as **directed graphs**, regardless whether they are disconnected or not, the metrics are always calculated both on the **largest** Strongly Connected Component and the **largest** Weakly Connected Component, and the attribute names will contain the **(SCC)** and **(WCC)** suffixes respectively.
 
-In a fully connected network, you will always have **only one WCC** spanning the entire graph (red asterisk), and several smaller SCCs, unless a large fraction of the edges come in reciprocal (bi-directional) pairs.
+In a fully connected, directed network, you will always have **only one WCC** spanning the entire graph (red asterisk in flowchart above), and several smaller SCCs, unless a large fraction of the edges come in reciprocal (bi-directional) pairs.
 
 When analyzing a network as a directed graph, users are likely to be interested in preserving the causality of the relationships between nodes, but might also be interested in analyzing the overall structure of the network; by providing both SCC and WCC metrics, we ensure users obtain a thorough analysis of their networks.
 
