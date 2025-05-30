@@ -6,7 +6,7 @@ Cytoscape Web offers a network analyzer tool, the **NetworkX Analyzer (NXA)**, t
 The user interface consists of a dialog window with information about the tool and the option to choose whether to analyze your network as an undirected or directed graph.
 The user experience is very similar to that of the Cytoscape desktop application and will be familiar to Cytoscape users.
 
-As suggested by its name, NXA is based on the popular [NetworkX](https://networkx.org/documentation/stable/index.html) (v3.4.2) Python utility and provides a comprehensive suite of [analysis metrics](analyze.md#nxa_metrics) that can be used to annotate a network's elements.
+As suggested by its name, NXA is based on the popular [NetworkX](https://networkx.org/documentation/stable/index.html) (v3.5) Python utility and provides a comprehensive suite of [analysis metrics](analyze.md#nxa_metrics) that can be used to annotate a network's elements.
 
 <a id="components"></a>
 ## Network Components
