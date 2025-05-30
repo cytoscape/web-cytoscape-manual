@@ -92,7 +92,7 @@ Below you'll find a comprehensive list of metrics computed by the analyzer. All 
 - **Degree Centrality**  
   Measures the fraction of nodes a given node is connected to. Uses [`degree_centrality()`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html).
 - **Degree**  
-  Calculates the node degree or the in-degree and out-degree for directed networks. Uses `Graph.degree()`, `DiGraph.in_degree()` and `DiGraph.out_degree()` like Avg. Degree metric above.
+  Calculates the node degree or the in-degree and out-degree for directed networks. Uses `Graph.degree()`, `DiGraph.in_degree()` and `DiGraph.out_degree()` like Avg. Degree metric above. This metric is always calculated on all nodes regardless of directionality and connectivity.
 - **Eccentricity**  
   Calculates the maximum shortest-path distance from a given node to any other node in the network. Relies on `eccentricity()` like Network Diameter and Network Radius above.
 - **Eigenvector Centrality**  
@@ -100,15 +100,15 @@ Below you'll find a comprehensive list of metrics computed by the analyzer. All 
 - **Neighborhood Connectivity**  
   Computes the average degree of each node's neighbors, thus indicating how well connected they are. Relies on [`average_neighbor_degree()`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.assortativity.average_neighbor_degree.html).
 - **Partner of Multi-edged Node Pairs**  
-  Calculates the number of times a given node is part of a node pair connected by more than one edge.
+  Calculates the number of times a given node is part of a node pair connected by more than one edge. This metric is always calculated on all nodes regardless of directionality and connectivity
 - **Radiality**  
   A measure of how close a node is to all other nodes in the network, calculated based on the shortest path distances and the network’s diameter, with higher values indicating greater overall accessibility. Uses [`diameter`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.distance_measures.diameter.html) as well as `shortest_path_lenght()` like Avg. Shortest Path Lenght node metric above.
-- Self Loops  
-  Counts the number of self loops for each node (if any).
+- **Self Loops**  
+  Counts the number of self loops for each node (if any). This metric is always calculated on all nodes regardless of directionality and connectivity.
 - **Stress**  
   Measures the total number of shortest paths between all node pairs that pass through the given node, reflecting its role in network flow. Outputs raw counts (like Cytoscape Desktop) and uses [`all_shortest_paths`](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.all_shortest_paths.html).
 - **Topological Coefficient**  
-  Measures the average fraction of a node's neighbors that are also neighbors of each other, indicating the overlap in connections within its immediate neighborhood. On the largest SCC, also calculates the metric for predecessors only, successors only and mutual. Like Avg. Unique Neighbors above, it relies on `Graph.neighbors()`, `DiGraph.successors()` as well as [`DiGraph.predecessors`](https://networkx.org/documentation/stable/reference/classes/generated/networkx.DiGraph.predecessors.html).
+  Measures the average fraction of a node's neighbors that are also neighbors of each other, indicating the overlap in connections within its immediate neighborhood. On the largest SCC, also calculates the metric for predecessors only, successors only and mutual. Like Avg. Unique Neighbors above, it relies on `Graph.neighbors()`, `DiGraph.successors()` as well as [`DiGraph.predecessors`](https://networkx.org/documentation/stable/reference/classes/generated/networkx.DiGraph.predecessors.html). This metric is always calculated on all nodes, in addition to the nodes of the applicable largest connected component. 
 
 ### Edge-level Metrics
 
