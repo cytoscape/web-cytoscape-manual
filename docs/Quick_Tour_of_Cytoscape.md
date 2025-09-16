@@ -60,7 +60,7 @@ The **Edit** menu allows to:
    - Delete the currently selected nodes/edges of a network
    - Perform undo/redo actions.
 
-Sdditional options will be added in future releases.
+Additional options will be added in future releases.
 
 <a id="layout"> </a>
 ### Layout
@@ -95,7 +95,7 @@ Choosing **Analysis → LLM Query Options** lets you select the Large Language M
 <a id="tools"> </a>
 ### Tools
 
-The **Tools** menu contains advanced features like **[Network Merge](Merge.md#merge)** and the **[Network Analyzer](analyze.md#analyze)**. Other advanced feature tools will be added in future releases. 
+The **Tools** menu contains advanced features like **[Network Merge](Merge.md#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
 ### Apps
