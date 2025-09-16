@@ -55,8 +55,12 @@ For more details, please review the chapters on **[Creating and Saving Networks]
 <a id="edit"> </a>
 ### Edit
 
-The **Edit** menu allows to delete the nodes and/or edges of a selected subset of
-the network, and perform undo/redo actions. Other editing options will be added in future releases.
+The **Edit** menu allows to:
+
+   - Delete the currently selected nodes/edges of a network
+   - Perform undo/redo actions.
+
+Additional options will be added in future releases.
 
 <a id="layout"> </a>
 ### Layout
@@ -91,7 +95,7 @@ Choosing **Analysis → LLM Query Options** lets you select the Large Language M
 <a id="tools"> </a>
 ### Tools
 
-The **Tools** menu contains advanced features like **[Network Merge](Merge.md#merge)** and the **[Network Analyzer](analyze.md#analyze)**. Other advanced feature tools will be added in future releases. 
+The **Tools** menu contains advanced features like **[Network Merge](Merge.md#merge)**. Other advanced feature tools will be added in future releases. 
 
 <a id="apps"> </a>
 ### Apps
