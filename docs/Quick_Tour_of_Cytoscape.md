@@ -55,8 +55,12 @@ For more details, please review the chapters on **[Creating and Saving Networks]
 <a id="edit"> </a>
 ### Edit
 
-The **Edit** menu allows to delete the nodes and/or edges of a selected subset of
-the network. Other editing options will be added in future releases.
+The **Edit** menu allows to:
+
+   - Delete the currently selected nodes/edges of a network
+   - Perform undo/redo actions.
+
+Additional options will be added in future releases.
 
 <a id="layout"> </a>
 ### Layout
@@ -114,16 +118,24 @@ Cytoscape Web.
 
 The **Search Tool** lets you find elements within your network using text-based search. Click ![](_static/images/Quick_Tour/search_settings.png) in the **Search Tool** to reveal the search settings:
 
-![](_static/images/Quick_Tour/search_tool.png)
-
-As shown in the image above, you can adjust the search settings by:
+As shown below, you can adjust the search settings by:
 
 -    Selecting the type of boolean operator (*AND* or *OR*) to use.
 -    Choosing the target (nodes only, edges only or both).
 -    Selecting the search mode. The *Exact Match* option is used to enable/disable wildcard searches. When enabled, the results 
      will only contain the exact search term you specified.
 
-Searches are ***case insensitive***; by default, they are performed on *nodes*, using the *OR* operator and *Exact match* enabled.
+![](_static/images/Quick_Tour/search_tool.png)
+
+Searches are ***case insensitive***; by default, they are performed on *nodes*, using the *OR* operator and *Exact match* enabled. So, in the example above:
+
+-    Searching for "gal4" will find the specified node
+-    Searching for "gal" will return no results.
+
+If you disable *Exact match*:
+
+-    Searching for "gal4" will find the specified node
+-    Searching for "gal" will find all the nodes whose name contains "gal", including Gal4.
 
 
 <a id="login"></a>
