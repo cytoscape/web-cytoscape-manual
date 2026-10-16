@@ -190,6 +190,15 @@ As shown below, even though the look and feel of the **Style Panel** is consiste
 
 ![](_static/images/Quick_Tour/quick_tour_style_tab.png)
 
+<a id="filter_tab"> </a>
+### Filter
+
+The **Filter Panel** (FILTER tab in Control Panel) finds the nodes and edges that meet a set of conditions, based on their column values, their number of edges or their neighbors, and either selects them or shows only them.
+
+As shown below, the **Filter Panel** works like the Filter tab of the Cytoscape desktop application, and the two applications can exchange filters through filter files. We recommend you review the chapter on **[Filters](Filters.md#filters)** for detailed information and examples.
+
+![](_static/images/Quick_Tour/quick_tour_filter_tab.png)
+
 <a id="layout_tools"> </a>
 ### Layout Tools
 
