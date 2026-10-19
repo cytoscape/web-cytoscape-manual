@@ -9,8 +9,8 @@ copyright = u'2001-{}, The Cytoscape Consortium'.format(current_year)    # f'© 
 project = u'Cytoscape Web User Manual'
 author = u'The Cytoscape Consortium'
 
-version = '1.0.x'
-release = '1.0.x'
+version = '1.1.x'
+release = '1.1.x'
 language = None
 
 rst_epilog = f"""

@@ -22,6 +22,7 @@ http://www.gnu.org/licenses/lgpl-2.1.html.
    Merge
    Export_Your_Data
    Extending
+   Developing_Apps
    Advanced
    Cytoscape_Privacy_Policy
 ..
