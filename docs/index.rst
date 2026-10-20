@@ -15,9 +15,13 @@ http://www.gnu.org/licenses/lgpl-2.1.html.
 
    Introduction
    Quick_Tour_of_Cytoscape
+   Menus
+   Workspace_Panels
+   Network_View
    Creating_Networks
    Node_and_Edge_Column_Data
    Styles
+   Filters
    Merge
    Export_Your_Data
    Extending

@@ -1,64 +1,178 @@
-Advanced Features and Troubleshooting
-=========================
-<a id="advanced_features"> </a>
+# Advanced Topics
 
-## URL Query Parameters
+<a id="advanced_features"></a>
+
+(Advanced-advanced_features)=
+This page covers the links you can build to open Cytoscape Web in a given
+state, and what to do when Cytoscape Web stops working.
+
 <a id="url_parameters"></a>
 
-Cytoscape Web's ```import``` URL parameter provides an easy way for web applications and third-party tools to use Cytoscape Web to inspect and process the result from their workflows as long as the result can be served on a REST endpoint in CX2 format. 
+(Advanced-url_parameters)=
+## URL Query Parameters
 
-For example, if my Jupyter notebook generates a CX2 network and the file is available at
+A Cytoscape Web address can open a network, import one from another server,
+restore part of the screen layout, and offer apps to install. Cytoscape Web
+reads the parameters once, when the page loads, and then removes them from
+the address bar. Changing the selection or the panels later does not update
+the address.
+
+### Open an NDEx Network
+
+Put the NDEx network's UUID in the path:
+
+```
+https://web.cytoscape.org/0/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf
+```
+
+If the network is not in your workspace yet, Cytoscape Web fetches it from
+NDEx and adds it. A private network opens only if you are signed in with an
+NDEx account that can read it, or if the link carries an NDEx access key
+(see [`accesskey`](#all-parameters)). If NDEx does not answer within 30
+seconds, or the network does not exist, Cytoscape Web shows an error and opens
+your workspace without it.
+
+### Import a Network from a URL
+
+The `import` parameter loads a CX2 network from any web address. A tool such
+as a Jupyter notebook can use it to show its results in Cytoscape Web, as long
+as it serves the result in CX2 format. For example, if a notebook serves its
+result at
 
 ```
 http://localhost:8080/xyz/mytempresult.cx2
 ```
 
-using the following URL
+this address opens it in Cytoscape Web:
 
 ```
 https://web.cytoscape.org/?import=http://localhost:8080/xyz/mytempresult.cx2
 ```
 
-will open the CX2 network in Cytoscape Web in the user's default web browser.
+- The network must be 10 MB or smaller.
+- The server must allow requests from Cytoscape Web's address (CORS), or the
+  browser blocks the download.
+- Repeat the parameter to import several networks:
+  `?import=<url1>&import=<url2>`. One failed import does not stop the others.
+  The last network imported becomes the current network.
+- When the address also names an NDEx network in its path, the imported
+  network becomes the current network, and selection parameters apply to it.
 
-Additional URL parameters allow to specify the behavior of some of the interface components. These parameters let users customize the way a network is displayed in Cytoscape Web prior to sharing it with collaborators, such as a collapsed or expanded table panel, the active table panel’s tab and the node/edge selection in the network’s graphic rendering.
+### Restore the View
 
-The resulting URL not only allows immediate interactive access to the network in the recipient’s Cytoscape Web workspace, but also preserves some of the interface settings that the sender defined. 
+Further parameters restore the selection, panels and tabs. The share button
+in the network view (**Share this network (copy URL to clipboard)**) builds
+such an address for the current network and copies it. It works only for a
+network saved to NDEx. It includes the current selection when no more than
+300 nodes or edges are selected.
 
-For example, pasting the following URL in a web browser
+For example, this address
 
 ```
 https://web.cytoscape.org/0/networks/9a8f5326-aa6e-11ea-aaef-0ac135e8bacf?selectednodes=41536+41580+41605+41606+41719&selectededges=e42257+e42161+e42160+e42117&left=open&right=closed&bottom=open&activeTableBrowserTab=2
 ```
 
-will open a network in Cytoscape Web that has 5 nodes and 4 edges selected in the "Homologous Recombination" cluster on the left side of the graphic rendering, an expanded table panel and the active table panel tab set to "Network". 
+opens a network with 5 nodes and 4 edges selected in the "Homologous
+Recombination" cluster, the left and bottom panels open, the right panel
+closed, and the **Network** tab active in the table panel.
 
-Below is the list of all additional query parameters available:
+### All Parameters
 
-```selectednodes``` >> Defines the selected nodes
+Parameter names are case-sensitive. Lists of IDs are separated by spaces,
+written `+` or `%20` in an address.
 
-```selectededges``` >> Defines the selected edges
+| Parameter | Effect |
+| --- | --- |
+| `import` | Imports the CX2 network at this URL. Repeatable. |
+| `accesskey` | NDEx access key from an NDEx share link. Opens the private network named in the path without signing in. |
+| `selectednodes` | Selects these node IDs in the current network. |
+| `selectededges` | Selects these edge IDs in the current network. |
+| `left` | `open` or `closed`: the left panel (**WORKSPACE**, **STYLE**, **FILTER** tabs). |
+| `right` | `open` or `closed`: the right panel (**Sub Network Viewer** and app panels). |
+| `bottom` | `open` or `closed`: the table panel. |
+| `activeTableBrowserTab` | Active tab in the table panel: `0` **Nodes**, `1` **Edges**, `2` Network. |
+| `activeNetworkViewTab` | Active tab of the network view, counted from `0`, for networks with more than one view. |
+| `activeNetworkView` | ID of the network view to show, such as a subnetwork of a hierarchy. |
+| `selectedSubnetworkNodes` | Selects these node IDs in the view named by `activeNetworkView`. |
+| `selectedSubnetworkEdges` | Selects these edge IDs in the view named by `activeNetworkView`. |
+| `filterFor`, `filterBy`, `filterRange` | Together, set up the checkbox filter of a hierarchy's subnetwork view: `filterFor` is `node` or `edge`, `filterBy` a column name, `filterRange` a comma-separated list of values to select. All three are required. |
+| `installApp` | URL of an app manifest or service app to install. Repeatable. |
 
-```left``` >> Defines the state of Workspace Panel (open or closed)
+The access key is kept in memory only, never stored in the browser. After the
+network has loaded once, it opens without the key.
 
-```right``` >> Defines the state of Sub Network View Panel (open or closed)
+### Install an App from a Link
 
-```bottom``` >> Defines the state of Table Panel (open or closed)
+`installApp` points at an app's manifest or a service app's address. Cytoscape
+Web fetches each URL and then asks before installing anything: a dialog titled
+**Install into this workspace?** lists the apps. Click **Install** to add them
+or **Cancel** to skip.
 
-```activeTableBrowserTab``` >> Defines the active tab in the table panel (0= Nodes, 1= Edges or 2= Network)
+- An app that loads code into Cytoscape Web is installed only from an
+  approved address. Others are rejected with an error message.
+- A service app that is already installed is not installed again. Cytoscape
+  Web shows **Already installed** instead.
 
+See [Extending Cytoscape Web](Extending.md) for apps and service apps.
 
-## Troubleshooting Cytoscape Web
 <a id="troubleshooting"></a>
 
-Web applications are complex software, sometimes they can get in an abnormal state that prevents normal operation and Cytoscape Web is no exception. Should Cytoscape Web get in a state that prevents it from operating normally, users can take measures to try resolve the issue.
+(Advanced-troubleshooting)=
+## Troubleshooting Cytoscape Web
 
-The first measure consists in performing a **hard reload** of the Cytoscape Web application. This can be achieved by holding down  the **Shift** key on your keyboard and clicking the browser's reload icon ![](_static/images/Advanced/reload_icon.png). A hard reload bypasses the browser's cache and can help restoring a web application's normal state by refreshing outdated files in the cache.
+If Cytoscape Web stops working normally, try these steps in order.
 
-The second measure consists in **clearing the browser's cache** entirely and then reloading Cytoscape Web. [THIS PAGE](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes how to clear the cache in different web browsers and platforms.
+### 1. Hard Reload
 
-The third and last measure involves **clearing the local database**. This fetaure is available in the Cytoscape web main menu under **Data → Clear Local Database** and should only be used as a last resort. You can think about this as a "factory reset", that will completely erase and restore Cytoscape Web to a clean slate.
+Press **Ctrl+Shift+R** (**Cmd+Shift+R** on a Mac), or hold down **Shift** and
+click the browser's reload button. A hard reload skips the browser's cache and
+downloads the app's files again.
 
-Finally, we remind you that Cytoscape Web is still in active development and may contain unidentified bugs. Should you find one, please make sure to report it by choosing **Help → Report a Bug** in the Cytoscape Web main menu.
+### 2. Clear the Browser Cache
 
+Clear the browser's cache, then reload Cytoscape Web.
+[This page](https://www.wikihow.com/Clear-Your-Browser%27s-Cache) describes
+how in each browser.
 
+### 3. Clear the Local Database
+
+Choose **Data → Clear Local Database**. A dialog titled
+**Reset Local Workspace (for developers)** asks you to confirm. Click
+**Reset Workspace (cannot be undone)** to continue.
+
+This deletes everything Cytoscape Web keeps in your browser: every network in
+the workspace, styles, filters and settings. Cytoscape Web then restarts with
+an empty workspace. Networks saved to NDEx are not affected and can be loaded
+again.
+
+````{warning}
+Clearing the local database cannot be undone. Save any network you want to
+keep to NDEx first, or keep a copy with **Help → Developer → Export Database
+Snapshot**.
+````
+
+Close other Cytoscape Web tabs first. The reset waits for them to release
+the database, and may reload the page if it cannot finish.
+
+If Cytoscape Web shows an error page instead of the workspace, the page offers
+the same reset with the **Reset Workspace and Reload Cytoscape** button.
+
+### Database Snapshots
+
+The **Help → Developer** menu can save and restore everything Cytoscape Web
+keeps in your browser:
+
+- **Export Database Snapshot** downloads it as a JSON file named
+  `cyweb-db-snapshot-<version>-<date>.json`.
+- **Import Database Snapshot...** asks for a snapshot file and replaces all of
+  your local data with its contents. This cannot be undone.
+
+A snapshot is also useful when you report a bug: it lets the developers see
+the workspace that caused the problem.
+
+### Report a Bug
+
+Cytoscape Web is in active development and may contain bugs. To report one,
+choose **Help → Report a Bug**. Describe the steps that lead to the problem.
+The report includes your Cytoscape Web version, operating system and browser
+automatically.

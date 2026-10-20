@@ -9,8 +9,8 @@ copyright = u'2001-{}, The Cytoscape Consortium'.format(current_year)    # f'© 
 project = u'Cytoscape Web User Manual'
 author = u'The Cytoscape Consortium'
 
-version = '1.0.x'
-release = '1.0.x'
+version = '1.1.x'
+release = '1.1.x'
 language = None
 
 rst_epilog = f"""
@@ -42,6 +42,11 @@ extensions = ['myst_parser',
               'sphinx.ext.autosectionlabel',
               'sphinx.ext.viewcode',
               'sphinx_copybutton']
+
+# Heading ids for links like Styles.md#how-mappings-work, as on GitHub.
+myst_heading_anchors = 4
+# Pages share heading names (Apps, Table Panel): label them per page.
+autosectionlabel_prefix_document = True
 
 
 latex_elements = {

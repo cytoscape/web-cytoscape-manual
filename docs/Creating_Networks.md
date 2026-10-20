@@ -1,187 +1,375 @@
-Creating and Saving Networks
-====================
-<a id="creating_networks"> </a>
+# Creating and Saving Networks
 
+<a id="creating_networks"></a>
 
-There are 2 different ways of creating networks in Cytoscape Web:
+(Creating_Networks-creating_networks)=
+You can bring a network into Cytoscape Web in several ways:
 
-1.  Opening pre-existing networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org) public database.
+1. Open networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org).
+2. Open the sample networks.
+3. Import a file from your computer: a CX2 network file, a SIF file, or a
+   delimited text table.
+4. Open a link that names a network, or a CX2 file on the web.
 
-2.  Importing unformatted tabular text files.
+Every network you open goes into your workspace. The workspace lives in
+this browser's local database, so it is still there when you close the tab and
+come back. It is not shared between browsers or computers. To keep a copy
+elsewhere, save networks or the whole workspace to NDEx, or download a network
+file.
 
-<a id="open_network_from_ndex"> </a>
+When the workspace is empty, the network area offers three buttons:
+**Open Sample Networks**, **Import from file** and **Load from NDEx**. They do
+the same as the matching **Data** menu items described below.
+
+<a id="open_network_from_ndex"></a>
+
+(Creating_Networks-open_network_from_ndex)=
 ## Open Network from NDEx
 
-The NDEx Project provides an open-source framework 
-where scientists and organizations can share, store, manipulate, and publish 
-biological network knowledge.
+NDEx is an open-source repository where scientists and organizations share,
+store and publish biological networks.
 
-To import a network from NDEx, choose **Data → Open Network(s) from NDEx** in the top menu bar:
+Choose **Data → Open Network(s) from NDEx...** to open the
+**NDEx - Network Browser** window.
 
--   The **NDEx Network Browser** window will open in the **SEARCH NDEx** tab allowing you to browse all the available public networks sorted by date last modified.
-  
-![](_static/images/Creating_networks/ndex_network_browser_v2.png)
+- The window opens on **Latest Networks**: the public networks most recently
+  modified on NDEx.
+- To search, type one or more terms (for example *BRCA1* or *apoptosis*) in the
+  **Search NDEx** box and press Enter or click the search button
+  ![search](_static/images/ui-icons/ndex-search.png). Results are ranked
+  by relevance, and the number of matches appears next to **Results**.
+- If you are signed in, one list holds public networks together with your own
+  private networks and networks shared with you. Check **Only mine** to show
+  only the networks you own.
+- The list shows the first page of results. Click **Load more** at the bottom
+  to add the next page.
+- The table lists each network's **Owner**, **Visibility**, **Nodes**,
+  **Edges** and **Last modified** date.
+- Folders appear under **Folders**, above the networks. Click a folder to open
+  it. The path at the top of the list shows where you are; click a part of the
+  path to go back up. A shortcut opens the folder or network it points to. A
+  shortcut whose target is in the trash or deleted is grayed out.
+- Grayed-out networks cannot be opened. Point at one to see why: it is already
+  in your workspace, it is a collection (Cytoscape Web cannot open
+  collections), or it is too large to load.
+- Check the box next to each network you want, then click the **Open** button
+  in the bottom right corner. The button shows how many networks you selected.
 
--   You can find networks of interest by typing one or more search terms in the **search bar** (such as BRCA1, Apoptosis etc), and then clicking the ![](_static/images/Creating_networks/magnifier.png) button to search.
+You can also search NDEx from the search box in the top bar. Choose **NDEx**
+as the search target and submit a query. The NDEx - Network Browser opens with
+your query already run.
 
--   *BONUS: If you are logged into your NDEx account, you can also select the **MY NETWORKS** tab and browse or search only among your own networks stored in NDEx.*
+````{note}
+**Data → Open Sample Networks** adds a set of example networks from NDEx to
+your workspace and shows the first one. It needs a connection to NDEx; if
+NDEx cannot be reached, an error message appears and the workspace is left
+unchanged.
+````
 
--   Search results are always returned in order of relevance based on the search terms you provided.
+### Links to NDEx Networks
 
--   Networks highlighted in grey cannot be imported, mouse-over for more information.
+The address of a network in Cytoscape Web ends in `/networks/` followed by the
+network's NDEx UUID. Opening such a link adds the network to the workspace in
+this browser and shows it. If the network is already in the workspace, it is
+shown from there.
 
--   On the left hand side, mark the checkbox to select the network(s) you want to import.
+A private NDEx network can be shared with an NDEx share link, which carries an
+access key. Add the key to the Cytoscape Web address as
+`?accesskey=` followed by the key to open the network without signing in.
+Cytoscape Web keeps the key in memory only and never stores it.
 
--   Click the **OPEN NETWORK(S)** button in the bottom right corner to import all selected networks.
+To copy a link to the network you are viewing, use the share button in the
+network view, or **Share Network (Copy URL to Clipboard)** in the network's ⋮
+menu in the **WORKSPACE** panel. The link also restores the current selection.
+Only networks saved to NDEx have a shareable link; save a local network to
+NDEx first.
 
--   *NOTE: You can also use **Data → Open Sample Networks** to conveninetly get started with 4 publicly available example networks available in NDEx.*
+<a id="open_workspace_from_ndex"></a>
 
-<a id="open_workspace_from_ndex"> </a>
+(Creating_Networks-open_workspace_from_ndex)=
 ## Open Workspace from NDEx
 
-In Cytoscape Web, the worspace is comparable to the "session" concept in the Cytoscape desktop application.
-Therefore, a Cytoscape Web workspace can be imported and exported to a user's NDEx account.
-This feature is only available to Cytoscape Web users when they are logged into their NDEx accounts.
+A Cytoscape Web workspace is comparable to a session in Cytoscape desktop.
+You can save a workspace to your NDEx account and open it again later, in any
+browser. This requires signing in to NDEx; see the
+[Quick Tour](Quick_Tour_of_Cytoscape.md).
 
-To import a workspace from NDEx, choose **Data → Open Workspace from NDEx...** in the top menu bar:
+To open a saved workspace, choose **Data → Open Workspace from NDEx...**:
 
--   The **My Workspaces** window will open and display all the available workspaces stored in your NDEx account.
+- The **My Workspaces** window lists the workspaces stored in your NDEx
+  account, with their **Number of Networks**, **Creation Time** and
+  **Modification Time**.
 
-![](_static/images/Creating_networks/my_workspaces.png)
-  
--   On the left hand side, mark the checkbox to select the workspace you want to import.
+![My Workspaces window](_static/images/Creating_networks/my_workspaces.jpg)
 
--   Click the **OPEN WORKSPACE** button in the bottom right corner to import the selected workspace.
+- Check the workspace you want and click **Open Workspace**.
+- A confirmation asks you to proceed. Opening a workspace replaces all the
+  networks in your current workspace and cannot be undone. Save anything you
+  want to keep first.
+- Cytoscape Web clears its local database, loads the workspace and reloads
+  the page.
+- **Delete Workspace** removes the selected workspace from NDEx, after a
+  confirmation.
 
--   You can also **DELETE** a selected workspace if desired.
+<a id="import_networks_from_file"></a>
 
-<a id="import_networks_from_file"> </a>
+(Creating_Networks-import_networks_from_file)=
 ## Import Network from File
 
-Cytoscape Web supports the import of networks from delimited text files (.csv, .txt, .tsv, .sif). Cytoscape Web can also import network files in **[CX2 JSON format](https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/)** (.cx2), wich is also the format used to store them in NDEx.
+Choose **Data → Import → Network from File...** to open the
+**Upload network file** window. Drag a file onto it, or click **Browse** to
+choose one. One file at a time; the file must be under 5 MB.
+
+Supported file types:
+
+| Extension | Format |
+| --- | --- |
+| `.cx2` | [CX2 JSON](https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/), the format NDEx uses. Opens directly, with its style and layout. |
+| `.sif` | [Simple Interaction Format](https://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html#sif-format). Opens directly, without a layout. |
+| `.csv`, `.tsv`, `.txt` | Delimited text table. Opens the column editor described below. |
+
+Microsoft Excel files are not supported; save the sheet as CSV first. The older
+CX format (`.cx`) is not supported either.
+
+A CX2 file is checked before it opens. If it is not valid CX2, an error message
+explains what is wrong. A network imported from a file is *local*: it exists
+only in your workspace until you save it to NDEx.
 
 *HINT:*
--   *CX2 JSON files can be generated by the **Cytoscape desktop application** for any networks using **File → Export → Network to File...**. For more details, please review section [23.1. Raw Data Export](https://manual.cytoscape.org/en/stable/Export_Your_Data.html#network) of the Cytoscape manual.*
--   *CX2 JSON files can be generated by the **[NDEx2 Python Client](https://ndex2.readthedocs.io/en/latest/index.html)***
--   *CX2 JSON files can be generated and **[downloaded](Creating_Networks.md#download_cx2_file)** by Cytoscape Web for any displayed network.*
 
-To import a network from file, choose **Data → Import → Network from File...** in the toop menu bar.
+- *Cytoscape desktop exports CX2 files with **File → Export → Network to
+  File...**. See
+  [Export Your Data](https://manual.cytoscape.org/en/stable/Export_Your_Data.html#network)
+  in the Cytoscape manual.*
+- *The [NDEx2 Python Client](https://ndex2.readthedocs.io/en/latest/index.html)
+  can write CX2 files.*
+- *Cytoscape Web downloads any network as a CX2 file; see
+  {ref}`Download Network File <Creating_Networks-download_cx2_file>`.*
 
-An interactive GUI will be presented as shown in the image below. This interface users to specify parsing options for specified
-files. The screen provides a preview that shows how the file will be
-parsed given the current configuration. As the configuration changes,
-the preview updates automatically. In addition to specifying how the
-file will be parsed, the user must also choose the columns that
-represent the source and target nodes as well as an optional edge
-interaction type. For detailed instructions, see the **Basic Operations** section below.
+### Import a Network from a Table
 
-![](_static/images/Creating_networks/import_network_dialog.png)
+A table file describes a network one edge per row. You choose which columns
+hold the source and target nodes; every other column can become node or edge
+data.
 
-The following is a sample network table file:
+The following is a sample network table:
 
-<table cellspacing="0"  style="table-layout: fixed; dwidth: 700px">
-<caption>Sample Network in Table</caption>
-<tr> <th class="">source</th>     <th class="">target</th>     <th class="center">interaction</th>  <th class="center">boolean data</th>  <th class="center">string data</th>   <th class="center">floating point data</th> </tr>
-<tr> <td class="">YJR022W</td>    <td class="">YNR053C</td>    <td class="center">pp</td>           <td class="center">TRUE </td>         <td class="center">abcd12371</td>     <td class="center">1.2344543</td>           </tr>
-<tr> <td class="alt">YER116C</td> <td class="alt">YDL013W</td> <td class="alt center">pp</td>       <td class="alt center">TRUE </td>     <td class="alt center">abcd12372</td> <td class="alt center">1.2344543</td>       </tr>
-<tr> <td class="">YNL307C</td>    <td class="">YAL038W</td>    <td class="center">pp</td>           <td class="center">FALSE</td>         <td class="center">abcd12373</td>     <td class="center">1.2344543</td>           </tr>
-<tr> <td class="alt">YNL216W</td> <td class="alt">YCR012W</td> <td class="alt center">pd</td>       <td class="alt center">TRUE </td>     <td class="alt center">abcd12374</td> <td class="alt center">1.2344543</td>       </tr>
-<tr> <td class="">YNL216W</td>    <td class="">YGR254W</td>    <td class="center">pd</td>           <td class="center">TRUE </td>         <td class="center">abcd12375</td>     <td class="center">1.2344543</td>           </tr>
-</table>
-<br>
+| source | target | interaction | boolean data | string data | floating point data |
+| --- | --- | --- | --- | --- | --- |
+| YJR022W | YNR053C | pp | TRUE | abcd12371 | 1.2344543 |
+| YER116C | YDL013W | pp | TRUE | abcd12372 | 1.2344543 |
+| YNL307C | YAL038W | pp | FALSE | abcd12373 | 1.2344543 |
+| YNL216W | YCR012W | pd | TRUE | abcd12374 | 1.2344543 |
+| YNL216W | YGR254W | pd | TRUE | abcd12375 | 1.2344543 |
 
-The network table file should contain at least two columns for creating
-network with edges. If the file has only one column, the created network
-will not contain any edges. The interaction type is optional in this
-format. Therefore, a minimal network table looks like the following:
+The interaction column is optional. A minimal network table has two columns:
 
-<table cellspacing="0">
-<caption style="width: 240px">Minimal Network Table</caption>
-<tr> <th class="">source</th>     <th class="">target</th>     </tr>
-<tr> <td class="">YJR022W</td>    <td class="">YNR053C</td>    </tr>
-<tr> <td class="alt">YER116C</td> <td class="alt">YDL013W</td> </tr>
-<tr> <td class="">YNL307C</td>    <td class="">YAL038W</td>    </tr>
-<tr> <td class="alt">YNL216W</td> <td class="alt">YCR012W</td> </tr>
-<tr> <td class="">YNL216W</td>    <td class="">YGR254W</td>    </tr>
-</table>
-<br>
+| source | target |
+| --- | --- |
+| YJR022W | YNR053C |
+| YER116C | YDL013W |
+| YNL307C | YAL038W |
 
-One row in a network table file represents an edge and its edge data
-columns. This means that a network file is considered a combination of
-network data and edge attribute data columns. A table may contain columns that
-aren't meant to be edge attribute data. In this case, you can choose not to import
-those columns.
+A table may hold columns you do not want; you can leave them out.
 
-### Basic Operations
+1. Choose **Data → Import → Network from File...**.
 
-To import a network from a delimited text table, please follow these steps:
+   ![Data → Import → Network from File... in the menu bar](_static/images/generated/network-from-table/menu.png)
 
-1.  Select **Data → Import → Network from File...** 
+2. In **Upload network file**, click **Browse** or drag the table file onto
+   the window.
 
-2.  Select a file in the file chooser dialog.
+   ![The Upload network file window](_static/images/generated/network-from-table/upload.png)
 
-3.  Define the interaction parameters by specifying which columns of
-    data contain the Source Interaction, Target Interaction, and
-    Interaction Type. Clicking on the boxes underneath any column header will bring up the
-    column editor interface for selecting source, interaction and target:
+3. The **Edit Column Definitions** window opens with a preview of the table.
+   Every column starts as an **Edge attribute**, with a data type guessed
+   from its values. The **Network name** box starts with the file name;
+   change it if you like.
 
-    ![](_static/images/Creating_networks/import_network_dialog_2.png)
+   ![The Edit Column Definitions window with a preview of the table](_static/images/generated/network-from-table/column-definitions.png)
 
-4.  (Optional)
-    -   Define node and edge attribute columns, if applicable. Network table files can have node and edge
-        attribute columns in addition to network data. In the screenshot above, the "Pubmed" 
-        data column has been defined as an *Edge attribute* and its data type set to *Integer* 
+4. Click the header of the column that names each edge's source node. Under
+   **Meaning**, choose **Source node**.
 
-    -   Enable/Disable Table Columns: You can enable/disable column data
-        by selecting the ![](_static/images/Creating_networks/not_imported.png) symbol in the
-        column editor interface.
+   ![The Meaning buttons of the source column, with Source node ringed](_static/images/generated/network-from-table/source.png)
 
-    -   Change Data Types: Cytoscape has a basic data type detection function that automatically
-        suggests the column data type according to its entries. This can be overridden by selecting
-        the appropriate data type in the column editor. For lists, a delimiter must also be specified
-        (i.e., all cells in the column must use the same delimiter). The following column data types are supported:
-        -   String
-        -   Boolean (True/False)
-        -   Integer
-        -   Floating Point (double)
-        -   List of (one of) String/Boolean/Integer/Floating Point
+5. Click the header of the target column and choose **Target node**.
 
-5.  Click the blue **Confirm** button in the bottom right corner to complete the process.
+   ![The Meaning buttons of the target column, with Target node ringed](_static/images/generated/network-from-table/target.png)
+
+6. If a column holds the edge type, such as *pp*, choose **Interaction
+   type** for it. This is optional.
+
+   ![The Meaning buttons of the interaction column, with Interaction type ringed](_static/images/generated/network-from-table/interaction.png)
+
+7. For each other column, choose its Meaning and check its **Data Type**.
+   Both are described below.
+
+   ![The Meaning and Data Type options of another column](_static/images/generated/network-from-table/other-columns.png)
+
+8. Check the preview. Values that do not match a column's data type are
+   shown in red, and the header shows how many there are.
+
+   ![The preview with source, target and interaction columns set](_static/images/generated/network-from-table/preview.png)
+
+9. Click **Confirm**. It stays inactive until every imported value matches
+   its type and at least one column is a source or target node.
+
+   ![The Confirm button](_static/images/generated/network-from-table/confirm.png)
+
+10. The new network opens, and its row is added to the **WORKSPACE** panel.
+
+   ![The new network in the workspace and the network view](_static/images/generated/network-from-table/result.png)
+
+**Meaning** is one of:
+
+| Meaning | Description |
+| --- | --- |
+| Source node and Target node | The columns that name the two ends of each edge. Only one column can have each meaning. |
+| Interaction type | The edge type, such as *pp*. Only one column can have this meaning. |
+| Source node attribute and Target node attribute | Data about the source or target node of the row. |
+| Edge attribute | Data about the edge. |
+| ![not imported](_static/images/ui-icons/not-imported.png) Not imported | The column is left out. |
+
+**Data Type** is **String**, **Integer**, **Long integer**, **Double**,
+**Boolean**, or a list of one of these. For a list, set the **List
+Delimiter** that separates the items in each cell. Source and target node
+columns must be String, Integer or Long integer.
+
+**Select All** marks every column for import. **Select None** marks every
+column Not imported.
 
 ### Import a List of Nodes Without Edges
 
-The table import feature supports lists of nodes without edges. If you
-select only a source column, it creates a network without interactions.
+Assign only a Source node (or only a Target node) column. The network
+then has one node per distinct value and no edges.
 
-<a id="advanced_settings"> </a>
+<a id="advanced_settings"></a>
+
+(Creating_Networks-advanced_settings)=
 ### Advanced Settings
 
-The **Advanced Settings** button allows you to:
+The **Advanced Settings** button in the Edit Column Definitions window
+controls how the file is read. The preview updates as you change them.
 
--   Transfer first line as column names: Selecting this option will
-    cause all edge columns to be named according to the first data entry
-    in that column.
+| Setting | What it does |
+| --- | --- |
+| File Delimiter | The character between columns: **Auto-detect** (the default), **Comma (,)**, **Semicolon (;)**, **Pipe (\|)**, **Tab**, **Space**, or **Custom** (any single character). |
+| Decimal Delimiter | The decimal mark in numbers: **Dot (e.g. 1.23)**, **Comma (e.g. 1,23)**, or Custom. |
+| Use first row as column names | On: the first row names the columns. Off: the first row is data. |
+| Skip first N lines | The number of lines at the top of the file to ignore, such as comment lines. |
 
--   Start Import Row: Set which row of the table to begin importing
-    data from. For example, if you want to skip the first 3 rows in the
-    file, set 4 for this option.
+To add columns from a table to a network that already exists, use
+**Data → Import → Table from File...**; see
+[Node and Edge Column Data](Node_and_Edge_Column_Data.md).
 
-<a id="save_to_NDEx"> </a>
+## Add Nodes and Edges by Hand
+
+You can build or extend a network directly in the network view.
+
+1. Right-click empty space and choose **Create Node**. The node appears where
+   you clicked, and a row appears in the table.
+2. Right-click a node and choose **Create Edge from this Node**, then click a
+   second node. Press Esc to cancel instead.
+3. Use **Edit → Undo** to start over.
+
+**Edit → Create Node** and **Edit → Create Edge** in the menu bar do the same.
+See {ref}`Edit <Menus-edit>` in Menus and Toolbar.
+
+## Import a Network from a URL
+
+Add `?import=` and the address of a CX2 file to the Cytoscape Web address to
+open that file on load. Repeat the parameter to open several files; the last
+one becomes the current network. Each file must be 10 MB or less, and the
+server that hosts it must allow the browser to fetch it. A network opened this
+way is local, like an imported file.
+
+## Duplicate a Network
+
+**Data → Duplicate Network** makes an independent copy of the current network
+in your workspace, named *Copy of* followed by the original name. The copy is
+local until you save it to NDEx. It does not require signing in, and later
+changes to either network do not affect the other.
+
+<a id="save_to_NDEx"></a>
+
+(Creating_Networks-save_to_NDEx)=
 ## Save to NDEx
 
-Cytoscape Web also allows users to save their networks and worskpaces if they are **[signed in](Quick_Tour_of_Cytoscape.md#sign-in-button)** to their NDEx account. To save a network or workspace to NDEx, choose one of the options available in the **Data** top menu bar item:
+Saving to NDEx requires signing in with an NDEx account; see the
+[Quick Tour](Quick_Tour_of_Cytoscape.md). The **Data** menu offers four options:
 
-   - **Save Network to NDEx** - this option saves your current network by *overwriting* the existing one in NDEx. In order to use this option, you must either be the network's owner or have *edit* permission on it.
+| Option | What it does |
+| --- | --- |
+| Save Network to NDEx | Saves the current network. For a network that came from NDEx, it *overwrites* the network on NDEx; for a local network, it saves a new network. Details below. |
+| Save Copy to NDEx | Saves the current network as a new network in your NDEx account and opens the copy. The original network is not changed. |
+| Save Workspace | Saves the workspace to NDEx. If the workspace was opened from or saved to NDEx before, this overwrites it there. Otherwise it asks for a name, as Save Workspace As... does. |
+| Save Workspace As... | Saves the workspace to NDEx under a new name, entered in **Unique Workspace Name**. If you have a workspace with that name already, Cytoscape Web asks whether to overwrite it. |
 
-   - **Save Copy to NDEx** - lets you save a new copy of the current network to your NDEx account. The existing source network will not be modified.
+To overwrite a network that came from NDEx, you must own it or have edit
+permission, and it must have changes since the last save. If someone changed
+the network on NDEx since you last saved it, the **Networks out of sync**
+window asks whether to save a new copy instead (**Yes, create copy to NDEx**)
+or overwrite (**No, overwrite the network in NDEx**).
 
-   - **Save Workspace** - allows you to overwrite your current workspace in NDEx. This includes not only your networks, but also any installed Apps and registered Service Apps. The very first time you use this option, you'll be asked to choose a *unique name* for your workspace.
-    
-   - **Save Workspace As...** - saves a new copy of the workspace to your NDEx account. When using this option, you must always specify a *unique name* for the new workspace to be saved.
+Saving a local network to NDEx creates a new network, which replaces the local
+one in your workspace.
 
-<a id="download_cx2_file"> </a>
+Point at a menu item that is inactive to see why, for example
+*Login to save network to NDEx*.
+
+Saving a workspace first saves its networks: each local network becomes a new
+network on NDEx, and each NDEx network with unsaved changes is overwritten.
+NDEx networks without changes are not saved again. The workspace record then
+stores its name, the list of networks, the current network, and the installed
+apps and service apps.
+
+````{warning}
+A workspace saved to NDEx does not include **Workspace Styles**, the style
+library described in [Managing Several Styles](Styles.md#managing-several-styles).
+That library stays in this browser. Each network's own styles are saved with
+the network.
+````
+
+The **WORKSPACE** panel also has a ⋮ menu on each network row. A dot on that
+button means the network has unsaved changes. The menu's first item,
+**Save to NDEx** (or **Save a Copy to NDEx** for a local network), saves that
+network; it works only on the network currently shown.
+
+## Open in Cytoscape Desktop
+
+**Data → Open Network in Cytoscape Desktop** sends a copy of the current
+network to Cytoscape desktop 3.8.0 or later, running on the same computer
+(port 1234). It is not available in Safari. The first time you use it, the
+**Connect to Cytoscape Desktop** window explains that your browser may ask
+for permission to reach the local network; allow it to continue.
+
+Cytoscape Desktop receives only the network's active style. See
+[Styles in CX2 Files and NDEx](Styles.md#styles-in-cx2-files-and-ndex).
+
+<a id="download_cx2_file"></a>
+
+(Creating_Networks-download_cx2_file)=
 ## Download Network File
 
-Another way to save a network is to download it as a **[CX2 JSON](https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/)** file by using **Data → Download Current Network (.cx2)**.
+**Data → Download Network File (.cx2)** saves the current network as a
+[CX2 JSON](https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/)
+file named after the network. The file includes the network's layout and
+all of its styles. Programs other than Cytoscape Web see only the active
+style; see [Styles in CX2 Files and NDEx](Styles.md#styles-in-cx2-files-and-ndex).
 
-CX2 JSON files can be opened in the Cytoscape desktop application, uploaded and stored in NDEx, and accessed programmatically via the **[NDEx2 Python Client](https://ndex2.readthedocs.io/en/latest/index.html)**.
+CX2 files can be opened in Cytoscape desktop, uploaded to NDEx, read with the
+[NDEx2 Python Client](https://ndex2.readthedocs.io/en/latest/index.html), and
+imported back into Cytoscape Web. If the network uses image custom graphics,
+a warning explains that Cytoscape desktop will not show those images from the
+file.
+
+For images of the network, see [Exporting Your Data](Export_Your_Data.md).
+
+## Remove Networks and Clear the Workspace
+
+| Menu item | What it does |
+| --- | --- |
+| Data → Remove Current Network | Removes the current network from your workspace, after a confirmation. The network on NDEx, if any, is not touched. |
+| Data → Remove All Networks | Removes every network from your workspace, after a confirmation. |
+| Data → Clear Local Database | Deletes everything Cytoscape Web stores in this browser and starts an empty workspace. It is meant for troubleshooting and cannot be undone. Save anything you want to keep to NDEx or to a file first. |
