@@ -1,25 +1,73 @@
-Exporting Your Data
-====================
-<a id="export_your_data"> </a>
+# Exporting Your Data
+
+<a id="export_your_data"></a>
+
+(Export_Your_Data-export_your_data)=
+Cytoscape Web exports the current network view as an image (PNG, SVG or
+PDF), and the network itself as a CX2 file.
 
 ## Exporting Networks as Static Images
-Cytoscape Web can generate publication-quality images from network views.
 
-To export a network as image, select **Data → Export → Network to Image…**.
-The **Export Network Image** dialog will open and look like the image below:
+Choose **Data → Export → Network to Image...**, or **Export Network to Image**
+in the network's ⋮ menu in the **WORKSPACE** panel. The
+**Export Network To Image** window opens:
 
-![](_static/images/Export/export_image_1.png)
+![The Export Network To Image window](_static/images/generated/export-image-dialog.png)
 
--    You can choose to export the current network view into the following formats: PNG, PDF or SVG.
+1. Choose the **File Type**: **PNG**, **SVG** or **PDF**.
+2. Edit the **File Name** if you like. It starts with the network's name; the
+   extension is added for you.
+3. Set the options for the chosen type, listed below.
+4. Click **Confirm**. The browser saves the file to your downloads, or asks
+   where to save it, depending on your browser settings.
 
--    The image export dialog has a variable number of options based on the file format selected, with **File Type**, **File Name** and  **Export full network image** always being selectable.
--    The PNG format has also options for scaling and background.
--    PDF has options for paper size.
--    Once you have selected the appropriate options, click **CONFIRM** in the bottom right corner of the dialog window.
--   Finally, choose the destination folder and save your network's image file.
+The image shows the network view that is active. When a network has more than
+one view, such as the subnetworks of a hierarchy, it exports the one you last
+worked in.
 
-The option to **Export full network image** is checked by default; if you uncheck this option, the exported image will only contain what is displayed in the Network View window. So, if you zoom in to display a portion of your network, the exported image will only contain that portion.
+### Export Full Network Image
 
-***NOTE: We recommend using PDF for publications because it is a standard vector graphics format, and it is easy to edit in other applications such as Adobe Illustrator.***
+All three types have **Export full network image**, checked by default. When
+it is checked, the image contains the whole network. When it is unchecked, the
+image contains only what is visible in the network view. To export part of a
+network, zoom in on that part and uncheck the box.
 
+### PNG Options
 
+| Option | What it does |
+| --- | --- |
+| Transparent background | Checked by default. Uncheck it for a white background. |
+| Units | **Pixels** or **Inches**. |
+| Size | The image width and height. Width and height stay in proportion: change one and the other follows. In inches, choose a **DPI** (72, 100, 150, 300 or 600) to set how many pixels each inch holds. |
+| Zoom | Scales the image from 0% to 500% of the network view's size on screen. Changing the size changes the zoom, and the other way around. |
+
+For a sharp image in a publication, choose Inches, set the printed width, and
+pick a DPI of 300 or more.
+
+### PDF Options
+
+| Option | What it does |
+| --- | --- |
+| Paper Size | **LETTER** (the default), **LEGAL**, **TABLOID**, **A0** to **A5**, or **CUSTOM**. With CUSTOM, enter the page **Width (inches)** and **Height (inches)**. |
+| Orientation | **PORTRAIT** or **LANDSCAPE**. |
+| Margin | The space around the network on the page. The default is 52. |
+
+### SVG Options
+
+SVG has only Export full network image. The image has a white background.
+
+````{note}
+PDF and SVG are vector formats: they stay sharp at any size, and you can edit
+them in programs such as Adobe Illustrator or Inkscape. We recommend PDF or SVG
+for publications.
+````
+
+## Exporting Network Files
+
+To save the network itself, with its data, styles and layout, use
+**Data → Download Network File (.cx2)**. The file opens in Cytoscape desktop,
+uploads to NDEx, and imports back into Cytoscape Web. See
+{ref}`Download Network File <Creating_Networks-download_cx2_file>`.
+
+To keep networks online instead, save them to NDEx; see
+{ref}`Save to NDEx <Creating_Networks-save_to_NDEx>`.

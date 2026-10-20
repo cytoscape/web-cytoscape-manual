@@ -1,201 +1,377 @@
-Styles
-====================
-<a id="styles"> </a>
+# Styles
+
+<a id="styles"></a>
+
+(Styles-styles)=
+A style decides how a network looks: node colors and shapes, edge widths and
+arrows, labels, and the background. You edit it in the **STYLE** tab of the
+side panel, also called the *Vizmapper*.
 
 ## Introduction to the Style Interface
 
-The style interface is located under the **STYLE** panel of the
-**Network Panel**.
+The **STYLE** tab has three tabs of its own: **NODES**, **EDGES** and
+**NETWORK**. Each lists the visual properties of that group. Every property
+row has three boxes:
 
-![](_static/images/Styles/StylesInterface.png)
+| Box | What it holds |
+| --- | --- |
+| Default | The value every node or edge gets unless something overrides it. Click it to change the default. |
+| Mapping | A rule that sets the value from a table column, per node or edge. Click it to create or edit the mapping. See [How Mappings Work](#how-mappings-work). |
+| Bypass | A fixed value for the nodes or edges you select. It overrides both the default and the mapping. Select at least one node or edge first; the box is inactive otherwise. |
 
--   The interface is composed of three tabs, for **NODES**,
-    **EDGES** and **NETWORK** properties.
+A mapping wins over the default for every node or edge it covers. A bypass
+wins over both.
 
--   Each tab contains a list of properties relevant to the
-    current style. 
+Two properties carry an extra option:
 
--   Each property entry in the list has 3 columns:
+- **Height** has **Lock node width and height**. It makes Width follow
+  Height, so a node keeps its proportions. Width is inactive while the
+  lock is on.
+- **Stroke Color** has **Edge color to arrows**. It paints the arrows with the
+  edge's Stroke Color. The arrow color properties are inactive while it is
+  on.
 
-    -   The **Default** shows just that, the default value for
-        the property. Clicking on the **Default** column for any
-        property allows you to change the default value.
+Hover over an inactive box to see why it is inactive.
 
-    -   **Mapping** displays the mapping currently in use for
-        the property. Clicking on the **Mapping** column for any
-        property opens an interface for
-        defining the mapping. Details on the mapping types are provided
-        [here](Styles.md#how-mappings-work).
+## How Mappings Work
 
-    -   **Bypass** displays any style bypass for a selected node
-        or edge. Note that a node/edge or subset of nodes/edges must be
-        selected to activate the **Bypass** column. Clicking on the
-        **Bypass** column for selected node(s)/edge(s) allows you to
-        enter a bypass for that property for selected node(s)/edge(s).
+A mapping reads a table column and turns each value into a visual value. Open
+a property's **Mapping** box, choose a **Column**, then a **Mapping Type**:
 
-The **Default Value** is used when no mapping is defined for a property,
-or for nodes/edges not covered by a mapping for a particular property.
-If a **Mapping** is defined for a property, this defines the style for
-all or a subset of nodes/edges, depending on how the mapping is defined.
-A **Bypass** on a specific set of nodes/edges will bypass and override
-both the default value and defined mapping.
+| Mapping type | What it does |
+| --- | --- |
+| Passthrough | The column value is used as-is. Typical use: label each node with its gene name. For a color property the column must hold text that names a color (`#ff0000`, `red`, `rgb(255,0,0)`); a value that is not a color falls back to the default. |
+| Discrete | Each distinct column value gets its own visual value. Typical use: a different shape per molecule type, or a different edge color per interaction type. |
+| Continuous | A numeric column maps onto a range. A color property gets a color gradient; a size property gets a size range. Drag the handles on the chart to change where the range starts and ends, and click the chart to add a handle. |
 
-<a id="how_mappings_work"> </a>
-### How Mappings Work
+Each mapping type accepts only some columns:
 
-For each property, you can specify a default value or define a dynamic
-mapping. Cytoscape currently supports three different types of mappings:
+| Mapping type | Columns it accepts |
+| --- | --- |
+| Passthrough | A column of the property's own type. Text properties accept any column that is not a list. Color properties and **Image/Chart 1** accept String columns only. |
+| Discrete | Any column, including lists. For a list column, each node or edge uses the first value in its list, as Cytoscape Desktop does. An empty list gets the default. |
+| Continuous | Integer, Long integer and Double columns. |
 
-1.  **Passthrough Mapping**
+A column or mapping type that cannot apply is grayed out. Hover over it to
+see why.
 
-The values of network column data are passed directly through
-        to properties. A passthrough mapping is typically used to
-        specify node/edge labels. For example, a passthrough mapping can
-        label all nodes with their common gene names.
+For a continuous color mapping you can pick a palette. Click the button
+next to **Current Palette:**. The **Set Palette** dialog has three tabs:
+**Sequential**, **Diverging** and **Viridis**. It opens on Diverging when the
+column holds both negative and positive values, and on Sequential otherwise.
+Check **reverse colors** to flip a palette, or **colorblind-friendly** to list
+only palettes that stay readable with color blindness. The palettes come from
+published recommendations for scientific and cartographic color, such as
+[ColorBrewer](https://colorbrewer2.org) and Viridis.
 
-2.  **Discrete Mapping**
+### Continuous Mappings on Shapes and Line Types
 
-Discrete column data are mapped to discrete properties. For
-        example, a discrete mapping can map different types of molecules
-        to different node shapes, such as rectangles for gene products
-        and ellipses for metabolites.
+**Shape**, **Border Line Type**, **Line Type** and the arrow shapes can
+also take a continuous mapping. The form shows a track with handles above
+a number axis. Each handle has a value (a shape or a line type) and a
+threshold. A node or edge gets the value of the last handle whose threshold
+its column value has reached. Values do not blend between handles.
 
-3.  **Continuous Mapping**
+- Click the track, or click **New Handle**, to add a handle.
+- Drag a middle handle to move its threshold, or click its × to delete it.
+- Type a number into a handle to set its threshold exactly. The first and
+  last handles move only this way.
+- The boxes at the two ends set the value for column values below the first
+  threshold and above the last one.
 
-Continuous data are mapped to properties. Depending on the
-        property, there are three kinds of continuous mapping:
+![A continuous mapping of gal1RGexp onto Shape: handles on a track, each with a shape and a threshold](_static/images/generated/continuous-shape.png)
 
-        i.  **Continuous-to-Continuous Mapping**: for example, you can
-            map a continuous numerical value to node size.
+### Opacity
 
-        ii. **Color Gradient Mapping**: This is a special case of
-            continuous-to-continuous mapping. Continuous numerical
-            values are mapped to a color gradient.
+Opacity properties, such as **Opacity**, **Border Opacity** and
+**Label Opacity**, show their values as percentages, from 0% (invisible) to
+100% (solid).
 
-<a id="list_of_node_edge_and_network_properties"> </a>
-### List of Node, Edge and Network Properties
+### Line Types Cytoscape Web Cannot Draw
 
-The style of a variety of properties can be controlled, summarized in the tables below.
+Cytoscape Web draws solid, dotted and dashed lines, plus double lines for
+node borders. When you import a CX2 file whose style uses another line type,
+a message lists the types it found. Cytoscape Web draws them as solid lines.
 
-<table cellspacing="0" style="table-layout: fixed; width: 700px">
-<caption>Node Properties</caption>
-<colgroup> <col style="width:200px">                              <col style="width:500px"> </colgroup>
-<tbody>
-<tr> <th>Node Property</th>                                     <th>Description</th></tr>
-<tr> <th class="specalt ulcase">Border Color</th>                    <td class="alt">The color of the border of the node.</td> </tr>
-<tr> <th class="spec ulcase">Border Line Type</th>                <td class="">The type of line used for the border of the node.</td> </tr>
-<tr> <th class="specalt ulcase">Border Opacity</th>          <td class="alt">The opacity of the color of the border of the node. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
-<tr> <th class="spec specalt">Border Width</th>                    <td class="alt">The width of the node border.</td> </tr>
-<tr> <th class="spec ulcase">Fill Color</th>                   <td class="">The color of the node.</td> </tr>
-<tr> <th class="specalt ulcase">Height</th>                          <td class="alt">The height of the node. Height will be independent of width.</td> </tr>
-<tr> <th class="spec ulcase">Label</th>                        <td class="">The text used for the node label.</td> </tr>
-<tr> <th class="specalt ulcase">Label Color</th>                     <td class="alt">The color of the node label.</td> </tr>
-<tr> <th class="spec ulcase">Label Font</th>                 <td class="">The font used for the node label.</td> </tr>
-<tr> <th class="specalt ulcase">Label Font Size</th>              <td class="alt">The size of the font used for the node label.</td> </tr>
-<tr> <th class="spec ulcase">Label Opacity</th>           <td class="">The opacity of the node label. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
-<tr> <th class="specalt ulcase">Label Position</th>                  <td class="alt">The position of the node label relative to the node.</td> </tr>
-<tr> <th class="spec ulcase">Label Rotation</th>                  <td class="">The rotation of the node label, default is 0.</td> </tr>
-<tr> <th class="specalt ulcase">Label Width</th>                     <td class="alt">The maximum width of the node label.</td> </tr>
-<tr> <th class="spec ulcase">Opacity</th>                 <td class="">The  opacity of the color of the node. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
-<tr> <th class="specalt ulcase">Selected Color</th>                 <td class="alt">The fill color of the node when selected.</td> </tr>
-<tr> <th class="spec ulcase">Shape</th>                           <td class="">The shape of the node.</td> </tr>
-<tr> <th class="specalt ulcase">Visibility</th>                   <td class="alt">Hides the node if set to false. By default, this value is set to true.</td> </tr>
-<tr> <th class="spec ulcase">Width</th>                        <td class="">The width of the node. Width will be independent of height.</td> </tr>
-<tr> <th class="specalt ulcase">Z Order</th>                   <td class="alt">Z location of the node. Default value of this will be ignored. The value will be used only when mapping function is defined.</td> </tr>
-</tbody>
-</table>
-<br>
+## Charts and Images on Nodes
 
-<table cellspacing="0" style="table-layout: fixed; width: 700px">
-<caption>Edge Properties</caption>
-<colgroup> <col style="width:200px">                                <col style="width:500px"> </colgroup>
-<tbody>
-<tr> <th>Edge Property</th>                                       <th>Description</th></tr>
-<tr> <th class="specalt ulcase">Label</th>                             <td class="alt">The text used for the edge label.</td> </tr>
-<tr> <th class="spec ulcase">Label Color</th>                       <td class="">The color of the edge label.</td> </tr>
-<tr> <th class="specalt ulcase">Label Font</th>                <td class="alt">The font used for the edge label.</td> </tr>
-<tr> <th class="spec ulcase">Label Font Size</th>                   <td class="">The size of the font used for the edge label.</td> </tr>
-<tr> <th class="specalt ulcase">Label Opacity</th>             <td class="alt">The opacity of the color of the edge label. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
-<tr> <th class="spec ulcase">Label Rotation</th>             <td class="">The rotation of the edge label, default is 0.</td> </tr>
-<tr> <th class="specalt ulcase">Label Width</th>             <td class="alt">The width of the edge label.</td> </tr>
-<tr> <th class="spec ulcase">Line Type</th>                         <td class="">The type of stoke used to render the line (solid, dashed, etc.)</td> </tr>
-<tr> <th class="specalt ulcase">Opacity</th>                      <td class="alt">The opacity of the of the edge. <i>0%</i> means totally transparent, and <i>100%</i> means totally opaque.</td> </tr>
-<tr> <th class="spec ulcase">Selected Color</th>                  <td class="">The color of the whole edge (stroke and arrows) when selected. </td> </tr>
-<tr> <th class="specalt ulcase">Source Arrow Color</th>  <td class="alt">The color of the arrow on the source node end of the edge.</td> </tr>
-<tr> <th class="spec ulcase">Source Arrow Shape</th>             <td class="">The shape of the arrow on the source node end of the edge.</td> </tr>
-<tr> <th class="specalt ulcase">Stroke Color</th>         <td class="alt">The color of the edge line.</td> </tr>
-<tr> <th class="spec ulcase">Target Arrow Color</th>  <td class="">The color of the arrow on the target node end of the edge.</td> </tr>
-<tr> <th class="specalt ulcase">Target Arrow Shape</th>                <td class="alt">The shape of the arrow on the target node end of the edge.</td> </tr>
-<tr> <th class="spec ulcase">Visible</th>                        <td class="">Hides the edge if set to <i>false</i>. By default, this value is set to <i>true</i>.</td> </tr>
-<tr> <th class="specalt ulcase">Width</th>                             <td class="alt">The width of the edge line.</td> </tr>
-<tr> <th class="spec ulcase">Source Arrow Selected Paint</th>    <td class="">The selected color of the arrow on the source node end of the edge.</td> </tr>
-<tr> <th class="specalt ulcase">Stroke Color (Selected)</th>           <td class="alt">The color of the edge line when selected.</td> </tr>
-<tr> <th class="spec ulcase">Target Arrow Selected Paint</th>    <td class="">The selected color of the arrow on the target node end of the edge.</td> </tr>
-<tr> <th class="specalt ulcase">Color (Unselected)</th>                <td class="alt">The color of the whole edge (stroke and arrows) when it is not selected.</td> </tr>
-<tr> <th class="spec ulcase">Z Order</th>                <td class="">The ordering for overlapping edges. Edges with a lower value will be underneath edges with a higher value. Default value of this will be ignored. The value will be used only when mapping function is defined.</td> </tr>
-</tbody>
-</table>
-<br>
+The last row of the **NODES** tab, **Image/Chart 1**, draws a chart or an
+image inside each node. The graphic always scales to the node's size.
 
-<table cellspacing="0" style="table-layout: fixed; width: 700px">
-<caption>Network Properties</caption>
-<colgroup> <col style="width:200px">                    <col style="width:500px"> </colgroup>
-<tbody>
-<tr><th>Network Property</th>                        <th>Description</th></tr>
-<tr><th class="spec ulcase">Background Color</th>       <td class="">The background color of the network view.</td></tr>
-</tbody>
-</table>
-<br>
+### Pie and Donut Charts
 
-<a id="styles_tutorials"> </a>
+A pie or donut chart shows several numeric columns of a node as slices.
+
+1. Click the **Image/Chart 1** Default box. The **Custom Graphics** dialog
+   opens.
+2. Choose **Pie Chart** or **Donut Chart**, then click **Next**.
+3. Move up to 16 numeric columns to **Selected Attributes**. Their order sets
+   the order of the slices. Click **Next**.
+4. Choose a color for each slice. Click **Next**.
+5. Set **Start Angle (degrees)**, where the first slice begins. For a donut,
+   also set **Hole Size**, from 0 (no hole) to 1 (all hole).
+6. Click **Confirm**.
+
+The chart types are grayed out when the node table has no numeric columns.
+To chart only some nodes, select them and use the Bypass box instead of the
+Default box. To remove a chart, open the dialog again and click the red
+**Remove custom graphic** button at the top right.
+
+### Images
+
+To give each node its own image, put the images in a String node column:
+either a web address (`https://…`) or the image data itself, as base64 text,
+with or without a `data:` prefix. Then map the column onto
+**Image/Chart 1**:
+
+1. Open the network. Its node table needs the image column; here it is
+   **image**, holding base64 image data.
+
+   ![The node table, whose image column holds base64 image data](_static/images/generated/node-images/image-column.png)
+
+2. In the **STYLE** tab, open **NODES** and click the **Mapping** box of
+   **Image/Chart 1**, the last row.
+
+   ![The NODES tab of the STYLE tab, with the Mapping box of Image/Chart 1 ringed](_static/images/generated/node-images/mapping-box.png)
+
+3. Choose the image column as the **Column** and **passthrough** as the
+   **Mapping Type**.
+
+   ![The mapping form of Image/Chart 1: column image, mapping type passthrough](_static/images/generated/node-images/passthrough.png)
+
+4. Click **Close**. Each node shows its own image.
+
+   ![Each node of the EGFR to ERK chain drawn with its own icon](_static/images/generated/node-images/result.png)
+
+The **Custom Graphics** dialog cannot create a new image graphic. It edits
+only an image the network already has, for example from an imported CX2
+file. There, choose **URL** to enter a web address, or **Upload** to use a
+PNG, JPEG, SVG, GIF or WebP file of up to 2 MB. An uploaded image is stored
+in the network itself.
+
+Cytoscape Desktop does not show images from a CX2 file, because it loads
+images from its own image library. Downloading such a network shows a warning.
+
+## Managing Several Styles
+
+A network can own several named styles, and you choose which one is active.
+The bar above the **NODES**, **EDGES** and **NETWORK** tabs shows the active
+style. Click its name to open the **Styles** dialog:
+
+| Section | Clicking a style |
+| --- | --- |
+| This Network | Makes it the active style. You can undo the switch. |
+| Other Networks | Copies it into this network. The original does not change. |
+| Workspace Styles | Copies it into this network. |
+| General Styles | Copies a style that comes with Cytoscape Web into this network. |
+
+Type in **Search styles** to filter every section by name. The general
+styles are:
+
+| Style | Looks like |
+| --- | --- |
+| Minimal | Small pale nodes, faint edges |
+| Directed | Arrowheads for directed graphs |
+| High Contrast | Heavy dark shapes for projectors |
+| Dark | Light nodes on a dark canvas |
+| Big Labels | Oversized text for figures |
+| Outline | Unfilled nodes, colored borders |
+| Box | Square-cornered rectangles |
+| Blueprint | Dashed edges, hexagonal nodes |
+
+The ⋮ button at the right of the bar manages the network's styles:
+
+- **New Style (copy of current)…**, **Duplicate Current Style**,
+  **Rename Current Style…** and **Delete Current Style…**;
+- **Save Style to Workspace…**, which keeps a copy in **Workspace Styles** for
+  use on other networks;
+- **Apply Style from Workspace…**.
+
+Copying a style into a network makes an independent copy. Later edits to
+either copy do not change the other. A network always keeps at least one
+style.
+
+Workspace styles live in this browser's local workspace.
+
+### Copy a General Style to Two Networks
+
+1. Open the **STYLE** tab and click the active style's name, above the
+   **NODES** tab.
+
+   ![The STYLE tab, with the active style name above the NODES tab ringed](_static/images/generated/general-style/open-picker.png)
+
+2. In the **Styles** dialog, under **General Styles**, click **Dark**.
+
+   ![The Styles dialog, with Dark ringed under General Styles](_static/images/generated/general-style/pick-preset.png)
+
+3. The network now uses its own copy of Dark, which is the active style.
+
+   ![The network drawn with its copy of Dark, now the active style](_static/images/generated/general-style/preset-applied.png)
+
+4. To use the same style on other networks, click ⋮ and choose
+   **Save Style to Workspace…**.
+
+   ![The style menu, with Save Style to Workspace ringed](_static/images/generated/general-style/save-menu.png)
+
+5. Keep the name or change it, then click **Save**.
+
+   ![The Save Style to Workspace dialog, with Save ringed](_static/images/generated/general-style/save-name.png)
+
+6. In the **WORKSPACE** tab, click the second network.
+
+   ![The WORKSPACE tab, with the HSF1 neighborhood network ringed](_static/images/generated/general-style/second-network.png)
+
+7. In the **STYLE** tab, click the style name again. Under
+   **Workspace Styles**, click the style you saved.
+
+   ![The Styles dialog of the second network, with Dark ringed under Workspace Styles](_static/images/generated/general-style/pick-workspace-style.png)
+
+8. The second network now uses its own copy of the style. Later edits to it
+   do not change the first network.
+
+   ![The HSF1 neighborhood network drawn with its own copy of Dark](_static/images/generated/general-style/second-applied.png)
+
+Step 7 also works from **Other Networks**, which lists the styles of the
+other networks you have opened in this workspace. Workspace Styles keeps a
+style after you remove the network it came from.
+
+### Styles in CX2 Files and NDEx
+
+Only Cytoscape Web shows a network's extra styles. Saving a network to NDEx,
+or downloading it as a CX2 file, keeps all of its styles and which one is
+active, and opening it in Cytoscape Web again brings every style back.
+
+Cytoscape Desktop shows only the active style. The other styles are not
+listed in its Style panel. The NDEx website and Cytoscape Web 1.0 also draw
+the network with the active style only. Before you save, or before
+**Open Network in Cytoscape Desktop**, make the style you want them to show
+the active one.
+
+If another program edits the style and saves the file, Cytoscape Web uses
+that edited version for the active style. It is not known whether Cytoscape
+Desktop keeps the extra styles in a file it saves.
+
+## List of Node, Edge and Network Properties
+
+These tables come from the application itself, so they always match the
+version you are running.
+
+### Node Properties
+
+| Property | Value | Default | Description |
+| --- | --- | --- | --- |
+| **Shape** | Node shape | `round-rectangle` | The shape of the node. |
+| **Border Color** | Color | `#CCCCCC` | The color of the border of the node. |
+| **Border Line Type** | Line type | `solid` | The type of line used for the border of the node. |
+| **Border Width** | Number | `0` | The width of the node border. |
+| **Border Opacity** | Number | `1` | The transparency of the node border. 100% is fully opaque, 0% is fully transparent. |
+| **Height** | Number | `35` | The height of the node. Independent of the width. |
+| **Width** | Number | `75` | The width of the node. Independent of the height. |
+| **Fill Color** | Color | `#89D0F5` | The fill color of the node. |
+| **Label** | Text | `(empty)` | The text of the node label. |
+| **Label Color** | Color | `#000000` | The color of the node label. |
+| **Label Font Size** | Number | `12` | The font size of the node label. |
+| **Label Font** | Font | `sans-serif` | The font of the node label. |
+| **Label Rotation** | Number | `360` | The rotation angle of the node label in degrees(from 0 to 360). |
+| **Label Opacity** | Number | `1` | The transparency of the node label. 100% is fully opaque, 0% is fully transparent. |
+| **Label Position** | Label position | `—` | The position of the node label relative to the node. |
+| **Opacity** | Number | `1` | The transparency of the node fill. 100% is fully opaque, 0% is fully transparent. |
+| **Visibility** | Visible / hidden | `element` | The flag to show or hide the node. |
+| **Selected Color** | Color | `#FFFF00` | The fill color of the node when it is selected. |
+| **Label Width** | Number | `100` | The maximum width of the node label. |
+| **Z Order** | Number | `0` | The stacking order of nodes on the canvas. Higher values are drawn on top. |
+| **Image/Chart 1–9** | Image or chart | `—` | Custom graphics applied to nodes. This can be an image or a chart. |
+| **Image/Chart Position 1–9** | Position | `—` | Where an image or chart sits on the node, and how it aligns. |
+| **Image/Chart Size 1–9** | Number | `50` | The size of an image or chart on the node. |
+
+### Edge Properties
+
+| Property | Value | Default | Description |
+| --- | --- | --- | --- |
+| **Stroke Color** | Color | `#848484` | The fill color of the edge line when not selected. |
+| **Line Type** | Line type | `solid` | The line style of the edge: solid, dashed, and so on. |
+| **Opacity** | Number | `1` | The transparency of the edge. 100% is fully opaque, 0% is fully transparent. |
+| **Source Arrow Color** | Color | `#000000` | The color of the edge source arrow when not selected. |
+| **Source Arrow Shape** | Arrow shape | `none` | The shape of the arrow at the source end. |
+| **Target Arrow Color** | Color | `#000000` | The color of the edge target arrow when not selected. |
+| **Target Arrow Shape** | Arrow shape | `none` | The shape of the arrow at the target end. |
+| **Label** | Text | `(empty)` | The text of the edge label. |
+| **Label Color** | Color | `#000000` | The color of the edge label. |
+| **Label Font Size** | Number | `10` | The font size of the edge label. |
+| **Label Font** | Font | `sans-serif` | The font of the edge label. |
+| **Label Rotation** | Number | `0` | The rotation angle of the edge label in degrees(from 0 to 360). |
+| **Label Opacity** | Number | `1` | The transparency of the edge label. 100% is fully opaque, 0% is fully transparent. |
+| **Width** | Number | `2` | The width of the edge line. |
+| **Visibility** | Visible / hidden | `element` | The flag to show or hide the edge. |
+| **Selected Color** | Color | `red` | The color of the whole edge, line and arrows, when it is selected. |
+| **Label Width** | Number | `100` | The maximum width of the edge label. |
+| **Z Order** | Number | `0` | The stacking order of edges on the canvas. Higher values are drawn on top. |
+
+### Network Properties
+
+| Property | Value | Default | Description |
+| --- | --- | --- | --- |
+| **Background Color** | Color | `#FFFFFF` | The background color of the network view. |
+
 ## Styles Tutorial
 
-The following tutorial demonstrate some of the basic style features. 
+Follow along in the editor on a network with a numeric node column. The
+steps name the columns of the *galFiltered* yeast network: `interaction` on
+edges and `gal1RGexp` on nodes.
 
-<a id="tutorial_1_creating_a_basic_style_and_setting_default_values"> </a>
 ### Creating a Basic Style with Discrete and Continuous Mappings
 
-First, we will update the default values for two node properties:
+Steps 1–2 set two default values. Steps 3–5 color the edges by interaction
+type with a discrete mapping, steps 6–8 color the nodes by expression with
+a continuous mapping, and steps 9–10 add a bypass.
 
-1.  Load a sample network via **Data → Open network(s) from NDEx** in the **Menu Bar**.
-In the **NDEx Network Browser** window, search for **galfiltered** and open the **galFiltered network with data**.
+1. In the **NODES** tab of the **STYLE** panel, click the **Default** box of
+   **Shape**. Choose the ellipse, then click **Confirm**.
 
-2.  Select the **STYLE** panel in the Network Panel. Default values are defined for
-some of the properties. 
+   ![The Shape picker opened from the Default box, with the ellipse ringed](_static/images/generated/styles-tutorial/shape-default.png)
 
-3.  To set the default node shape to oval, click the **Default** column for the
-    **Shape** property in the **NODES** tab. Select the **ellipse** item and click **CONFIRM**. 
-    
-4.  Similarly, click the **Default** column for **Fill
-    Color** and set it to light grey.
+2. Click the **Default** box of **Fill Color** and choose a light grey, then
+   click **Confirm**.
 
-Next, we will use discrete mappings for edge style properties:
+   ![The color picker opened from the Default box of Fill Color, with a light grey ringed](_static/images/generated/styles-tutorial/fill-default.png)
 
-5.  In the **EDGE** tab of the **STYLE** panel, find the
-    **Stroke Color** property and click on the **Mapping** column. Under **Column**, 
-    select **interaction**.
+3. Open the **EDGES** tab. Click the **Mapping** box of **Stroke Color**.
 
-6.  Under **Mapping Type**, select **discrete**. The interface will now show all available column values for **interaction**: 
+   ![The mapping form of Stroke Color, with the Column list ringed](_static/images/generated/styles-tutorial/stroke-mapping.png)
 
-    ![](_static/images/Styles/DiscreteMapper.png)
+4. Under **Column**, choose **interaction**. Under **Mapping Type**, choose
+   **discrete**. The form lists every value of the column: **pp**
+   (protein–protein) and **pd** (protein–DNA).
 
-7.  Click the box next to **pp** (protein-protein interactions), select a dark blue color, then click **CONFIRM**. Repeat the process with **pd** (protein-DNA interasctions) and select a green color.
+   ![A discrete mapping on interaction, listing pp and pd](_static/images/generated/styles-tutorial/discrete.png)
 
-    ![](_static/images/Styles/Tutorial2-final.png)
+5. Click the value box of **pp** and choose a dark blue. Give **pd** a
+   green the same way, then click **Close**.
 
-Next, let's create continuous mappings for nodes:
+   ![The color picker of the pp value, with a dark blue ringed](_static/images/generated/styles-tutorial/discrete-color.png)
 
-8.  In the **NODES** tab of the **STYLE** panel, find the
-    **Fill Color** property. Click on the **Mapping** column. 
-    
-9.  Under **Column**, select **gal1RGexp** from the drop-down list that appears.
+6. Open the **NODES** tab. Click the **Mapping** box of **Fill Color**.
 
-10. Select the "continuous" option as the **Mapping Type**. This automatically creates a default mapping using a default palette.
+   ![The mapping form of Fill Color on the Nodes tab, with the Column list ringed](_static/images/generated/styles-tutorial/fill-mapping.png)
 
-    ![](_static/images/Styles/DefaultContinous.png)
+7. Under **Column**, choose **gal1RGexp**. Under **Mapping Type**, choose
+   **continuous**. The nodes take colors from a default gradient at once.
 
-11. Let's update the palette by clicking the **Current Palette** button. Select the **Red-Blue** palette on the left and click **OK**. 
+   ![A continuous mapping on gal1RGexp, with its gradient](_static/images/generated/styles-tutorial/continuous.png)
 
-The available palettes come from published recommendations for choosing colors in scientific and cartographic applications, such as [BrewerColors](http://colorbrewer2.org).
+8. Click the button next to **Current Palette:** and choose a diverging
+   palette, so negative and positive expression read as opposite colors.
+   Click **Confirm**, then **Close**.
 
-![](_static/images/Styles/RedBlue.png)
+   ![The Set Palette window on the diverging palettes](_static/images/generated/styles-tutorial/palette.png)
+
+9. Click one node in the network to select it.
+
+   ![One node selected in the network view](_static/images/generated/styles-tutorial/select-node.png)
+
+10. Click the **Bypass** box of **Fill Color**, then the box next to
+    **Apply the bypass value to all selected nodes:**, and pick a bright
+    yellow. Only the selected node changes; the mapping still colors the
+    rest.
+
+   ![The Bypass form of Fill Color for the selected node](_static/images/generated/styles-tutorial/bypass.png)

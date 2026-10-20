@@ -1,32 +1,74 @@
-Introduction
-===============
+# Introduction
 
-<a id='introduction'> </a>
+<a id="introduction"></a>
 
-Cytoscape has been a leading platform for visualization and analysis of complex networks since 2003. To complement the highly successful desktop application, we introduce [Cytoscape Web](https://web.cytoscape.org), a web-based version of Cytoscape that supports modern computing environments without the need for software installation.
- 
-Cytoscape Web delivers efficient network analysis directly in the browser. Its new UI-centric app framework allows for the seamless migration of existing Cytoscape applications and enables *de novo* development of Service Apps in any programming language, thus enhancing access and flexibility.
- 
-It simplifies data sharing and distribution. Networks can be stored in the [Network Data Exchange (NDEx)](https://www.ndexbio.org) and shared among researchers via unique URLs rather than attaching large session files to email messages.
- 
-Cytoscape Web expands visualization capabilities by supporting multiple rendering engines such as the new "Cell View", and allows analysis of "communities" of genes using a variety of Large Language Models (LLM) thanks to the [Gene Set AI (GSAI)](https://idekerlab.ucsd.edu/gsai/) service, recently developed by the Ideker Lab at UC San Diego and published in the January 2025 issue of Nature Methods.
- 
-By integrating these features, Cytoscape Web maintains the robust functionality and familiarity of its desktop counterpart while streamlining collaboration and visual analysis within a modern web environment.
+(Introduction-introduction)=
+Cytoscape has been a platform for visualizing and analyzing complex networks
+since 2003. [Cytoscape Web](https://web.cytoscape.org) is the web version of Cytoscape. It runs in the
+browser, so there is nothing to install.
 
-Being a newer tool and still in active development, Cytoscape Web doesn't provide all the features and functionalities available in its desktop application counterpart yet. Please refer to the [Feature Comparison](https://github.com/cytoscape/cytoscape-web/wiki/Cytoscape-Web-vs-Desktop-Feature-Comparison) table for more information. 
+With Cytoscape Web you can:
 
-<a id="requirements"> </a>
+- Load networks from the [Network Data Exchange (NDEx)](https://www.ndexbio.org),
+  from files on your computer, or from a link.
+- Edit how a network looks with [styles](Styles.md) and select parts of it with
+  [filters](Filters.md).
+- Browse and edit node, edge and network data in the
+  [table panel](Node_and_Edge_Column_Data.md).
+- Save networks and whole workspaces to NDEx, and share a network with
+  colleagues as a link instead of a file.
+- Explore hierarchical networks in the **Cell View**, a separate view for
+  hierarchies whose subsystems all use one interaction type.
+- Ask a large language model (LLM) to describe the genes in selected
+  subsystems of a hierarchy, with **Analysis → Run LLM Query**. You choose the
+  provider (OpenAI, a local Ollama server, or another OpenAI-compatible
+  service) under **Analysis → LLM Query Options...**.
+- Add features through apps, including service apps written in any
+  programming language. See [Extending Cytoscape Web](Extending.md).
+
+Your networks are kept in your browser between visits. Networks you have not
+saved to NDEx exist only in that browser on that computer.
+
+Cytoscape Web does not yet offer every feature of Cytoscape Desktop. The
+[Feature Comparison](https://github.com/cytoscape/cytoscape-web/wiki/Cytoscape-Web-vs-Desktop-Feature-Comparison)
+table lists the differences. To move a network to Cytoscape Desktop, use
+**Data → Open Network in Cytoscape Desktop**.
+
+## Getting Help
+
+The **Help** menu has:
+
+| Menu item | What it does |
+| --- | --- |
+| Take a tour | A short guided tour of the main screen. |
+| User Manual | Opens this manual in a new tab. |
+| Report a Bug | Sends a bug report to the Cytoscape team. |
+
+<a id="requirements"></a>
+
+(Introduction-requirements)=
 ## Software Requirements
 
-We recommend that you always update your preferred web browser to the latest version whenever possible. Cytoscape Web fully supports the following browsers:
+Use a current version of your web browser. Cytoscape Web is developed for:
 
-   - Google Chrome
-   - Mozilla Firefox
-   - Microsoft Edge
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
 
-While we don't discourage the use of alternative web browsers, we cannot guarantee that all features will be available and functioning as intended. For example, if using the Brave browser, you must disable the **Brave Shield** otherwise the **Open in Cytoscape** feature in Cytoscape Web will not work.
+Other browsers may work, but some features may not. In Safari,
+**Open Network in Cytoscape Desktop** is not available. In the Brave browser,
+turn off **Brave Shields** for Cytoscape Web, or the connection to Cytoscape
+Desktop may be blocked.
 
-For the **Open in Cytoscape** feature to work properly, you also need [Cytoscape 3.10 or higher](https://cytoscape.org/download.html) installed and running on your machine, and the **cx support** core-app updated to the latest version available.
+Open Network in Cytoscape Desktop sends a copy of the current network to
+Cytoscape Desktop on the same computer. It needs:
 
+- [Cytoscape Desktop](https://cytoscape.org/download.html) running, with its
+  REST service on the default port 1234. Cytoscape 3.10 or later is
+  recommended.
+- The **CX Support** core app updated to the latest version, so Cytoscape
+  Desktop can read the network.
 
-
+The menu item is inactive until Cytoscape Web detects Cytoscape Desktop. The
+first time you use it, your browser may ask for permission to access the
+local network. Click **Allow** so Cytoscape Web can reach Cytoscape Desktop.
